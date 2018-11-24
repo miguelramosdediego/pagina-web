@@ -1,0 +1,103 @@
+<!doctype html><!--codepen.io/datJedi/pen/KwZqEW/-->
+<html lang="es-ES">
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Música">
+        <meta name="keywords" content="Música, Reproductor, Canciones">
+        <meta name="author" content="Ramos de Diego, Miguel">
+        <!--<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.js'></script>--><!--Deshabilitado ya que no funciona-->
+        <title>Música</title>
+    </head>
+    <body>
+        <h3 id="musica">Música</h3><!--En la carpeta "musica", los archivos HTML, CSS y JS que están en ella, sirven para en un futuro incluir una lista de reproducción sin tener que hacer uso de reproductores en línea. Les intenté echar mano y modificar algunas cosas que eran obvias, pero no requiero del tiempo suficiente para poder terminarla ahora de una manera rápida. Se probó a hacer un "embed" del archive .m3u creado y por otra vías, pero no hubo el resultado esperado, ya que se especificaba que se requería un "plugin" para poder reproducirlo (fuete del referente del "embed": https://www.quackit.com/html/codes/create_music_playlist.cfm). La lista .m3u funciona correctamente por sí sola (fuente de la misma: http://freemusicarchive.org/). La fuente de la herramienta para crear la lista de reproducción es la siguiente: https://gist.github.com/tsabat/cb7607bf5a8da5aef352#file-html5-audio-player-w-responsive-playlist-markdown, aunque finalmente se optó por otra-->
+            <br>
+            <section><!--Música-->
+                <audio id="audio" preload="auto" type="audio/mpeg" autoplay controls><!--Canción en primer plano, que se reproduzca automáticamente y sin bucle-->
+                    <source src="musica/Dee_Yan-Key_-_Ambient_Sonata/Dee_Yan-Key_-_01_-_Ambient_Sonata.mp3">
+                </audio>
+                <ul id="playlist">
+                    <h4>Dee Yan-Key - Ambient Sonata</h4>
+                        <li class="songactive">
+                            <a href="musica/Dee_Yan-Key_-_Ambient_Sonata/Dee_Yan-Key_-_01_-_Ambient_Sonata.mp3">01. Ambient Sonata</a>
+                        </li>
+                    <h4>Les Hayden - Proverbs</h4>
+                        <li class="songactive">
+                            <a href="musica/Les_Hayden_-_Proverbs/Les_Hayden_-_01_-_Gift_Horse.mp3">01. Gift Horse</a>
+                        </li>
+                        <li>
+                            <a href="musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3">02. Proverb</a>
+                        </li>
+                        <li>
+                            <a href="musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3">03. Still</a>
+                        </li>
+                        <li>
+                            <a href="musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3">04. Fish to Swim</a>
+                        </li>
+                        <li>
+                            <a href="musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3">05. Ophelia</a>
+                        </li>
+                        <li>
+                            <a href="musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3">06. Elephant Wings</a>
+                        </li>
+                        <li>
+                            <a href="musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3">07. Oh What A Funny Joke</a>
+                        </li>
+                        <li>
+                            <a href="musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3">08. Need</a>
+                        </li>
+                        <li>
+                            <a href="musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3">09. Three</a>
+                        </li>
+                        <li>
+                            <a href="musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3">10. Want</a>
+                        </li>
+                    <br>
+                </ul>
+            </section><!--Música-->
+                <br><!--Son para dejar la firma abajo del todo-->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            <section><!--Iconos-->
+                <div>
+                    <img src="imagenes/logo_brackets.png" class="iconobrackets" title="Logo Brackets" alt="Logo Brackets" width="100" height="100">
+                </div><!--Icono Brackets-->
+            </section><!--Iconos-->
+            <section><!--Paginación, solo para páginas externas (excepto los marcos)-->
+                <div class="paginacion">
+                    <a href="formulario.html"><i class="fa fa-angle-double-left"></i></a>
+                    <a href="index.html">1</a>
+                    <a href="formulario.html">2</a>
+                    <a href="musica.html" class="activopaginacion">3</a>
+                    <a href="galeria.html">4</a>
+                    <a href="articulos.html">5</a>
+                    <a href="galeria.html" class="ultimopaginacion"><i class="fa fa-angle-double-right"></i></a>
+                    <a href="" class="trampapaginacion">6</a>
+                </div>
+            </section><!--Paginación-->
+            <footer><!--Pie de página-->
+                <p class="firmarealizada">
+                    <span class="realizada">Página realizada por:</span>
+                    <span class="firma">Ramos de Diego, Miguel</span>
+                </p>
+            </footer><!--Pie de página-->
+    </body>
+</html>

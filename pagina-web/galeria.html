@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Galería de imágenes">
+        <meta name="keywords" content="Galeria,Wallpaper">
+        <meta name="author" content="Ramos de Diego, Miguel">
+        <title>Galería de imágenes</title>
+    </head>
+    <body>
+        <h3 id="galeriaindice">Galería de imágenes: Wallpapers de distribuciones Linux</h3>
+            <br>                    
+            <div class="cuadroexternogaleria"><!--Recuadro para establecer los límites de la galería de imágenes-->
+                <div class="galeria"><!--Contiene la imagen y, anteriormente, su descripción. Ahora parece que son independientes el uno del otro-->
+                    <a target="_blank" href="imagenes/arch_logo.jpg">
+                        <img src="imagenes/arch_logo.jpg" alt="Arch wallpaper"><!--Altura y anchura no determinadas debido a que el CSS se encarga de darles el tamaño-->
+                    </a>
+                    <div class="descripciongaleria">Arch Linux Wallpaper – 1920x1080</div>
+                    <div class="galeriadesplegable">
+                        <img src="imagenes/arch_logo.jpg" alt="Arch wallpaper">
+                        <div class="descripciongaleriadesplegable">Arch Linux Wallpaper – 1920x1080</div>
+                    </div>
+                </div>
+                <div class="galeria">
+                    <a target="_blank" href="imagenes/mint_logo.jpg">
+                        <img src="imagenes/mint_logo.jpg" alt="Mint wallpaper">
+                    </a>
+                    <div class="descripciongaleria">Linux Mint Wallpaper – 1920x1080</div>
+                    <div class="galeriadesplegable galeriadesplegablesuperiorderecha"><!--Segunda clase introducida para posicionar las imágenes desplegables aisladamente-->
+                        <img src="imagenes/mint_logo.jpg" alt="Mint wallpaper">
+                        <div class="descripciongaleriadesplegable">Linux Mint Wallpaper – 1920x1080</div>
+                    </div>
+                </div>
+            <br><!--Trampa: salto de línea para que el bloque de la tercera imagen se me mueva abajo y no se ponga seguido aunque se corte-->
+                <div class="galeriaubuntu">
+                    <a target="_blank" href="imagenes/ubuntu_logo.jpg">
+                        <img src="imagenes/ubuntu_logo.jpg" alt="Ubuntu wallpaper">
+                    </a>
+                    <div class="descripciongaleria">Ubuntu Wallpaper – 1920x1080</div>
+                    <div class="galeriadesplegable galeriadesplegablecentral">
+                        <img src="imagenes/ubuntu_logo.jpg" alt="Ubuntu wallpaper">
+                        <div class="descripciongaleriadesplegable">Ubuntu Wallpaper – 1920x1080</div>
+                    </div>
+                </div>
+            <br><!--Trampa: salto de línea para que los bloques de la cuarta y quinta imagen se me mueva abajo y no se pongan seguidos aunque se corten-->
+                <div class="galeria">
+                    <a target="_blank" href="imagenes/debian1_logo.jpg">
+                        <img src="imagenes/debian1_logo.jpg" alt="Debian dark wallpaper">
+                    </a>
+                    <div class="descripciongaleria">Debian Dark Wallpaper – 1920x1080</div>
+                    <div class="galeriadesplegable galeriadesplegableinferiorizquierda">
+                        <img src="imagenes/debian1_logo.jpg" alt="Debian dark wallpaper">
+                        <div class="descripciongaleriadesplegable">Debian Dark Wallpaper – 1920x1080</div>
+                    </div>
+                </div>
+                <div class="galeria">
+                    <a target="_blank" href="imagenes/debian2_logo.jpg">
+                        <img src="imagenes/debian2_logo.jpg" alt="Debian ligth wallpaper">
+                    </a>
+                    <div class="descripciongaleria">Debian Light Wallpaper – 1920x1080</div>
+                    <div class="galeriadesplegable galeriadesplegableinferiorderecha">
+                        <img src="imagenes/debian2_logo.jpg" alt="Debian ligth wallpaper">
+                        <div class="descripciongaleriadesplegable">Debian Light Wallpaper – 1920x1080</div>
+                    </div>
+                </div>
+            </div><!--Recuadro para establecer los límites de la galería de imágenes-->
+            <section><!--Iconos-->
+                <div>
+                    <img src="imagenes/logo_brackets.png" class="iconobrackets" title="Logo Brackets" alt="Logo Brackets" width="100" height="100">
+                </div><!--Icono Brackets-->
+                <div>
+                    <img src="imagenes/logo_html5.png" class="iconohtml5" title="Logo HTML5" alt="Logo HTML5" width="100" height="100">
+                </div><!--Icono HTML5-->
+                <div>
+                    <img src="imagenes/logo_css.png" class="iconocss3" title="Logo CSS3" alt="Logo CSS" width="130" height="120">
+                </div><!--Icono CSS-->
+                <br>
+            </section><!--Iconos-->
+            <section><!--Paginación, solo para páginas externas (excepto los marcos)-->
+                <div class="paginacion">
+                    <a href="musica.html"><i class="fa fa-angle-double-left"></i></a>
+                    <a href="index.html">1</a>
+                    <a href="formulario.html">2</a>
+                    <a href="musica.html">3</a>
+                    <a href="galeria.html" class="activopaginacion">4</a>
+                    <a href="articulos.html">5</a>
+                    <a href="articulos.html" class="ultimopaginacion"><i class="fa fa-angle-double-right"></i></a>
+                    <a href="" class="trampapaginacion">6</a>
+                </div>
+            </section><!--Paginación-->
+            <footer><!--Pie de página-->
+                <p class="firmarealizada">
+                    <span class="realizada">Página realizada por:</span>
+                    <span class="firma">Ramos de Diego, Miguel</span>
+                </p>
+            </footer><!--Pie de página-->
+    </body>
+</html>

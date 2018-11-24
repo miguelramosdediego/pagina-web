@@ -1,0 +1,51 @@
+Menú: para solucionar estos problemas, habría de cambiarse seguramente entero, probablemente estableciendo una lista para los enlaces del menú principal. Se ha probado a cambiar varias cosas, pero el menú "sticky" entraba en conflicto con el menú desplegable. Actualización: Solucionado.
+- El apartado de "Multimedia" en el menú es despalazado automáticamente hasta el final del mismo. Debido a esto, se ha decidido desplazar manualmente al último lugar. Actualización: A pesar de haber definido el menú con listas, no se ha conseguido solucionar el problema de este apartado. Ahora, no se va al final y ya está, sino que descuadra los elementos. Parece ser que con "sticky" no hacen buenas migas, quizá con "fixed"... Segunda actualización: El menú ha sido arreglado. Al igual que en la paginación, justo después del símbolo insertado se cortaba el color de fondo y aparecía en espacio entre "Multimedia" y el siguiente elemento, produciéndose una descolocación. Habiendo dejado un espacio después del símbolo, esto se ha solucionado y, para que no se viera descentrado, se ha añadido otro antes de "Multimedia". Aparte de solucionar esto, se ha dejado el "hover" de "Multimedia" activado al pasar por el menú desplegable. Se ha reorganizado la paginación y los "iframes" debido al cambio de orden producido en el menú principal.
+- El menú no puede reescalarse. En caso de intetentar establecer una longitud en porcentaje y una altura automática, empezarían a descuadrarse los elementos de mayor longitud.
+- Al pasar por la tabla, el menú desplegable no se logra distinguir bien de su color de fondo. Se ha intentado mitigar estableciendo los bordes superior e inferior. Actualización: Solucionado gracias a los bordes laterales añadidos.
+- Posición del menú desplegable: se ha intentado establecer la posición relativa para que el contenido de este salga justo debajo de "Multimedia", pero al hacer esto y suprimir la distancia de la posición absoluta, "Música" se superpone a "Multimedia". Debido a esto, se ha dejado una posición absoluta para intentar cuadrarlo pero, aun así, cambiando de navegador, monitor, etc., este habría que volver a ponerlo bien. Actualización: Gracias a delimitar los enlaces con listas y a cambiar diversas cosas en el menú, se ha logrado que el menú desplegable aparezca justo de bajo del elemento padre y que así este no se descoloque constantemente respecto al margen superior.
+- Trampas: Bordes superior e inferior, el inferior del menú desplegable y la posición absoluta en el menú desplegable tomada a ojo.
+
+Mapa:
+- No se puede establecer un "hover" con la opacidad al 1 en la imagen y luego definir otros "hovers" para las áreas. Solución pendiente de implementar: https://codepen.io/solipsistacp/pen/Cbdeg.
+
+Audio:
+- Pendiente de implementar la lista .m3u en la página web mediante https://gist.github.com/tsabat/cb7607bf5a8da5aef352#file-html5-audio-player-w-responsive-playlist-markdown.
+
+Formulario:
+- Pendiente de pulir e implmentar limitaciones en ciertos campos, como en el de la mayoría de edad.
+- Pendiente de crear mis propias cajas de "inputs".
+- Pendiente de añadir https://www.w3schools.com/css/css_tooltip.asp Actualización: Burbujas informativas añadidias, pero con "input[type=""]:focus + .burbujainformacion", debido a que los "tooltips" no se podían en los "inputs".
+- En el navegador Konqueror, el "legend" sale en dos líneas, pero si se recarga la página, se pone bien, en una sola. En Firefox no ocurre este problema.
+
+Galería de imágenes:
+- Pendiente de suprimir el resquicio de ".responsive". Creo que puede suprimirse y que el reescalado se mantenga, pero supongo que habrá que volver a cuadrar ciertos elementos dentro de la galería de imágenes. Actualización: ".responsive" eliminado correctamente y vuelto a cuadrar todo nuevamente. Lo único que ha desaparecido ha sido el recuadro que contenía la imagen y la descripción, pero así está más coherente. Aún el reescalado está por la mitad. falta que se cuadren los iconos en posiciones absolutas y que las descripciones no desorganicen otros elementos (para esto habría que hacer que el texto también se reescale).
+- Pendiente de implementar que el "hover" de la imagen afecte también a la descripción, para que ambos sean activados a la vez.
+- Pendiente de hacer que las descripiones se reescalen dentro de la caja de descripción.
+- Al haber puesto una imagen desplegable de las imágenes, se había dañado el correcto reescalado de las mismas (se reescalaban, pero llegaba un punto en que se empezaban a tapar unas con otras). Se ha conseguido solucionar si no recuerdo  mal añadiendo un ancho o un alto en 100% que faltaba. Ahora, ocurre otro problema: las imágenes desplegables no pueden aumentar su tamaño debido a esta limitación (si pueden, pero solo las imágenes, la caja con la descripción no puede aumentar más su tamaño). Esto último creo que viene limitado por el ancho del ".responsive", pendiente de elminar y, por consiguiente, cuadrar todo nuevamente. Al menos las imágenes desplegables también pueden reescalarse. Actualización: Las imágenes desplegables pueden tener un tamaño mayor al de la propia imagen y se han cambiado algunos posicionamientos de las mismas.
+
+Marcos:
+- No se han podido establecer debido a que según w3schools, ya no son soportados más los "frames" en HTML5. Por ello, se ha establecido un "embed" de los apuntes tomados. En caso de poderse hacer, pendiente de implementar. Actualización: en los marcos había que definirlos sin un "body", por lo que ya se han podido poner. Se han introducido en "index.html" a través de un "embed", pero sin poder ponerle un borde, ya que el derecho lo ignora y aparece la barra horizontal de desplazamiento dentro de la página. En Firefox sí funciona el reescalado, pero no en los navegadores de KHTML.
+
+Espacio derecho en blanco:
+- Pendiente de encontrar qué elemento hace que haya un espacio en blanco a la derecha de la página. Actualización: Espacio derecho en blanco quitado correctamente, era debido al margen derecho de los marcos.
+
+Animaciones (iconos HTML5 y CSS3):
+- Al estar en posición absoluta, solo Konqueror las interpreta bien, en los demás las animaciones entran en bucle al empezar a ejecutarse. Si estuviera todo definido en "vw" o porcentajes, seguramente se solucionaría.
+
+Iframes:
+- Pendiente de implementar "iframes" que se vean así: https://codepen.io/iamjordanlittle/pen/GozEKY
+- Pendiente de implementar enlaces en los "iframes" para que redirijan a sus respectivas páginas.
+- En Konqueror, el "autofocus" de "Nombre" consigue saltarse la anulación de clics del "iframe" del formulario, pero en Mozilla Firefox no ocurre.
+
+Paginación:
+- En Konqueror, el margen derecho del cuarto elemento aparece con el borde de 1 pixel (solo aparece en la página principal). Es extraño, ya que Firefox y Yandex lo interpretan bien.
+- Se han suprimido los enlaces internos de la paginación para solo dejar aquellos que son externos, ya que los otros eran redundantes a la hora de darle a "siguiente" o "atrás".
+
+Página entera:
+- Pendiente de hacer que toda la página se vea bien tanto en móviles como en ordenadores.
+- Pendente de implementar alguna animación "chula".
+- Pendiente de establecer columnas de Bootstrap.
+- Pendiente de implementar con solo HTML+CSS que al ir bajando en la página principal, tanto el índice como la paginación vayan desplazando el elemento activo dependiendo de en qué parte de la página se encuentren.
+
+Página de carga:
+- Pendiente de implementar: https://ihatetomatoes.net/create-custom-preloading-screen/

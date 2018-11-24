@@ -1,0 +1,865 @@
+/*Inicio encabezado*/
+header {
+    background-color: #7c6250;
+    color: #e6e2d3;
+    text-align: center;
+    font-size: 0.65vw;
+}
+/*Fin encabezado*/
+
+/*Inicio menú principal*/
+nav {
+    position: sticky; /*Menú fijo al hacer "scroll"*/
+    position: -webkit-sticky; /*Menú fijo al hacer "scroll" en Safari*/
+    top: -1px; /*Quitar margen superior. En 0 se producía un margen de 1 pixel respecto a la parte superior*/
+    margin-left: -8px; /*Quitar margen izquierdo*/
+    z-index: 1; /*Traer el menú al primer plano aun cuando pase por un elemento transparente. Si no está puesto, se tornará trasparente cuando se pase por un elemento que tenga transparencia y generará conflicto*/
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+	padding: 0;
+}
+nav ul li {
+    float: left; /*Establecer los enlaces del menú dispuestos horizontalmente, uno detrás de otro*/
+    position: relative;
+    width: auto;
+    margin-top: 7px; /*Margen superior añadido debido a que los elementos de la lista tenían un margen superior inferior al del "nav", por lo que la posición "sticky" se veía cortada por arriba*/
+}
+nav ul li a { /*Tantos los enlaces del menú principal como aquellos del menú desplegable*/
+    background-color: #e6e2d3;
+    color: #7c6250;
+    text-align: center;
+    padding: 4px 40px; /*Eje Y, eje X, respectivamente*/ /*Con "min-width" no puede expandirse, pero con "padding" sí*/
+    border-top: 2px solid #7c6250; /*Aquí hay una trampa: se ha definido solo borde superior e inferior porque, de establecerse el derecho y el izquierdo también de 2 píxeles, aquí quedarían elementos con un borde de más píxeles que otros (por ejemplo serían más estrechos los del lateral izquierdo y derecho del todo). Se han establecido no por capricho, sino para que al pasar por ciertos elementos con el mismo color, el menú pueda diferenciarse un poco mejor de ellos. Actualización: los cuatro bordes ya están definidos, antes solo había dos (superior e inferior), por lo que ahora se puede diferenciar mejor el menú del resto de elementos*/
+    border-right: 1px solid #7c6250; /*El borde final es de 2px, por eso se han establecido estos de 1, porque se juntarán con otro de 1*/
+    border-bottom: 2px solid #7c6250;
+    border-left: 1px solid #7c6250;
+    font-family: 'Charmonman', cursive; /*Tipo de letra de los elementos del menú, fuente: https://fonts.google.com/*/
+    font-weight: bold;
+}
+nav ul li a.navactivo { /*Enlace que estará activo. Equivale al "first-child", pero tambiés afectaría al menú desplegable*/
+    background-color: #a29083; /*Color hexadecimal extraído de los botones en trasparencia*/
+    color: #e6e2d3;
+    border-right: 1px solid #7c6250;
+    border-left: 2px solid #7c6250; /*Borde único de la izquierda*/
+}
+nav ul li.last-child a {
+    border-right: 2px solid #7c6250;
+}
+nav ul li:hover a:not(.elementomenudesplegable) { /*Acción que ocurrirá al poner el cursor encima de cada elemento del menú principal. Enlaces del menú desplegable excluidos para que no se produzca un "hover" en bloque*/
+    background-color: #7c6250;
+    color: #e6e2d3;
+}
+nav ul li:hover a.navactivo { /*Acción que ocurrirá al poner el cursor encima del elemento activo*/
+    background-color: #7c6250;
+    transition: 0.3s; /*Lapso de tiempo hasta activarse por completo los atributos añadidos. Se ha prescindido de él en los elementos de la barra de navegación debido a que parece que hay "ghosting" o sensación de "lag" y puede llegar a ser molesto*/
+}
+nav a.iconorss i, nav a.iconoatom i {
+    float: right;
+    font-size: 3.8vh;
+    margin-top: -1px;
+    -webkit-text-fill-color: #d9ad7c; /*Color del elemento delimitado por el borde definido a continuación*/
+    -webkit-text-stroke-width: 1px; /*Tamaño del borde en rededor del elemento, respetándose las transparencias*/
+    -webkit-text-stroke-color: #d9ad7c; /*Color del borde en rededor del elemento*/
+    border-radius: 60px;
+    box-shadow: 0 0 2px black;
+    padding: 0.1em 0.2em;
+    background-color: white;
+}
+nav a.iconorss:hover i, nav a.iconoatom:hover i {
+    -webkit-text-fill-color: #d19d61;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d19d61;
+    box-shadow: 0 0 8px black;
+}
+/*Fin menú principal*/
+
+/*Inicio menú desplegable de "Multimedia"*/
+ul.menudesplegable-contenido { /*Contenido del menú desplegable, elemento en línea indicado en el HTML*/
+    position: absolute; /*Es requerido para que no se despliegue en línea horizontal el menú desplegable, sino de manera vertical*/
+    visibility: hidden; /*Es requerido para que el menú esté escondido y no se muestre nada más que al pasar el cursor por encima (esto se define más adelante)*/
+    left: 0;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+ul.menudesplegable-contenido li {
+    width: calc(100% + 1px); /*Requerido por el borde, para que se cuadre el ancho de "Multimedia"*/
+    margin-bottom: -7px; /*Quitar espaciado entre elementos del menú desplegable*/
+}
+ul.menudesplegable-contenido li a { /*Enlaces introducidos en el menú desplegable, particularidades respecto a los elementos del menú principal*/
+    padding: 4px;   
+    border-top: none; /*Eliminar el borde superior. Es necesario para que no entre en conflicto con aquel ya definido en "nav a" y, por ende, se duplique en tamaño*/
+    border-right: 2px solid #7c6250;
+    border-left: 2px solid #7c6250;
+    display: block;
+}
+li.menudesplegable:hover ul.menudesplegable-contenido {
+    visibility: visible;
+}
+li.menudesplegable ul.menudesplegable-contenido li:hover a {
+    background-color: #7c6250;
+    color: #e6e2d3;
+}
+/*Inicio flecha abajo a arriba*/
+li.menudesplegable a span.flechamultimediaarriba { /*Flecha hacia arriba escondida*/
+    display: none;
+}
+li.menudesplegable:hover a span.flechamultimediaabajo { /*Cuando se pose el cursor sobre el elemento, flecha hacia abajo escondida...*/
+    display: none;
+}
+li.menudesplegable:hover a span.flechamultimediaarriba { /*... y que la flecha hacia arriba sea visible*/
+    display: inline;
+}
+/*Fin flecha abajo a arriba*/
+/*Fin menú desplegable de "Multimedia"*/
+
+/*Inicio otros*/
+/*Inicio "iframes"*/
+div.lineaiframes {
+    width: 98vw;
+    /*height: 9.2vw; Aún no es relevante*/
+}
+div.iframeinicio {
+    display: inline-block;
+    margin: 0 3.32vw 0 2.6vw; /*El cuarto margen (el de la izquierda) es el común de otros elementos de la página*/
+}
+div.iframeinicio:last-child {
+    margin-right: 0; /*Anular el margen del último "iframe" ("last-child)*/
+}
+div.iframeinicio:not(.contenedorlogoavellaneda):hover { /*"Hover" en los "iframes" excepto en "logoavellaneda"*/
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /*Sombra al pasar el cursor, la misma que en los botones y en las imágenes desplegables de la galería*/
+}
+div.iframeinicio:not(.contenedorlogoavellaneda):hover::after { /*Después de haber pasado el cursor por encima y exceptuando a "logoavellaneda", aplicar lo siguiente*/
+    position: relative;
+    content: '¡Púlsame!';
+    color: #7c6250;
+    font-weight: bold;
+    left: 38.5%;
+}
+div.iframeinicio iframe:not([name=iframemusica]) { /*Como "target" requería que se definiera un nombre al elemento, se ha aprovechado para no tener que volver a establecer otra clase adicional; así, el "iframe" que corresponde a "Música" no es afectado*/
+    height: auto;
+    width: 15.85vw;
+    opacity: 0.8;
+    pointer-events: none; /*Impedir que se pueda interactuar con la página a través del "iframe", o sea, hacer clics*/
+}
+div.igrameinterno iframe[name=iframemusica] { /*Definido de manera para que se pueda interactuar con el "iframe" y así poder pausar la canción o cambiarla*/
+    height: auto;
+    width: 15.85vw;
+    opacity: 0.8;
+}
+div.iframeinicio:hover iframe {
+    opacity: 1; /*Que la opacidad en 0.8 pase a ser 1 al pasar encima de los elementos*/
+}
+div.descripcioniframe a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: #7c6250;
+    text-decoration: none; /*Suprimir el subrayado que se le asignan automáticamente a los enlaces*/
+    opacity: 0.8;
+}
+div.descripcioniframe a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+div.descripcioniframe a span.musicaatras { /*Flecha de "retroceso" escondida*/
+    display: none;
+}
+div.descripcioniframe a:hover span.musicaatras { /*Al pasar sobre el elemento, hacer visible la flecha de "retroceso"*/
+    display: inline;
+}
+img.logoavellaneda {
+    opacity: 0.8;
+}
+img.logoavellaneda:hover {
+    opacity: 1;
+}
+div.trampalogoavellaneda { /*Descripción trampa para que tanto los "iframes" como la imagen empiecen en el mismo punto a lo alto*/
+    visibility: hidden; /*Para que sea invisible*/
+    padding-top: 9px; /*Tomado a ojo donde coincidían los puntos*/
+}
+/*Fin "iframes"*/
+p.introductorio {
+    text-align: center; /*Necesario para poder centrar .contenedorlogoavellaneda. Aun siendo un elemento de bloque, se alinea con este modificador (seguramente el enlace contenido dentro de este elemento tenga algo que ver) */
+}
+p a {
+    color: #7c6250;
+    text-decoration: none;
+    opacity: 0.8;
+}
+p a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+button, input[type=submit], input[type=reset] { /*Botón de "index" y los del formulario*/
+    display: block; /*Elemento en línea el cual lo ponemos de bloque para así poder centrarlo con "margin: auto;"*/
+    margin: auto;
+    background-color: #7c6250;
+    color: #e6e2d3;
+    /*text-align: center; Los botones centran el texto por defecto*/
+    padding: 5px 20px;
+    cursor: pointer; /*Cambio en el cursor*/
+    opacity: 0.7;
+    transition: 0.3s;
+}
+button:hover, input:hover[type=submit], input:hover[type=reset] {
+    opacity: 1;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+}
+button.pulseaqui {
+    width: 150px; /*Por defecto le añade un tamaño, es para poder alargarlo*/
+    background-image: linear-gradient(#e6e2d3, #7c6250); /*Gradiente establecido por obligación, queda bastante mal*/
+}
+button.pulseaqui:hover {
+    background-image: none; /*Para suprimir el gradiente cuando se pasa el cursor por encima*/
+}
+img.iconobrackets { /*Posición fija en la página. Se parece a la absoluta, solo que esta funciona de la misma manera que el atributo "position: sticky;" del "nav"*/
+    position: fixed;
+    left: 95%;
+    top: 91.5%;
+    z-index: 1; /*Para que no se tape con determinados elementos al hacer "scroll"*/
+    height: auto;
+    width: 4%;
+}
+div:hover img.iconobrackets {  /*Transición y animación*/
+    -ms-transform: rotatez(360deg); /*Internet Explorer 9*/
+    -webkit-transform: rotatez(360deg); /*Safari*/
+    transform: rotatez(360deg); /*Sintaxis estándar*/
+    transition: 1.5s;
+    left: 94%;
+    top: 89.5%;
+    height: auto;
+    width: 5%;
+    transform-origin: -200% center;
+    animation: rotate 1.5s linear;
+}
+li:not(.nomargenlista), div.esqueletotabla, img.cancha, h3, iframe.videoyt, video, audio, p:not(.introductorio) { /*Poner todos los párrafos con margen excepto el párrafo introductorio. Actualización: Debido al cambio que ha sufrido todo el "nav", ha sido necesario introducir la clase ".nomargenlista" para excluirlos del margen*/
+    margin: 0 1vw 0 2.6vw;
+}
+h1, h2, h3, h4, h5, h6, caption, legend, #listadesordenada, #listaordenada {
+    font-family: 'Charmonman', cursive; /*Tipo de letra de los elementos del menú, fuente: https://fonts.google.com/*/
+    font-weight: bold;
+}
+h2 {
+    color: #7c6250;
+    margin-left: 1.99vw;
+    text-decoration: underline
+}
+h3 {
+    color: #7c6250;
+    margin-top: 15px;
+}
+h4 {
+    color: #7c6250;
+    margin-bottom: 0;
+}
+* { /*Aplicar en todos los elementos*/
+    font-family: 'Roboto', sans-serif;
+}
+/*Inicio selección de texto*/
+*::selection {
+    background: #7c6250;
+    color: #e6e2d3;
+    }
+*::-moz-selection {
+    background: #7c6250;
+    color: #e6e2d3;
+    }
+*::-webkit-selection {
+    background: #7c6250;
+    color: #e6e2d3;
+    }
+/*Fin selección de texto*/
+/*Inicio diseño enlaces*/
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+/*Fin diseño enlaces*/
+/*Inicio paginación*/
+div.paginacion {
+    display: inline-block;
+    position: fixed;
+    left: 44.5%;
+    top: 95%;
+    z-index: 1; /*Para que no se tape con determinados elementos al hacer "scroll"*/
+}
+div.paginacion a {
+    background-color: #e6e2d3;
+    color: #7c6250;
+    text-align: center;
+    padding: 12px;
+    margin: -2px;
+    border-top: 2px solid #7c6250;
+    border-bottom: 2px solid #7c6250;
+    border-right: 1px solid #7c6250;
+    border-left: 1px solid #7c6250;
+}
+div.paginacion a:first-child {
+    border-right: 1px solid #7c6250;
+    border-left: 2px solid #7c6250;
+}
+div.paginacion a.ultimopaginacion { /*No se puede establecer "last-child" debido a "trampapaginacion"*/
+    border-right: 2px solid #7c6250;
+}
+a.trampapaginacion { /*Si no se establece, en el símbolo no se establece el "padding" de la derecha*/
+    visibility: hidden;
+}
+div.paginacion a:hover { /*Acción que ocurrirá al poner el cursor encima*/
+    background-color: #7c6250;
+    color: #e6e2d3;
+}
+div.paginacion a.activopaginacion {
+    background-color: #a29083;
+    color: #e6e2d3;
+}
+div.paginacion a:hover.activopaginacion {
+    background-color: #7c6250;
+    transition: 0.3s;
+}
+/*Fin paginación*/
+/*Fin otros*/
+
+/*Inicio listado de asignaturas*/
+#listadesordenada {
+    background-color: #e6e2d3;
+    color: #7c6250;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    margin: 0; /*Suprime el margen que es generado a todos los párrafos por un modificador establecido con anterioridad*/
+}
+#listaordenada {
+    background-color: #7c6250;
+    color: #e6e2d3;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    margin: 0;
+}
+sup a.asir { /*Superíndice*/
+    background-color: #e6e2d3;
+    color: #7c6250;
+    text-decoration: none;
+}
+sup a.asir:hover {
+    background-color: #7c6250;
+    color: #e6e2d3;
+    text-decoration: none;
+}
+/*Fin listado de asignaturas*/
+
+/*Inicio tabla*/
+table, th, td { /*Tablas, elementos principales de las mismas y elementos secundarios, respectivamente*/
+    border: 3px dotted #7c6250; /*Atributo "dotted": de puntos*/
+    border-collapse: collapse;	/*Necesario para que no se vean por duplicado los puntos*/
+    padding: 10px;
+}
+table { /*Solo a tabla*/
+    /* Para ocupar todo el ancho de la página. Trampa: está modificado por un modificador que afecta a div.esqueletotabla y así poder establecer un margen, por lo que solo se extiende por el espacio que hay entre los márgenes*/
+    border-right: hidden; /*Borde derecho oculto*/
+    border-top: hidden;
+    /*border-bottom: 3px dashed #7c6250; No afecta en nada, ya viene definido justo antes*/
+    border-left: hidden;
+}
+caption {
+    font-weight: bold;
+    color: #7c6250;
+    text-decoration: underline;
+    font-size: 18px;
+}
+th {
+    color: #7c6250;
+}
+td {
+    text-align: center;
+    background-color: #e6e2d3;
+    color: #7c6250;
+}
+td.recreo {
+    background-color: white;
+    font-weight: bold;
+    border: solid; /*Establecer un borde sólido, cambiándose el de puntos definido anteriormente*/
+    border-left: none; /*Suprimir el borde sólido a la izquierda, para que no tape al de puntos. A la derecha no hace falta porque ya se quitó en la tabla, por lo que no se vuelve a poner con "border"*/
+    font-size: 18px;
+}
+/*Fin tabla*/
+
+/*Inicio formulario*/
+/*Inicio dentro del "fieldset"*/
+fieldset { /*Cuadro del formulario*/
+    border: 2px solid black;
+    border-radius: 2%;
+    background-color: #e6e2d3;
+}
+legend {
+    background-color: #7c6250;
+    color: #e6e2d3;
+    padding: 5px 2% 5px 2%;
+    border: 2px ridge black;
+    margin: auto;
+}
+label {
+    color: #7c6250;
+    font-weight: bold;
+    margin-left: 25%;
+}
+fieldset input:not([type=range]), keygen, select { /*"Input" de tipo "range" excluido para que se mantenga después de "Valoración"*/
+    position: absolute; /*Posiciones absolutas de casi todos los elementos para poder establecer un mismo margen izquierdo*/
+    left: 40%;
+} /*"Range"*/  /*Pendiente*/
+input[type=text], [type=password], [type=email], [type=tel], [type=url], [type=number], [list], select {
+    text-indent: 25px;
+	width: 20%;
+	height: auto;
+    border: 1px solid #e6e2d3;
+    padding: 5px 0;
+}
+[type=search] { /*Parece ridículo, pero había una diferencia de un 0.1 % de ancho con respecto a los otros elementos, por eso no se trata de forma conjunta. Reducido a la mitad para que al hacer clic, el tamaño crezca hasta igualar al del resto de elementos*/
+    text-indent: 25px;
+	width: 10.1%;
+	height: auto;
+    border: 1px solid #e6e2d3;
+    padding: 5px 0;
+}
+input[type=search]:focus { 
+    width: 20.1%;
+}
+input[type=date], [type=datetime-local] { /*Tratados de forma aislada debido a que los tamaños internos son el doble que en el resto de "inputs"*/
+    text-indent: 12.5px;
+	width: 20%;
+	height: auto;
+    border: 1px solid #e6e2d3;
+    padding: 2.5px 0;
+    background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-46-calendar.png');
+}
+option { /*Aunque "select" ya tenga sus atributos, el "text-indent" no le afecta, y requiere de un icono por cada opción */
+	text-indent: 25px;
+	background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-341-globe.png');
+    background-size: 10px;
+    background-position: 2% 60%;
+    background-repeat: no-repeat;
+}
+input[type=text]:focus, [type=password]:focus, [type=email]:focus, [type=tel]:focus, [type=url]:focus, [type=search]:focus, [type=number]:focus, [type=date]:focus, [type=datetime-local]:focus, [list]:focus, select:focus {
+    border: 1px solid #7c6250;
+    box-shadow: 0 0 5px 3px rgba(124, 98, 80, 0.7);
+    border-radius: 3.5%;
+}
+textarea {
+    display: block; /*Elemento en línea puesto como bloque ya que es necesario para que, al expandirlo, arrastre a los siguientes elementos y no se superponga sobre ellos*/
+    position: static; /*Antes tenía posición relativa, pero se requría de establecer un margen absoluto, lo cual era una tara. Con la posición estática solo hay que ajustar el ancho*/
+    margin-left: 25%;
+    resize: vertical; /*Para que solo pueda expandirse hacia abajo*/
+    min-height: 100px;
+    width: 35.45%;
+    max-height: 200px;
+    text-indent: 25px;
+    border: 1px solid #e6e2d3;
+    padding: 5px 0;
+    background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-709-paragraph.png');
+    background-size: 10px;
+    background-position: 1% 5px; 
+    background-repeat: no-repeat;
+}
+textarea:focus { /*El "border-radius" del "taxtarea" es diferente al resto al ser más ancho*/
+    border: 1px solid #7c6250;
+    box-shadow: 0 0 5px 3px rgba(124, 98, 80, 0.7);
+    border-radius: 1%;
+}
+/*Inicio iconos formulario*/ /*Los iconos de "option", "input[type=date], [type=datetime-local]" y "textarea" ya han sido incluidos con anterioridad aprovechando su exclusividad*/
+[type=email], [type=url], [type=date], [type=datetime-local], [type=password], [type=tel], [name=usuario] { /*Características comunes*/
+    background-size: 10px;
+    background-position: 2% 60%; 
+    background-repeat: no-repeat;
+}
+input[name=usuario] {
+    background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-4-user.png');
+}
+input[type=password] {
+    background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-204-lock.png');
+}
+input[type=email] {
+    background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-11-envelope.png');
+}
+input[type=tel] {
+    background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-443-earphone.png');
+}
+input[type=url] {
+    background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-372-global.png');
+}
+input[type=search], [list] { /*"List" es "Datalist", la transición no le será aplicada, solo el icono*/
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-28-search.png');
+    background-size: 10px;
+    background-position: 8px 8px; 
+    background-repeat: no-repeat;
+}
+/*Fin iconos formulario*/
+/*Inicio burbujas de información*/
+span.burbujainformacion, span.burbujainformacionsearch, span.burbujainformacioncomentarios {
+	display: none;
+	position: absolute;
+	background-color: #7c6250;
+    color: #e6e2d3;
+    box-shadow: 0 0 5px 3px rgba(124, 98, 80, 0.7);
+    border-radius: 5%;
+	width: 15vw;
+    margin-top: -1%; /*Para solucionar que la burbuja se baje a la línea siguiente*/
+    left: 65%;
+    text-align: center;
+    padding: 8px;
+    border: 1px inset white;
+}
+span.burbujainformacioncomentarios {
+    margin-top: -6%;
+}
+input[type=text]:focus + span.burbujainformacion, [type=password]:focus + span.burbujainformacion, [type=email]:focus + span.burbujainformacion, [type=tel]:focus + span.burbujainformacion, [type=url]:focus + span.burbujainformacion, [type=search]:focus + span.burbujainformacion, [type=datetime-local]:focus + span.burbujainformacion, [list]:focus + span.burbujainformacion, [type=date]:focus + span.burbujainformacion, [type=number]:focus + span.burbujainformacion, keygen:hover + span.burbujainformacion, [type=file]:hover + span.burbujainformacion, select:focus + span.burbujainformacion, textarea:focus + span.burbujainformacioncomentarios {
+    display: block;
+} /*No funciona la burbuja de "[list]" ni la función de "datalist"*/  /*Pendiente*/
+input[type=search]:focus + span.burbujainformacionsearch { /*Animación propia del elemento, tratado aisladamente*/
+    display: block;
+    -webkit-animation: movsearch 1s; /*Safari 4.0 - 8.0*/
+    animation: movsearch 1s;
+    left: 65%;
+    z-index: 1; /*Para que no se esconda por debajo del siguiente "input" al efectuar la animación*/
+}
+@-webkit-keyframes movsearch { /*Safari 4.0 - 8.0*/
+    from {left: 55%;}
+    to {left: 65%;}
+}
+@keyframes movsearch { /*Sintaxis estándar*/
+    from {left: 55%;}
+    to {left: 65%;}
+}
+/*Fin burbujas de información*/ 
+/*Fin dentro del "fieldset"*/
+input[type=checkbox], input[type=radio] {
+    margin-left: 25%;
+    margin-right: 10px; /*Margen respecto al texto de su derecha*/
+}
+/*Botones del formulario definidos con los otros botones*/
+/*Fin formulario*/
+
+/*Inicio marcos*/
+embed { /*Sin margen debido a que el derecho no se aplicaba corractamente y, por consiguiente, aparecía una barra horizontal de desplazamiento*/
+    width: 100%;
+    height: 1080px;
+}
+/*Fin marcos*/
+
+/*Inicio multimedia: galería de imágenes*/
+div.cuadroexternogaleria { /*Recuadro exterior donde está delimitada la galería de imágenes*/
+    border: 1px solid #7c6250;
+    border-radius: 10%;
+    position: relative;
+}
+div.galeria, div.galeriaubuntu {
+    position: relative;
+    display: inline-block;
+    left: 18.45%;
+    border: 1px solid white; /*Borde trampa para que a la hora de hacer "hover" no haya movimiento en el resto de elementos*/
+    border-radius: 10%;
+    opacity: 0.9;
+    top: 10px;
+    width: 31vw;
+    height: calc(31vw/1.77);
+    margin-bottom: 50px; /*Margen inferior para que los elementos no se solapen*/
+}
+div.galeriaubuntu {
+    left: 34.3%;
+}
+div.galeria:hover, div.galeriaubuntu:hover {
+    box-shadow: 0 0 20px 5px rgba(0, 140, 186, 0.5);
+    border: 1px solid white;
+    opacity: 1;
+}
+div.galeria a img, div.galeriaubuntu a img {
+    border-radius: 10%;
+    height: auto;
+    width: 100%;
+}
+div.descripciongaleria {
+    color: #a29083;
+    padding: 6px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    margin: 0 100px 0 100px; /*Establecido adrede para indicar que es la zona por donde hay que bajar el cursor sin que se rompa el "hover", es decir, por debajo de las líneas horizontales en las descripciones de las imágenes superiores*/
+    border-top: 1px solid #7c6250;
+}
+div.descripcion:hover {
+    color: #7c6250;
+}
+/*Inicio imagen desplegable*/
+div.galeriadesplegable {
+    display: none;
+    border-radius: 10%;
+    position: absolute;
+    background-color: white; /*Para que el fondo de la descripción no sea transparente*/
+    z-index: 2; /*Para que los iconos no se superpongan y pueda superponerse a la paginación*/
+    height: auto;
+    width: 200%;
+}
+div.galeriadesplegable img{
+    border-radius: 10%;
+    height: auto;
+    width: 100%;
+}
+div.galeria:hover .galeriadesplegable, div.galeriaubuntu:hover .galeriadesplegable {
+    display: block;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.7);
+    border: 1px solid white;
+}
+div.galeriadesplegablesuperiorderecha {
+    left: -100%;
+}
+div.galeriadesplegablecentral {
+    left: -50%;
+}
+div.galeriadesplegableinferiorizquierda {
+    top: -210%;
+}
+div.galeriadesplegableinferiorderecha {
+    left: -100%;
+    top: -210%;
+}
+div.descripciongaleriadesplegable {
+    color: #7c6250;
+    padding: 6px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+}
+/*Fin imagen desplegable*/
+/*Inicio iconos*/
+img.iconohtml5 {
+    position: absolute; /*Posición fija en la página respecto a la esquina superior izquierda de la página*/
+    left: 24.5%;
+    top: 596px;
+    height: auto;
+    width: 4.1%;
+    z-index: 1; /*Un elemento parece que tapa al icono y por eso no puede accionarse si no tiene este atributo. Se ha probado a poner "div.galeriaubuntu" como "inline-block", pero sin resultados. Al menos las imágenes desplegables tapan por completo a los iconos*/
+}
+div:hover img.iconohtml5 {  /*Transición*/
+    -ms-transform: rotatex(1080deg); /*IE 9*/
+    -webkit-transform: rotatex(1080deg); /*Safari*/
+    transform: rotatex(1080deg); /*Sintaxis estándar*/
+    transition: 2s;
+    left: 23.5%;
+    top: 596px;
+    height: auto;
+    width: 5.1%;
+}
+img.iconocss3 {
+    position: absolute;
+    left: 71%;
+    top: 584px;
+    height: auto;
+    width: 6%;
+    z-index: 1;
+}
+div:hover img.iconocss3 {  /*Transición*/
+    -ms-transform: rotatex(1080deg); /*IE 9*/
+    -webkit-transform: rotatex(1080deg); /*Safari*/
+    transform: rotatex(1080deg); /*Sintaxis estándar*/
+    transition: 2s;
+    left: 71%;
+    top: 584px;
+    height: auto;
+    width: 7%;
+}
+/*Fin iconos*/
+/*Fin multimedia: galería de imágenes*/
+
+/*Inicio multimedia: vídeos*/
+iframe.videoyt, video {
+ width: 37.48vw; /*Medida tomada a ojo para que el ancho del vídeo coincida con el ancho del mapa*/
+ height: calc(37.48vw/1.77); /*1.77 es el resultado de dividir el largo por el alto de los "iframes" que genera YouTube, es decir, 560 entre 315 (o séase, su proporción). Gracias a esto, el vídeo podrá reescalarse, evadiendo el problema que surge con "height: auto;" (si está en medio de la página, no como la tramposa de Cristina)*/
+}
+/*Fin multimedia: vídeos*/
+
+/*Inicio multimedia: lista de reproducción*/ /*Cambiar para que sea un elemento exclusivamente de tipo "iframe"*/  /*Pendiente*/
+#playlist, audio {
+    width: 350px;
+    background-color: #e6e2d3;
+    margin-left: 5%;
+}
+#playlist {
+    margin-top: -4px;
+    border: 1px solid #7c6250;
+    
+}
+.songactive a {
+    text-decoration: none;
+    opacity: 0.8;
+}
+.songactive:hover a {
+    opacity: 1;
+}
+#playlist li a {
+    color: #7c6250;
+    background: #e6e2d3;
+    padding: 5px;
+    display: block;
+}
+#playlist li a:hover {
+    text-decoration: none;
+    opacity: 1;
+}
+/*Fin multimedia: lista de reproducción*/
+
+/*Inicio artículos (noticias)*/ /*Color de fondo definido en el "body" de su respectivo HTML*/
+div.colsarticulos {
+/*Cuántas columnas hay*/
+	-webkit-column-count: 3; /*Chrome, Safari, Opera*/
+    -moz-column-count: 3; /*Firefox*/
+    column-count: 3;
+/*Espaciado entre las columnas*/
+    -webkit-column-gap: 15px; /*Chrome, Safari, Opera*/
+    -moz-column-gap: 15px; /*Firefox*/
+    column-gap: 15px;
+/*Añadir estilo a las líneas de las columnas*/
+    -webkit-column-rule: 2px solid #7c6250; /*Chrome, Safari, Opera*/
+    -moz-column-rule: 2px solid #7c6250; /*Firefox*/
+    column-rule: 2px solid #7c6250;
+}
+div.banderavertical {
+    background-color: #003281;
+    width: 0.6vw;
+    height: 3vw;
+    position: absolute;
+    top: 1vw;
+    left: 17.2vw;
+    z-index: 1;
+    -webkit-animation: movvertical 1.5s; /*Safari 4.0 - 8.0*/
+    animation: movvertical 1.5s;
+}
+@-webkit-keyframes movvertical { /*Safari 4.0 - 8.0*/
+    from {top: 0vw;}
+    to {top: 1vw;}
+}
+@keyframes movvertical { /*Sintaxis estándar*/
+    from {top: 0vw;}
+    to {top: 1vw;}
+}
+div.banderahorizontal {
+    background-color: #003281;
+    width: 5vw;
+    height: 0.6vw;
+    position: absolute;
+    top: 2.2vw;
+    left: 16vw;
+    z-index: 1;
+    -webkit-animation: movhorizontal 1s; /*Safari 4.0 - 8.0*/
+    animation: movhorizontal 1s;
+}
+@-webkit-keyframes movhorizontal { /*Safari 4.0 - 8.0*/
+    from {left: 0vw;}
+    to {left: 16vw;}
+}
+@keyframes movhorizontal { /*Sintaxis estándar*/
+    from {left: 0vw;}
+    to {left: 16vw;}
+}
+div.banderablanco {
+    background-color: #FFFFFF;
+    width: 5vw;
+    height: 3vw;
+    position: absolute;
+    top: 1vw;
+    left: 16vw;
+    z-index: 0;
+    -webkit-animation: movblanco 3s; /*Safari 4.0 - 8.0*/
+    animation: movblanco 3s;
+} /*Definir por segundos*/ /*Pendiente*/
+@-webkit-keyframes movblanco { /*Safari 4.0 - 8.0*/
+    0% {opacity: 0} 
+    50% {opacity: 0.5}
+    100% {opacity: 1} 
+}
+@keyframes movblanco { /*Sintaxis estándar*/
+    0% {opacity: 0} 
+    50% {opacity: 0.5}
+    100% {opacity: 1} 
+}
+/*Fin artículos (noticias)*/
+
+/*Inicio división en columnas, para escritorio*/ /*Pendiente*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/*Fin división en columnas, para escritorio*/
+
+/*Inicio para móvil*/ /*Pendiente*/
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+/*Fin para móvil*/
+
+/*Inicio "footer"*/
+/*Inicio firma*/
+p.firmarealizada {
+    text-align: center;
+}
+span.realizada {
+    margin-right: 18%;
+}
+span.firma {
+    font-family: 'Charmonman', cursive;
+    font-weight: bold;
+    color: #7c6250;
+    text-decoration: underline;
+}
+/*Fin firma*/
+/*Fin "footer"*/
+
+/*Iconos que se reescalen correctamente, es decir, que su posición no se desplace*/ /*Pendiente*/
+/*"Realizado por", cambiar diseño*/ /*Pendiente*/
+/**/
+p, li, h4, a, span.burbujainformacion/*Formulario*/, span.burbujainformacioncomentarios/*Formulario*/, span.radio-checkbox/*Formulario*/ {
+    font-size: 0.85vw;
+}
+button, textarea, keygen, option { /*Pendiente: "Keygen" no está funcionando*/
+    font-size: 0.75vw;
+}
+h3 {
+    font-size: 1.1vw;
+}
+h2, legend {
+    font-size: 1.3vw;
+}
+table, #listadesordenada, #listaordenada {
+    font-size: 0.95vw;
+}
+label {
+    font-size: 0.8vw;
+}
+input {
+    font-size: 0.75vw;
+}
+fieldset {
+    width: 96.5vw;
+    height: 100vh;
+}
+div.descripciongaleria, div.descripciongaleriadesplegable {
+    font-size: 0.8vw;
+}
+caption, td.recreo {
+    font-size: 1vw;
+}

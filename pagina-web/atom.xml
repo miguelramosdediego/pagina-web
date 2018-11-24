@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es-es">
+        <title type="text">Tiempo Alcalá de Henares</title>
+	<updated>2018-11-13T18:00:00Z</updated>
+        <link rel="self" type="apllication/atom+xml" href="https://www.tiempo.es/madrid-alcala_de_henares-es0ma0005.html"><!--enlace/feed/atom--></link>
+	<link rel="alternate" type="text/html" href="https://www.tiempo.es/madrid-alcala_de_henares-es0ma0005.html"></link>
+        <id><!--enlace/feed/atom--></id>
+        <entry>
+            <title>Mañana</title>
+            <link>https://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</link>
+            <description>Tiempo para mañana</description>
+        </entry>
+        <entry>
+            <title>Pasado mañana</title>
+            <link>https://www.tiempo.es/el-tiempo-pasado-manana/madrid-alcala_de_henares-es0ma0005.html</link>
+            <description>Tiempo para pasado mañana</description>
+        </entry>
+        <entry>
+            <title>En 3 días</title>
+            <link>https://www.tiempo.es/el-tiempo/por-horas/en-3-dias/madrid-alcala_de_henares-es0ma0005.html</link>
+            <description>En 3 días</description>
+        </entry>
+        <entry>
+            <title>En 4 días</title>
+            <link>https://www.tiempo.es/el-tiempo/por-horas/en-4-dias/madrid-alcala_de_henares-es0ma0005.html</link>
+            <description>En 4 días</description>
+        </entry>
+        <entry>
+            <title>En 5 días</title>
+            <link>https://www.tiempo.es/el-tiempo/por-horas/en-5-dias/madrid-alcala_de_henares-es0ma0005.html</link>
+            <description>En 5 días</description>
+        </entry>
+</feed>

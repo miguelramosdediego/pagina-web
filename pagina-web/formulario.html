@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Formulario">
+        <meta name="keywords" content="Formulario,Registro">
+        <meta name="author" content="Ramos de Diego, Miguel">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form name="formulario" enctype="text/plain" method="post" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <fieldset>
+                <legend>Alta nuevo usuario</legend>
+                    <label>Nombre (requerido) </label>
+                        <input type="text" name="nombre" placeholder="Nombre" tabindex="1" pattern=".{3,25}" maxlength="20" required autofocus><!--Traspasa al bloqueo de clics definido en los "iframes" del CSS-->
+                        <span class="burbujainformacion">Máximo 20 caracteres. Hasta dos nombres permitidos.</span>
+            <br>
+            <br>
+                    <label>Apellido/s (requerido) </label>
+                        <input type="text" name="apellido" placeholder="Apellido/s" tabindex="2" pattern=".{3,25}" maxlength="25" required>
+                        <span class="burbujainformacion">Máximo 25 caracteres. Uno o dos apellidos.</span>
+            <br>
+            <br>
+                    <label>Usuario (requerido) </label>
+                        <input type="text" name="usuario" placeholder="Usuario" tabindex="3" pattern=".{4,18}" maxlength="18" required><!--"Pattern" sirve para establecer un mínimo y un máximo de caracteres a la hora de enviarlo. Combina con "maxlength" para que no se puedan escribir más de ese número de caracteres en el campo y sea visible antes de enviarse por el usuario-->
+                        <span class="burbujainformacion">Entre 4 y 18 caracteres. Mayúscula obligatoria al comienzo de la palabra y solo se permiten caracteres numéricos (0-9) y alfabéticos latinos (a-z, incluyendo la ñ), así como también de la raya baja (_), sin espacios. Los nombres de carácter sexual, político o religioso no están permitidos, ni aquellos que contengan exabruptos o inciten al odio.</span>
+            <br>
+            <br>
+                    <label>Contraseña (requerido) </label>
+                        <input type="password" name="contraseña" placeholder="Contraseña" tabindex="4" pattern=".{6,24}" maxlength="24" required>
+                        <span class="burbujainformacion">Entre 6 y 24 caracteres. Ha de contener al menos una mayúscula y un número.</span>
+            <br>
+            <br>
+                    <label>Grado de encriptación (requerido) </label>
+                        <keygen name="security" tabindex="5" required>
+                        <span class="burbujainformacion">El grado de encriptación que desea tener en su contraseña. Puede optar por un grado mediano o elevado.</span>
+            <br>
+            <br>
+                    <label>Correo electrónico (requerido) </label>
+                        <input type="email" name="email" placeholder="sucorreo@gmail.com" tabindex="6" pattern=".{6,}" required>
+                        <span class="burbujainformacion">Se requiere de un correo electrónico para poder validar su registro. Si no lo encuentra en su bandeja de entrada, por favor, revise el correo no deseado.</span>
+            <br>
+            <br>
+                    <label>Teléfono </label>
+                        <input type="tel" name="telephone" placeholder="Ej.: 611222333" tabindex="13" maxlength="9">
+                        <span class="burbujainformacion">Puede poner un número de teléfono si así lo desea, tanto fijo como móvil. Sin espacios.</span>
+            <br>
+            <br>
+                    <label>Su página web </label>
+                        <input type="url" name="url" placeholder="http://www.suweb.com" tabindex="14" pattern=".{4,}">
+                        <span class="burbujainformacion">¿Tiene una página web y quiere compartirla? ¡Nos encantaría conocerla!</span>
+            <br>
+            <br>
+                    <label>Archivo adjunto </label>
+                        <input type="file" name="file" tabindex="15"><!--Para poder limitar el tamaño de archivo, es necesario hacerlo vía PHP o JavaScript-->
+                        <span class="burbujainformacion">Puede adjuntar algún archivo si así lo desea. Máximo 20 MB.</span>
+            <br>
+            <br>
+                    <label>Búsqueda </label>
+                        <input type="search" name="search" placeholder="Búsqueda a realizar" tabindex="16">
+                        <span class="burbujainformacionsearch">Busque aquí si tiene alguna duda.</span>
+            <br>
+            <br>
+                    <label>Fecha de nacimiento (requerido) </label>
+                        <input type="date" name="nacimiento" value="2000-01-01" min="1900-01-01" max="2000-01-01" tabindex="7" required><!--Recordatorio: hay que poner las fechas en estilo americano-->
+                        <span class="burbujainformacion">Necesitamos verificar que es usted mayor de edad (18 años). Ponga su fecha de nacimiento aquí, le será útil en un futuro para poder verificar su identidad.</span>
+            <br>
+            <br>
+                    <label for="listadesplegable">País </label><!--https://www.w3schools.com/css/tryit.asp?filename=trycss_form_select-->
+                        <select id="listadesplegable" name="Lista desplegable" size="1" tabindex="17" multiple>
+                            <option value="españa" selected>España</option>
+                            <option value="francia">Francia</option>
+                            <option value="potugal">Portugal</option>
+                            <option value="otro">Otro...</option>
+                        </select>
+                        <span class="burbujainformacion">Escoja su país de residencia. Si no está en la lista, seleccione «Otro...».</span>
+            <br>
+            <br>
+                    <label>Datalist </label>
+                        <input list="datalist" tabindex="18" maxlength="20">
+                        <datalist id="datalist">
+                            <option value="españa">España</option>
+                            <option value="francia">Francia</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="otro">Otro...</option>
+                        </datalist>
+                        <span class="burbujainformacion">Busque en nuestra base de datos.</span><!--No funciona la burbuja-->
+            <br>
+            <br>
+                    <label>Cita solicitada </label>
+                        <input type="datetime-local" name="cita" tabindex="19" value="2018-01-01T00:00" step="900"><!--"Step" con "datetime-local" solo afecta a los minutos, definidos en segundos. 900 segundos son 15 minutos-->
+                        <span class="burbujainformacion">¿Desea concertar una cita? Seleccione la fecha y la hora.</span>
+            <br>
+            <br>
+                    <label>Turno solicitado </label>
+                        <input type="number" id="turno" name="turno" min="1" max="200" step="20" value="1">
+                        <span class="burbujainformacion">¿Tiene ya una cita? Escoja aquí su turno.</span>
+            <br>
+            <br>
+                    <label>Comentarios </label>
+            <br>
+            <br>
+                        <textarea name="comentarios" rows="2" cols="80" placeholder="Escriba aquí sus comentarios..." maxlength="1077" tabindex="21"></textarea>
+                        <span class="burbujainformacioncomentarios">Escribános sus comentarios: sugerencias, preguntas... ¡Estaremos encantados de ayudarle! Máximo 1077 caracteres.</span>
+            <br>
+            <br>
+                    <label>Valoración </label>
+                        <input type="range" id="a" name="a" value="0" step="10" min="0" max="100"><!--"Value" establecido para que la barra horizontal se posicione al a la izquirda de la horizontal-->
+                        <input type="number" id="b" name="b" value="0" step="10" min="0" max="100"><!--Si no se especifica el "value·, el "range" no funcionará correctamente-->
+                        <span class="burbujainformacion">Introduzca una valoración entre el 0 y el 100.</span>
+                    <output name="x" for="a b"></output>
+            <br>
+            <br>
+            </fieldset>
+            <br>
+            <br>
+            <input type="reset" value="Borrar" tabindex="-2">
+            <br>
+            <br>
+            <input type="radio" name="opción" tabindex="8" required><span class="radio-checkbox">Hombre</span>
+            <br>
+            <br>
+            <input type="radio" name="opción" tabindex="9" required><span class="radio-checkbox">Mujer</span>
+            <br>
+            <br>
+            <input type="radio" name="opción" tabindex="10" required><span class="radio-checkbox">Lo definiré más adelante</span>
+            <br>
+            <br>
+            <br>
+            <input type="checkbox" name="confirmacion1" required tabindex="11"><span class="radio-checkbox">¿Acepta las condiciones de uso?</span>
+            <br>
+            <br>
+            <input type="checkbox" name="confirmacion2" checked tabindex="23"><span class="radio-checkbox">Permitir que otros usuarios puedan enviarme mensajes</span>
+            <br>
+            <br>
+            <input type="checkbox" name="confirmacion3" tabindex="24"><span class="radio-checkbox">Deseo recibir el boletín informativo en mi correo electrónico</span>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Enviar" tabindex="12">
+            <br>
+            <br>
+            <button onclick="alert('¡Alerta, usted está saliendo de nuestro sitio web! ¿Está usted seguro de esto?');" tabindex="20">Botón con ventana emergente</button>
+            <br>
+            <br>
+            <br>
+        </form>
+        <div>
+            <img src="imagenes/logo_brackets.png" class="iconobrackets" title="Logo Brackets" alt="Logo Brackets" width="100" height="100">
+        </div><!--Icono Brackets-->
+        <section><!--Paginación, solo para páginas externas (excepto los marcos)-->
+            <div class="paginacion">
+                <a href="index.html"><i class="fa fa-angle-double-left"></i></a>
+                <a href="index.html">1</a>
+                <a href="formulario.html" class="activopaginacion">2</a>
+                <a href="musica.html">3</a>
+                <a href="galeria.html">4</a>
+                <a href="articulos.html">5</a>
+                <a href="musica.html" class="ultimopaginacion"><i class="fa fa-angle-double-right"></i></a><!--Clase introducida debido a que no es el último elemento ("last-child")-->
+                <a href="" class="trampapaginacion">6</a>
+            </div>
+        </section>
+        <footer><!--Pie de página-->
+            <p class="firmarealizada">
+                <span class="realizada">Página realizada por:</span>
+                <span class="firma">Ramos de Diego, Miguel</span>
+            </span>
+        </footer><!--Pie de página-->
+    </body>
+</html>

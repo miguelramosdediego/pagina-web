@@ -1,0 +1,244 @@
+<!doctype html><!--Indica que el siguiente documento será de tipo HTML5-->
+<html lang="es-ES"><!--Indica que el idioma empleado en es siguiente documento será el castellano o español empleado en España-->
+    <head><!--Los elementos aquí mostrados no serán visibles directamente por el visitante, solo "title"-->
+        <link rel="stylesheet" type="text/css" href="estilo.css"><!--Aplicar el estilo del archivo CSS indicado en esta página-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Fa fa iconos-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman"><!--Tipo de letra-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"><!--Tipo de letra. Separadas debido al error en la validación de código, no se permite el signo "|" en los "href"-->
+        <meta charset="utf-8"><!--Leer en UTF-8 y no en ASCII (puede haber problemas con determinados caracteres)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Página adaptada también a móviles y otros dispositivos-->
+        <meta name="description" content="Práctica de HTML en lenguajes de marcas de ASIR"><!--Descripción para la indexación de los motores de búsqueda-->
+        <meta name="keywords" content="Práctica,HTML,CSS,ASIR"><!--Palabras clave para la indexación de los motores de búsqueda-->
+        <meta name="author" content="Ramos de Diego, Miguel"><!--Nombre del autor para la indexación de los motores de búsqueda-->
+        <title>Ramos de Diego, Miguel</title><!--Nombre que aparecerá en la pestaña y ventana del navegador-->
+        <link rel="alternate" type="application/rss+xml" title="        " href="       "><!--RSS-->
+        <link rel="alternate" type="application/atom+xml" title="       " href="     "><!--Atom-->
+    </head>
+    <body><!--Los elementos aquí mostrados sí serán visibles por el visitante-->
+        <header><!--Organizador de elementos: El encabezado, la parte superior de la página-->
+            <h1>Lenguaje de marcas</h1><!--Título de primera categoría-->
+        </header>
+        <nav><!--Organizador de elementos: Es la segunda parte más arriba de la página. Es recomendable establecer aquí el menú de navegación, como en este caso-->
+            <ul>
+                <li class="nomargenlista"><a href="#" class="navactivo"><i class="fa fa-home fa-fw"></i>Inicio</a></li><!--Acutalización: Clase ".nomargenlista" introducida para que sea todo el "nav" excluido del margen aplicado en todos los "li"-->
+                <li class="nomargenlista"><a href="#asignaturas"><i class="fa fa-list"></i> Lista de asignaturas</a></li><!--Ir a la dirección correspondiente dentro la página marcada con un "id", precedido de almohadilla (#)-->
+                <li class="nomargenlista"><a href="#horario"><i class="fa fa-calendar"></i> Horario</a></li>
+                <li class="nomargenlista"><a href="#mapa"><i class="fa fa-map-o"></i> Mapa</a></li>
+                <li class="nomargenlista"><a href="formulario.html" target="_blank"><i class="fa fa-pencil"></i> Formulario &nbsp;<i class="fa fa-external-link"></i></a></li><!--Abrir el archivo "formulario.html" en una nueva pestaña. "&nbsp;" es un espacio generado adicionalmente-->
+                <li class="menudesplegable nomargenlista"><a href="#multimedia">&nbsp;<i class="fa fa-film"></i> Multimedia &nbsp;<span class="flechamultimediaabajo"><i class="fa fa-caret-down"></i></span><span class="flechamultimediaarriba"><i class="fa fa-caret-up"></i></span>&nbsp;</a><!--Flecha abajo, flecha arriba--><!--Espacio final añadido con "&nbsp;" debido a que el icono se corta, como ocurre con la paginación. Uno al principio añadido para que se vea centrado-->
+                    <ul class="menudesplegable-contenido"><!--Contenido del menú delplegable-->
+                        <li class="nomargenlista"><a href="musica.html" class="elementomenudesplegable" target="_blank"><i class="fa fa-music"></i> Música &nbsp;<i class="fa fa-external-link"></i></a></li>
+                        <li class="nomargenlista"><a href="#videos" class="elementomenudesplegable"><i class="fa fa-youtube-play"></i> Vídeos</a></li>
+                        <li class="nomargenlista"><a href="galeria.html" class="elementomenudesplegable" target="_blank"><i class="fa fa-image"></i> Galería de imágenes <i class="fa fa-external-link"></i></a></li>
+                    </ul>
+                </li>
+                <li class="nomargenlista"><a href="#marcos"><i class="fa fa-square-o"></i> Marcos</a></li>
+                <li class="nomargenlista"><a href="articulos.html" target="_blank"><i class="fa fa-newspaper-o"></i> Artículos <i class="fa fa-external-link"></i></a></li>
+                <li class="nomargenlista last-child"><a href="#contacto"><i class="fa fa-envelope-o"></i> Contacto</a></li>
+            </ul>
+            <a rel="alternate" type="application/rss+xml" href="https://github.com/miguelramosdediego/miguelramosdediego/rss.xml" class="iconorss"><i class="fa fa-rss-square"></i></a>
+            <a rel="alternate" type="application/atom+xml" href="https://github.com/miguelramosdediego/miguelramosdediego/atom.xml" class="iconoatom"><i class="fa fa-atom"></i></a>
+            <br>
+            <br>
+            <br>
+        </nav><!--Menú de navegación-->
+        <section><!--Otros elementos-->
+            <p class="introductorio">Esta es mi primera práctica de HTML de lenguaje de marcas en el <a href="https://iesavellaneda.es/" target="_blank">IES Alonso de Avellaneda</a>.</p><!--Clase introducida para poder centrar este párrafo posteriormente en el CSS y que no le afecten los márgenes-->
+            <br><!--Salto de línea-->
+            <div class="lineaiframes"><!--Línea de "iframes" y "logoavellaneda"-->
+                <div class="iframeinicio">
+                    <iframe name="iframeformulario" scrolling="no"></iframe><!--Nombre establecido para que pueda ser el objetivo de la acción especificada en la dirección, así solo se cargarán si el visitante así lo desea. "Scroll" deshabilitado-->
+                    <div class="descripcioniframe"><a href="formulario.html" target="iframeformulario">Formulario</a></div><!--Al pulsar este, activará su respectivo "iframe"-->
+                </div>
+                <div class="iframeinicio">
+                    <iframe name="iframemusica"></iframe><!--"Scroll" habilitado para poder pausar la canción o seleccionar otra-->
+                    <div class="descripcioniframe"><a href="musica.html" target="iframemusica">Música <span class="musicaatras"><i class='fa fa-reply'></i></span></a></div><!--Flecha de "atrás" que aparecerá al estar sobre el elemento indicado, con la sugerencia de que al estar en una pista de reproducción, si se pulsa nuevamente el enlace, poder volver atrás para así poder elegir alguna otra. La idea era que al pulsar sobre "Música" apareciera esta flecha y se quedara fija para siempre, lo cual se intentó con ":focus", pero al darle a una canción, esta se quitaba y se requería volver a presionar el enlace-->
+                </div>
+                <div class="contenedorlogoavellaneda iframeinicio"><!--Elemento de bloque contenedor del enlace y la respectiva imagen que enlaza para así poder centrarla en el CSS. En esta posición y no en la siguiente debido a que inmediatamente antes de la imagen detectaría al enlace y, en toda la línea de la imagen, se podría hacer clic en la imagen. Segunda clase añadida para establecerlo en la misma línea que los "iframes" aunque este no lo sea-->
+                    <a href="imagenes/logo_avellaneda.png" target="_blank" title="Logo IES Avellaneda"><!--"Title" sirve para que aparezca una burbuja de información por defecto en el navegador al estar posado sobre el elemento-->
+                        <img src="imagenes/logo_avellaneda.png" class="logoavellaneda" alt="Logo IES Avellaneda" width="104" height="145"><!--Imagen con sus medidas reales. El atributo "alt" es empleado para que las personas invidentes puedan saber cuál es dicho elemento de la página-->
+                    </a>
+                    <div class="trampalogoavellaneda">Trampa</div><!--Debido a que no cuenta con una descripción, quedaría descompensado respecto a los "iframes". En el CSS se definirá como un elemento invisible-->
+                </div>                
+                <div class="iframeinicio ">
+                    <iframe name="iframegaleria" scrolling="no"></iframe>
+                    <div class="descripcioniframe"><a href="galeria.html" target="iframegaleria">Galería de imágenes</a></div>
+                </div>
+                <div class="iframeinicio">
+                    <iframe name="iframearticulos" scrolling="no"></iframe>
+                    <div class="descripcioniframe"><a href="articulos.html" target="iframearticulos">Artículos</a></div>
+                </div>
+            </div>
+            <button class="pulseaqui" onclick="alert('Usted acaba de presionar un botón inútil, uno tan inútil como lo es con el código quien me ha escrito (o tecleado) a mí.');">¡Pulse aquí!</button><!--Generar un botón. El atributo "onclick" sirve para que aparezca una ventana emergente al ser pulsado-->
+            <div>
+                <img src="imagenes/logo_brackets.png" class="iconobrackets" title="Logo Brackets" alt="Logo Brackets" width="100" height="100">
+            </div><!--Icono de Brackets, el editor de código que ha sido empleado. "Div" establecido para detectar correctamente el elemento y que no cause problema al posarse sobre el borde del icono-->
+            <br>
+            <br>
+        </section><!--Otros elementos-->
+        <section><!--Listado de asignaturas-->
+            <h2 id="asignaturas">Listado de asignaturas</h2><!--Título de segunda categoría-->
+                <p id="listadesordenada">Asignaturas ASIR<sup><a href="#asir" class="asir">1</a></sup>, lista desordenada:</p><!--La etiqueta "sup" sirve para poder establecer superíndices. A este se le ha añadido un enlace a la parte inferior de la página-->
+                    <ul><!--Lista desordenada-->
+                        <li>Formación y orientación laboral</li><!--Definir cada elemento de la lista-->
+                        <li>Fundamentos de hardware</li>
+                        <li>Gestión de bases de datos</li>
+                        <li>Implantación de sistemas operativos</li>
+                            <ul type="square"><!--El atributo "type=square" sirve para cambiar el estilo por defecto de las listas desordenadas, en este caso, de un círculo a un cuadrado--><!--Lista anidada en otra lista-->
+                                <li>Windows</li><!--Subelementos anidados en la lista principal-->
+                                <li>Linux</li>
+                            </ul>
+                        <li>Lenguajes de marcas</li>
+                        <li>Planificación y administración de redes</li>
+                    </ul>
+                <br>
+                <p id="listaordenada">Asignaturas ASIR, lista ordenada:</p>
+                    <ol><!--Lista ordenada-->
+                        <li>Formación y orientación laboral</li>
+                        <li>Fundamentos de hardware</li>
+                        <li>Gestión de bases de datos</li>
+                        <li>Implantación de sistemas operativos</li>
+                        <li>Lenguajes de marcas</li>
+                            <ol type="a"><!--El atributo "type=a" sirve para cambiar la numeración por defecto de las listas ordenadas, en este caso, de números a letras ordenadas alfabéticamente-->
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>XML</li>
+                            </ol>
+                        <li>Planificación y administración de redes</li>
+                    </ol>
+                <br>
+                <hr><!--Línea horizontal separadora-->
+        </section><!--Listado de asignaturas-->
+        <section><!--Horario-->
+            <h2 id="horario">Horario</h2>
+                <div class="esqueletotabla"><!--Elemento de bloque introducido para así poder establecer los márgenes adecuadamente-->
+                    <table><!--Crear una tabla-->
+                        <caption>ASIR 1</caption><!--Introducir un título a la tabla-->
+                            <tr><!--Introducir la primera línea de la tabla-->
+                                <th></th><!--Coordenada (0,0) de la tabla, vacía "ex professo"-->
+                                <th>Lunes</th><!--Casilla de primer grado dentro de la primera línea de la tabla. Tantas hubiere, tantas columnas habrá-->
+                                <th>Martes</th> 
+                                <th>Miércoles</th>
+                                <th>Jueves</th> 
+                                <th>Viernes</th>
+                            </tr>
+                            <tr>
+                                <th>08:15-9:10</th>
+                                <td rowspan="2">Lenguajes de marcas</td><!--Casilla de segundo grado dentro de la segunda línea de la tabla, segunda columna--><!--Une la primera hora del lunes con la segunda. Une líneas de una misma columna. Nombre de la asignatura truncado-->
+                                <td rowspan="2">Planificación y administración de redes</td><!--Une la primera hora del martes con la segunda-->
+                                <td rowspan="2">Implantación de sistemas operativos</td><!--Une la primera hora del miércoles con la segunda-->
+                                <td>Formación y orientación laboral</td>
+                                <td>Formación y orientación laboral</td>
+                            </tr>
+                            <tr>
+                                <th>09:10-10:05</th>
+                                <td rowspan="2">Planificación y administración de redes</td><!--Une la segunda hora del jueves con la tercera-->
+                                <td rowspan="2">Implantación de sistemas operativos</td><!--Une la segunda hora del viernes con la tercera-->
+                            </tr>
+                            <tr>
+                                <th>10:05-11:00</th>
+                                <td>Formación y orientación laboral</td>
+                                <td>Implantación de sistemas operativos</td>
+                                <td>Lenguajes de marcas</td>
+                            </tr>
+                            <tr>
+                                <th>11:00-11:25</th>
+                                <td colspan="5" class="recreo">RECREO</td><!--Une toda la fila del recreo. Une columnas de una misma fila-->
+                            </tr>
+                            <tr>
+                                <th>11:25-12:20</th>
+                                <td rowspan="3">Fundamentos de hardware</td><!--Une la cuarta hora del lunes con la quinta y sexta-->	
+                                <td rowspan="2">Implantación de sistemas operativos</td><!--Une la cuarta hora del martes con la quinta-->
+                                <td rowspan="3">Gestión de bases de datos</td><!--Une la cuarta hora del miércoles con la quinta y sexta-->
+                                <td rowspan="3">Gestión de bases de datos</td><!--Une la cuarta hora del jueves con la quinta y sexta-->
+                                <td>Implantación de sistemas operativos</td>
+                            </tr>
+                            <tr>
+                                <th>12:20-13:15</th>
+                                <td rowspan="2">Planificación y administración de redes</td><!--Une la quinta hora del viernes sexta-->
+                            </tr>
+                            <tr>
+                                <th>13:15-14:10</th>
+                                <td>Lenguajes de marcas</td>
+                            </tr>
+                    </table>
+                </div>
+                <br>
+                <br>
+                <hr>
+        </section><!--Horario-->
+        <section><!--Mapa interactivo-->
+            <h2 id="mapa">Mapa</h2>
+                <br>
+                <img src="imagenes/cancha_baloncesto.png" class="cancha" alt="Cancha de baloncesto" usemap="#cancha" width="720" height="450"><!--El atributo "usemap" indica que dicha imagen es una de tipo interactivo, esto es, que se pueden delimitar zonas dentro de la propia imagen y asignarles distintas funciones al hacer clic en ellas-->
+                    <map name="cancha"><!--Atributo para indicar que las acciones indicadas están relacionadas con dicha imagen. Para poder establecer las coordenadas, se ha hecho uso de la página http://imagemap-generator.dariodomi.de/-->
+                        <area shape="poly" coords="369,85,413,71,719,170,719,201,669,212" onclick="alert('Grada frontal. A continuación, se le abrirá un enlace externo en relación a este elemento.');" href="http://www.dasding.es/media/k2/items/cache/4965657af186b9092c7a96976ffe881c_XL.jpg" target="_blank" alt="Grada frontal" title="Grada frontal"><!--Grada frontal. El atributo "poly" indica que el área delimitada tiene unas coordenadas con la forma de un polígono-->
+                        <area shape="poly" coords="470,85,509,68,564,80,558,101,529,106" onclick="alert('Grada trasera izquierda. A continuación, se le abrirá un enlace externo en relación a este elemento.');" href="https://www.equidesa.com/media/productos/grada_desmontable_galvanizada_comprar_equidesa.jpg" target="_blank" alt="Grada trasera izquierda" title="Grada trasera izquierda"><!--Grada trasera izquierda-->
+                        <area shape="poly" coords="588,83,548,108,626,134,659,130,667,105" onclick="alert('Grada trasera derecha. A continuación, se le abrirá un enlace externo en relación a este elemento.');" href="https://www.equidesa.com/media/productos/grada_desmontable_galvanizada_comprar_equidesa.jpg" target="_blank" alt="Grada trasera derecha" title="Grada trasera derecha"><!--Grada trasera derecha-->
+                        <area shape="poly" coords="75,108,349,82,719,247,719,309,362,450,90,450" onclick="alert('Pista de baloncesto. A continuación, se le abrirá un enlace externo en relación a este elemento.');" href="https://es.wikipedia.org/wiki/Pista_de_juego" target="_blank" alt="Pista de baloncesto" title="Pista de baloncesto"><!--Pista de baloncesto-->
+                    </map>
+                <br>
+                <br>
+                <hr>
+        </section><!--Mapa interactivo-->
+        <section><!--Apartado multimedia en el que antes estaban la música, el vídeo y la galería de imágenes. La música y la galería de imágenes se han enlazado a páginas externas, accesibles por medio del menú y la paginación, y visibles por medio de los "iframes"-->
+            <h2 id="multimedia">Multimedia</h2>
+                <h3 id="videos">Vídeos</h3>
+                    <br>
+                    <iframe class="videoyt" src="https://www.youtube.com/embed/0PG8lw4PVRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--Introducir el elemento indicado en la fuente del mismo, en este caso un vídeo de YouTube, con atributos propios que no admiten muchas modificaciones. Ancho y alto definidos en el CSS-->
+                    <br>
+                    <br>
+                    <br>
+                    <video poster="imagenes/sad_bear" controls><!--Ancho y alto definidos en el CSS-->
+                        <source src="video/perkele_bear.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                    </video>
+                    <br>
+                    <br>
+                    <br>
+        </section><!--Multimedia-->
+        <section>
+            <h2 id="marcos">Marcos</h2><!--Marcos-->
+                <embed src="marcos.html"><!--Necesariamente hechos en una página externa (requerían de eliminar el "body") e incrustados en el archivo principal mediante un "embed"-->
+                <br>
+                <hr>
+        </section><!--Marcos-->
+        <section><!--Contacto-->
+            <h2 id=contacto>Contacto</h2>
+                <p>Para cualquier duda, contáctenos a <a href="mailto:ayudaiesavellaneda@gmail.com">ayudaiesavellaneda@gmail.com</a> (al hacer clic, se le abrirá su gestor de correo por defecto).</p><!--"Mailto" sirve para enlazar un correo electrónico y que este se abra en el gestor de correo por defecto del visitante-->
+                <br>
+                <a rel="alternate" type="application/rss+xml" href="tiempo.rss"><img src="imagenes/feedicons-standard/feed-icon-28x28.png" alt="Iono RSS" width="28" height="28"></a>
+                <br>
+                <a rel="alternate" type="application/atom+xml" href="tiempo.atom"><img src="imagenes/feedicons-standard/feed-icon-28x28.png" alt="Iono RSS" width="28" height="28"></a>
+                <br>
+                <a href="https://validator.w3.org/feed/check.cgi?url="><img src="imagenes/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" width="88" height="31"></a>
+                <br>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="imagenes/vcss-blue.gif" alt="¡CSS Válido!" width="88" height="31"></a>
+                <br>
+		<a href="https://feedity.com/tiempo-es/UlNaV1pVVA.rss">Noticias</a>
+        </section><!--Contacto-->
+        <section><!--Paginación, solo para páginas externas (excepto los marcos)-->
+            <div class="paginacion">
+                <!--<a href=""><i class="fa fa-angle-double-left"></i></a>--><!--Flecha de "anterior" omitida en la primera página-->
+                <a href="index.html" class="activopaginacion">1</a>
+                <a href="formulario.html">2</a>
+                <a href="musica.html">3</a>
+                <a href="galeria.html">4</a>
+                <a href="articulos.html">5</a>
+                <a href="formulario.html" class="ultimopaginacion"><i class="fa fa-angle-double-right"></i></a>
+                <a href="" class="trampapaginacion">6</a><!--Puesto en elemento más, invisible, debido a que "siguiente" aparecía como cortado-->
+            </div>
+        </section><!--Paginación-->
+        <footer><!--Pie de página-->
+            <p>Para poder abarcar este grado superior (y todo en la vida) de la mejor manera posible, hay un dicho en francés muy acertado: <q><i>Petit a petit l'oiseau fait son nid</i></q>.</p><!--La etiqueta "i" sirve para poner la letra en itálica o cursiva, la "q", para introducir una cita en la misma línea-->
+            <br>
+            <hr>
+            <p><sup id="asir">1</sup> ASIR = Administración de Sistemas Informáticos en Red.</p>
+            <br>
+            <p class="firmarealizada">
+                <span class="realizada">Página realizada por:</span>
+                <span class="firma">Ramos de Diego, Miguel</span>
+            </p>
+        </footer><!--Pie de página-->
+    </body>
+</html>

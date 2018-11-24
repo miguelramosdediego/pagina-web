@@ -1,0 +1,15 @@
+Navegador empleado:
+- Navegador principal: Konqueror, versión 5.0.97.
+- Navegador secundario: Mozilla Firefox Quantum 62.0.3.
+- Navegador terciario: Yandex Browser 18.10.0.2722 beta.
+
+Sistema operativo empleado:
+- Linux Mint 19 de 64 bits, actualizado.
+
+Editor de código empleado:
+- Brackets 1.13.
+
+Tamaño del monitor empleado:
+- 14".
+
+Es recomendable visualizar la página web con acceso a internet, debido a las fuentes importadas.

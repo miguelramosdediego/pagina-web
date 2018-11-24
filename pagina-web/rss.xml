@@ -6,10 +6,10 @@
 	<description>Mi RSS con un enlace externo y otro a mi página web</description>
 	<language>es</language>
         <item>
-            <title>Tiempo en Alcalá de Henares</title>
-            <link>https://www.tiempo.es/madrid-alcala_de_henares-es0ma0005.html</link>
+            <title>Tiempo que hará mañana en Alcalá de Henares</title>
+            <link>https://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</link>
             <description><![CDATA[Tiempo diario en Alcalá de Henares]]></description>
-            <guid>https://www.tiempo.es/madrid-alcala_de_henares-es0ma0005.html</guid>
+            <guid>https://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</guid>
         </item>
         <item>
             <title>¿Finés o finlandés?</title>

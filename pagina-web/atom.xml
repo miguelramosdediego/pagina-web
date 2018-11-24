@@ -1,33 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es-es">
-        <title type="text">Tiempo Alcalá de Henares</title>
-	<updated>2018-11-13T18:00:00Z</updated>
-        <link rel="self" type="apllication/atom+xml" href="https://www.tiempo.es/madrid-alcala_de_henares-es0ma0005.html"><!--enlace/feed/atom--></link>
-	<link rel="alternate" type="text/html" href="https://www.tiempo.es/madrid-alcala_de_henares-es0ma0005.html"></link>
-        <id><!--enlace/feed/atom--></id>
+    <title>Mi RSS</title>
+    <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/atom.xml</id>
+    <link rel="self" type="application/atom+xml" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/atom.xml"></link>
+    <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io"></link>
+    <updated>2018-11-24T16:51:00Z</updated>
+    <author>
+        <name>Ramos de Diego, Miguel</name>
+        <email>2990263@gmail.com</email>
+    </author>
         <entry>
-            <title>Mañana</title>
-            <link>https://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</link>
-            <description>Tiempo para mañana</description>
+            <title>Tiempo en Alcalá de Henares</title>
+            <id>https://www.tiempo.es/madrid-alcala_de_henares-es0ma0005.html</id>
+            <link rel="alternate" type="text/html" href="https://www.tiempo.es/madrid-alcala_de_henares-es0ma0005.html"></link>
+            <updated>2018-11-24T16:51:00Z</updated>
+            <author>
+                <name>Desconocido</name>
+            </author>
+            <summary><![CDATA[Tiempo diario en Alcalá de Henares]]></summary>
         </entry>
         <entry>
-            <title>Pasado mañana</title>
-            <link>https://www.tiempo.es/el-tiempo-pasado-manana/madrid-alcala_de_henares-es0ma0005.html</link>
-            <description>Tiempo para pasado mañana</description>
-        </entry>
-        <entry>
-            <title>En 3 días</title>
-            <link>https://www.tiempo.es/el-tiempo/por-horas/en-3-dias/madrid-alcala_de_henares-es0ma0005.html</link>
-            <description>En 3 días</description>
-        </entry>
-        <entry>
-            <title>En 4 días</title>
-            <link>https://www.tiempo.es/el-tiempo/por-horas/en-4-dias/madrid-alcala_de_henares-es0ma0005.html</link>
-            <description>En 4 días</description>
-        </entry>
-        <entry>
-            <title>En 5 días</title>
-            <link>https://www.tiempo.es/el-tiempo/por-horas/en-5-dias/madrid-alcala_de_henares-es0ma0005.html</link>
-            <description>En 5 días</description>
+            <title>¿Finés o finlandés?</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</id>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</link>
+            <updated>2018-10-28T16:51:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finés» y «finlandés»]]></summary>
         </entry>
 </feed>

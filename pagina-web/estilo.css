@@ -56,7 +56,7 @@ nav ul li:hover a.navactivo { /*Acción que ocurrirá al poner el cursor encima 
     background-color: #7c6250;
     transition: 0.3s; /*Lapso de tiempo hasta activarse por completo los atributos añadidos. Se ha prescindido de él en los elementos de la barra de navegación debido a que parece que hay "ghosting" o sensación de "lag" y puede llegar a ser molesto*/
 }
-nav a.iconorss i, nav a.iconoatom i {
+nav a.iconorss i, nav a.iconoatom i, nav a.iconogithub i {
     float: right;
     font-size: 3.8vh;
     margin-top: -1px;
@@ -72,14 +72,15 @@ nav a.iconorss i, nav a.iconoatom i {
 nav a.iconoatom i {
     -webkit-text-stroke-color: white;
 }
-nav a.iconorss:hover i, nav a.iconoatom:hover i {
-    -webkit-text-fill-color: #d19d61;
+nav a.iconorss:hover i, nav a.iconoatom:hover i, nav a.iconogithub:hover i {
+    -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #d19d61;
+    -webkit-text-stroke-color: white;
     box-shadow: 0 0 8px black;
+    background-color: #d19d61;
 }
 nav a.iconoatom:hover i {
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: #d19d61;
 }
 /*Fin menú principal*/
 
@@ -242,7 +243,7 @@ div:hover img.iconobrackets {  /*Transición y animación*/
     transform-origin: -200% center;
     animation: rotate 1.5s linear;
 }
-li:not(.nomargenlista), div.esqueletotabla, img.cancha, h3, iframe.videoyt, video, audio, p:not(.introductorio) { /*Poner todos los párrafos con margen excepto el párrafo introductorio. Actualización: Debido al cambio que ha sufrido todo el "nav", ha sido necesario introducir la clase ".nomargenlista" para excluirlos del margen*/
+li:not(.nomargenlista), div.esqueletotabla, img.cancha, h3, iframe.videoyt, video, audio, p:not(.introductorio), span.iconosvalidacion { /*Poner todos los párrafos con margen excepto el párrafo introductorio. Actualización: Debido al cambio que ha sufrido todo el "nav", ha sido necesario introducir la clase ".nomargenlista" para excluirlos del margen*/
     margin: 0 1vw 0 2.6vw;
 }
 h1, h2, h3, h4, h5, h6, caption, legend, #listadesordenada, #listaordenada {
@@ -823,10 +824,10 @@ div.banderablanco {
 /*Inicio "footer"*/
 /*Inicio firma*/
 p.firmarealizada {
-    text-align: center;
+    margin-left: 35%
 }
 span.realizada {
-    margin-right: 18%;
+    margin-right: 25%;
 }
 span.firma {
     font-family: 'Charmonman', cursive;

@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>RSS</title>
-        <link>https://github.com/miguelramosdediego/pagina-web/blob/master/pagina-web/rss.xml</link>
+        <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/rss.xml</link>
         <updated>2018-21-11T18:00:00Z</updated>
         <author>Ramos de Diego, Miguel</author>
         <item>
@@ -16,7 +16,7 @@
             <link>https://github.com/miguelramosdediego/pagina-web/blob/master/pagina-web/articulos.html</link>
             <description><![CDATA[Artículo de nuestra página web que trata sabro los términos de «finés» y «finlandés»]]>
             </description>
-            <guid>https://github.com/miguelramosdediego/pagina-web/blob/master/pagina-web/articulos.html</guid>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</guid>
         </item>
     </channel>
 </rss>

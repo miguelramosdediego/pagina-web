@@ -63,16 +63,23 @@ nav a.iconorss i, nav a.iconoatom i {
     -webkit-text-fill-color: #d9ad7c; /*Color del elemento delimitado por el borde definido a continuación*/
     -webkit-text-stroke-width: 1px; /*Tamaño del borde en rededor del elemento, respetándose las transparencias*/
     -webkit-text-stroke-color: #d9ad7c; /*Color del borde en rededor del elemento*/
+    margin-right: 8px;
     border-radius: 60px;
     box-shadow: 0 0 2px black;
     padding: 0.1em 0.2em;
     background-color: white;
+}
+nav a.iconoatom i {
+    -webkit-text-stroke-color: white;
 }
 nav a.iconorss:hover i, nav a.iconoatom:hover i {
     -webkit-text-fill-color: #d19d61;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #d19d61;
     box-shadow: 0 0 8px black;
+}
+nav a.iconoatom:hover i {
+    -webkit-text-stroke-color: white;
 }
 /*Fin menú principal*/
 

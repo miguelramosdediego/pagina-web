@@ -2,7 +2,7 @@
 <html lang="es-ES"><!--Indica que el idioma empleado en es siguiente documento será el castellano o español empleado en España-->
     <head><!--Los elementos aquí mostrados no serán visibles directamente por el visitante, solo "title"-->
         <link rel="stylesheet" type="text/css" href="estilo.css"><!--Aplicar el estilo del archivo CSS indicado en esta página-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Fa fa iconos-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"><!--Fa fa iconos-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charmonman"><!--Tipo de letra-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"><!--Tipo de letra. Separadas debido al error en la validación de código, no se permite el signo "|" en los "href"-->
         <meta charset="utf-8"><!--Leer en UTF-8 y no en ASCII (puede haber problemas con determinados caracteres)-->
@@ -20,24 +20,24 @@
         </header>
         <nav><!--Organizador de elementos: Es la segunda parte más arriba de la página. Es recomendable establecer aquí el menú de navegación, como en este caso-->
             <ul>
-                <li class="nomargenlista"><a href="#" class="navactivo"><i class="fa fa-home fa-fw"></i>Inicio</a></li><!--Acutalización: Clase ".nomargenlista" introducida para que sea todo el "nav" excluido del margen aplicado en todos los "li"-->
-                <li class="nomargenlista"><a href="#asignaturas"><i class="fa fa-list"></i> Lista de asignaturas</a></li><!--Ir a la dirección correspondiente dentro la página marcada con un "id", precedido de almohadilla (#)-->
-                <li class="nomargenlista"><a href="#horario"><i class="fa fa-calendar"></i> Horario</a></li>
-                <li class="nomargenlista"><a href="#mapa"><i class="fa fa-map-o"></i> Mapa</a></li>
-                <li class="nomargenlista"><a href="formulario.html" target="_blank"><i class="fa fa-pencil"></i> Formulario &nbsp;<i class="fa fa-external-link"></i></a></li><!--Abrir el archivo "formulario.html" en una nueva pestaña. "&nbsp;" es un espacio generado adicionalmente-->
+                <li class="nomargenlista"><a href="#" class="navactivo"><i class="fas fa-home"></i> Inicio</a></li><!--Acutalización: Clase ".nomargenlista" introducida para que sea todo el "nav" excluido del margen aplicado en todos los "li"-->
+                <li class="nomargenlista"><a href="#asignaturas"><i class="fas fa-clipboard-list"></i> Lista de asignaturas</a></li><!--Ir a la dirección correspondiente dentro la página marcada con un "id", precedido de almohadilla (#)-->
+                <li class="nomargenlista"><a href="#horario"><i class="far fa-calendar-alt"></i> Horario</a></li>
+                <li class="nomargenlista"><a href="#mapa"><i class="far fa-map"></i> Mapa</a></li>
+                <li class="nomargenlista"><a href="formulario.html" target="_blank"><i class="fas fa-pencil-alt"></i> Formulario &nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a></li><!--Abrir el archivo "formulario.html" en una nueva pestaña. "&nbsp;" es un espacio generado adicionalmente-->
                 <li class="menudesplegable nomargenlista"><a href="#multimedia">&nbsp;<i class="fa fa-film"></i> Multimedia &nbsp;<span class="flechamultimediaabajo"><i class="fa fa-caret-down"></i></span><span class="flechamultimediaarriba"><i class="fa fa-caret-up"></i></span>&nbsp;</a><!--Flecha abajo, flecha arriba--><!--Espacio final añadido con "&nbsp;" debido a que el icono se corta, como ocurre con la paginación. Uno al principio añadido para que se vea centrado-->
                     <ul class="menudesplegable-contenido"><!--Contenido del menú delplegable-->
-                        <li class="nomargenlista"><a href="musica.html" class="elementomenudesplegable" target="_blank"><i class="fa fa-music"></i> Música &nbsp;<i class="fa fa-external-link"></i></a></li>
-                        <li class="nomargenlista"><a href="#videos" class="elementomenudesplegable"><i class="fa fa-youtube-play"></i> Vídeos</a></li>
-                        <li class="nomargenlista"><a href="galeria.html" class="elementomenudesplegable" target="_blank"><i class="fa fa-image"></i> Galería de imágenes <i class="fa fa-external-link"></i></a></li>
+                        <li class="nomargenlista"><a href="musica.html" class="elementomenudesplegable" target="_blank"><i class="fa fa-music"></i> Música &nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a></li>
+                        <li class="nomargenlista"><a href="#videos" class="elementomenudesplegable"><i class="fab fa-youtube"></i> Vídeos</a></li>
+                        <li class="nomargenlista"><a href="galeria.html" class="elementomenudesplegable" target="_blank"><i class="far fa-image"></i> Galería de imágenes &nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a></li>
                     </ul>
                 </li>
-                <li class="nomargenlista"><a href="#marcos"><i class="fa fa-square-o"></i> Marcos</a></li>
-                <li class="nomargenlista"><a href="articulos.html" target="_blank"><i class="fa fa-newspaper-o"></i> Artículos <i class="fa fa-external-link"></i></a></li>
-                <li class="nomargenlista last-child"><a href="#contacto"><i class="fa fa-envelope-o"></i> Contacto</a></li>
+                <li class="nomargenlista"><a href="#marcos"><i class="far fa-square"></i> Marcos</a></li>
+                <li class="nomargenlista"><a href="articulos.html" target="_blank"><i class="far fa-newspaper"></i> Artículos &nbsp;&nbsp;<i class="fas fa-external-link-alt"></i></a></li>
+                <li class="nomargenlista last-child"><a href="#contacto"><i class="far fa-envelope"></i> Contacto</a></li>
             </ul>
             <a rel="alternate" type="application/rss+xml" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/rss.xml" class="iconorss" target="_blank"><i class="fa fa-rss-square"></i></a>
-            <a rel="alternate" type="application/atom+xml" href="https://github.com/miguelramosdediego/miguelramosdediego/atom.xml" class="iconoatom"><i class="fa fa-atom"></i></a>
+            <a rel="alternate" type="application/atom+xml" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/atom.xml" class="iconoatom" target="_blank"><i class="fab fa-react"></i></a>
             <br>
             <br>
             <br>

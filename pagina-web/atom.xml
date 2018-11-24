@@ -22,7 +22,7 @@
         <entry>
             <title>¿Finés o finlandés?</title>
             <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</id>
-            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</link>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html"></link>
             <updated>2018-10-28T16:51:00Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>

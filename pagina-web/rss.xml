@@ -4,7 +4,7 @@
         <title>Mi RSS</title>
         <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/rss.xml</link>
         <description>Mi RSS con un enlace externo y otro a mi página web</description>
-	    <language>es</language>
+	<language>es</language>
         <item>
             <title>Tiempo en Alcalá de Henares</title>
             <link>https://www.tiempo.es/madrid-alcala_de_henares-es0ma0005.html</link>

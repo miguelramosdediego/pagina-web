@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-	<title>Mi RSS</title>
-	<link>https://miguelramosdediego.github.io/pagina-web/pagina-web/rss.xml</link>
+        <title>Mi RSS</title>
+        <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/rss.xml</link>
 	<description>Mi RSS con un enlace externo y otro a mi página web</description>
 	<language>es</language>
         <item>

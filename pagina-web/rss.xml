@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Mi archivo RSS</title>
-        <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/</link>
+        <link>https://miguelramosdediego.github.io</link>
 	<description>Mi RSS con un enlace externo y otro a mi página web</description>
 	<language>es</language>
         <item>
@@ -14,9 +14,15 @@
         <item>
             <title>¿Finlandés o finés?</title>
             <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</link>
-            <description><![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finlandés» y «finés».]]>
-            </description>
+            <description><![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finlandés» y «finés».]]></description>
             <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</guid>
+        </item>
+        <item>
+            <title>Vídeo oso</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</link>
+            <description><![CDATA[Vídeo de oso rebuscando basura en Finlandia]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</guid>
+            <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/video/perkele_bear.mp4" length="4547987" type="video/mpeg"></enclosure>
         </item>
     </channel>
 </rss>

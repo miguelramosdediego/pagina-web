@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>Mi archivo RSS</title>
-        <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/rss.xml</link>
+        <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/</link>
 	<description>Mi RSS con un enlace externo y otro a mi página web</description>
 	<language>es</language>
         <item>
@@ -14,7 +14,7 @@
         <item>
             <title>¿Finlandés o finés?</title>
             <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</link>
-            <description><![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finés» y «finlandés»]]>
+            <description><![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finlandés» y «finés».]]>
             </description>
             <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</guid>
         </item>

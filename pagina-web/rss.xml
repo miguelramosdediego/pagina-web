@@ -14,7 +14,7 @@
         <item>
             <title>¿Finlandés o finés?</title>
             <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</link>
-            <description><![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finlandés» y «finés».]]></description>
+            <description><![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finlandés» y «finés»]]></description>
             <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</guid>
         </item>
         <item>
@@ -23,6 +23,36 @@
             <description><![CDATA[Vídeo de oso rebuscando basura en Finlandia]]></description>
             <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</guid>
             <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/video/perkele_bear.mp4" length="4547987" type="video/mpeg"></enclosure>
+        </item>
+        <item>
+            <title>Formulario</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/formulario.html</link>
+            <description><![CDATA[Formulario con diversas opciones]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/formulario.html</guid>
+        </item>
+        <item>
+            <title>Mapa</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa</link>
+            <description><![CDATA[Mapa interactivo de una pista de baloncesto, para poder interactuar con diversos elementos]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa</guid>
+        </item>
+        <item>
+            <title>Horario</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#horario</link>
+            <description><![CDATA[Horario del curso 2018-2019 de ASIR]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#horario</guid>
+        </item>
+        <item>
+            <title>Lista de asignaturas</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#asignaturas</link>
+            <description><![CDATA[Lista de asignaturas del curso, tanto en una lista desordenada como en una lista ordenada]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#asignaturas</guid>
+        </item>
+        <item>
+            <title>Inicio</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html</link>
+            <description><![CDATA[Inicio de mi página web realizada en la asignatura de lenguaje de marcas de ASIR]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html</guid>
         </item>
     </channel>
 </rss>

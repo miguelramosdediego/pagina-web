@@ -67,10 +67,10 @@ nav a.iconorss i, nav a.iconoatom i, nav a.iconogithub i {
     border-radius: 60px;
     box-shadow: 0 0 2px black;
     padding: 0.1em 0.2em;
-    background-color: white;
+    background-color: #a29083;
 }
 nav a.iconoatom i {
-    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-color: #a29083;
 }
 nav a.iconorss:hover i, nav a.iconoatom:hover i, nav a.iconogithub:hover i {
     -webkit-text-fill-color: white;
@@ -814,9 +814,10 @@ div.banderablanco {
 /*Fin división en columnas, para escritorio*/
 
 /*Inicio para móvil*/ /*Pendiente*/
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {*/
     [class*="col-"] {
-        width: 100%;
+        float: left;
+        padding: 15px;
     }
 }
 /*Fin para móvil*/

@@ -3,8 +3,8 @@
     <channel>
         <title>Mi archivo RSS</title>
         <link>https://miguelramosdediego.github.io</link>
-	<description>Mi RSS con un enlace externo y otro a mi página web</description>
-	<language>es</language>
+        <description>Mi RSS con un enlace externo y otro a mi página web</description>
+        <language>es</language>
         <item>
             <title>Tiempo que hará mañana en Alcalá de Henares</title>
             <link>https://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</link>
@@ -18,11 +18,42 @@
             <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</guid>
         </item>
         <item>
+            <title>Marcos</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos</link>
+            <description><![CDATA[Marcos incluidos, dos pueden reescalarse]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos</guid>
+        </item>
+        <item>
+            <title>Galería de imágenes</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html</link>
+            <description><![CDATA[Inclusión de la galería de imágenes: wallpapers de Linux]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html</guid>
+        </item>
+        <item>
             <title>Vídeo oso</title>
             <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</link>
             <description><![CDATA[Vídeo de oso rebuscando basura en Finlandia]]></description>
             <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</guid>
             <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/video/perkele_bear.mp4" length="4547987" type="video/mpeg"></enclosure>
+        </item>
+        <item>
+            <title>Vídeo dominó YouTube</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</link>
+            <description><![CDATA[Vídeo de un dominó de YouTube]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</guid>
+            <enclosure url="https://www.youtube.com/embed/0PG8lw4PVRM" length="             " type="video/mpeg"></enclosure>
+        </item>
+        <item>
+            <title>Música</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
+            <description><![CDATA[Inclusión de música]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
+        </item>
+        <item>
+            <title>Multimedia</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia</link>
+            <description><![CDATA[Inicio del apartado multimedia: música, vídeos y galería de imágenes]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia</guid>
         </item>
         <item>
             <title>Formulario</title>

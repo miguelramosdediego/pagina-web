@@ -28,6 +28,127 @@
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary><![CDATA[Artículo de mi página web que trata sobre la distinción entre los términos «finlandés» y «finés».]]></summary>
+            <summary><![CDATA[Artículo de mi página web que trata sobre la distinción entre los términos «finlandés» y «finés»]]></summary>
+        </entry>
+        <entry>
+            <title>Marcos</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos"></link>
+            <updated>2018-10-28T13:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Marcos incluidos, dos pueden reescalarse]]></summary>
+        </entry>
+        <entry>
+            <title>Galería de imágenes</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html"></link>
+            <updated>2018-10-28T13:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Inclusión de la galería de imágenes: wallpapers de Linux]]></summary>
+        </entry>
+        <entry>
+            <title>Vídeo oso</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos"></link>
+            <updated>2018-10-28T13:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Vídeo de oso rebuscando basura en Finlandia]]></summary>
+        </entry>
+        <entry>
+            <title>Vídeo dominó YouTube</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos"></link>
+            <updated>2018-10-28T13:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Vídeo de un dominó de YouTube]]></summary>
+        </entry>
+        <entry>
+            <title>Música</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html"></link>
+            <updated>2018-10-28T13:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Inclusión de música]]></summary>
+        </entry>
+        <entry>
+            <title>Multimedia</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia"></link>
+            <updated>2018-10-28T13:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Inicio del apartado multimedia: música, vídeos y galería de imágenes]]></summary>
+        </entry>
+        <entry>
+            <title>Formulario</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/formulario.html</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/formulario.html"></link>
+            <updated>2018-10-28T13:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Formulario con diversas opciones]]></summary>
+        </entry>
+        <entry>
+            <title>Mapa</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa"></link>
+            <updated>2018-10-01T10:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Mapa interactivo de una pista de baloncesto, para poder interactuar con diversos elementos]]></summary>
+        </entry>
+        <entry>
+            <title>Horario</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#horario</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#horario"></link>
+            <updated>2018-10-28T13:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Horario del curso 2018-2019 de ASIR]]></summary>
+        </entry>
+        <entry>
+            <title>Lista de asignaturas</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#asignaturas</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#asignaturas"></link>
+            <updated>2018-09-16T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Lista de asignaturas del curso, tanto en una lista desordenada como en una lista ordenada]]></summary>
+        </entry>
+        <entry>
+            <title>Inicio</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html"></link>
+            <updated>2018-09-15T18:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Inicio de mi página web realizada en la asignatura de lenguaje de marcas de ASIR]]></summary>
         </entry>
 </feed>

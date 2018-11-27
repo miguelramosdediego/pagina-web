@@ -12,7 +12,7 @@
             <guid>https://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</guid>
         </item>
         <item>
-            <title>¿Finlandés o finés?</title>
+            <title>Artículos: ¿Finlandés o finés?</title>
             <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</link>
             <description><![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finlandés» y «finés»]]></description>
             <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</guid>
@@ -41,7 +41,7 @@
             <link>https://www.youtube.com/embed/0PG8lw4PVRM</link>
             <description><![CDATA[Vídeo de un dominó de YouTube]]></description>
             <guid>https://www.youtube.com/embed/0PG8lw4PVRM</guid>
-            <enclosure url="https://www.youtube.com/embed/0PG8lw4PVRM" length="             " type="video/mpeg"></enclosure>
+            <enclosure url="https://www.youtube.com/embed/0PG8lw4PVRM" duration="142" type="video/mpeg"></enclosure>
         </item>
         <item>
             <title>Música</title>
@@ -66,6 +66,12 @@
             <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa</link>
             <description><![CDATA[Mapa interactivo de una pista de baloncesto, para poder interactuar con diversos elementos]]></description>
             <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa</guid>
+        </item>
+        <item>
+            <title>Contacto</title>
+            <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#contacto</link>
+            <description><![CDATA[Inclusión del correo electrónico de contacto en nuestra página web]]></description>
+            <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#contacto</guid>
         </item>
         <item>
             <title>Horario</title>

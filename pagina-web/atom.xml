@@ -20,7 +20,7 @@
             <summary><![CDATA[Tiempo diario en Alcalá de Henares]]></summary>
         </entry>
         <entry>
-            <title>¿Finlandés o finés?</title>
+            <title>Artículos: ¿Finlandés o finés?</title>
             <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</id>
             <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html"></link>
             <updated>2018-10-28T13:00:00Z</updated>
@@ -62,6 +62,7 @@
                 <email>2990263@gmail.com</email>
             </author>
             <summary><![CDATA[Vídeo de oso rebuscando basura en Finlandia]]></summary>
+            <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/video/perkele_bear.mp4" length="4547987" type="video/mpeg"></enclosure>
         </entry>
         <entry>
             <title>Vídeo dominó YouTube</title>
@@ -73,6 +74,7 @@
                 <email>2990263@gmail.com</email>
             </author>
             <summary><![CDATA[Vídeo de un dominó de YouTube]]></summary>
+            <enclosure url="https://www.youtube.com/embed/0PG8lw4PVRM" duration="142" type="video/mpeg"></enclosure>
         </entry>
         <entry>
             <title>Música</title>
@@ -117,6 +119,17 @@
                 <email>2990263@gmail.com</email>
             </author>
             <summary><![CDATA[Mapa interactivo de una pista de baloncesto, para poder interactuar con diversos elementos]]></summary>
+        </entry>
+        <entry>
+            <title>Contacto</title>
+            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#contacto</id>
+            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#contacto"></link>
+            <updated>2018-10-01T10:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Inclusión del correo electrónico de contacto en nuestra página web]]></summary>
         </entry>
         <entry>
             <title>Horario</title>

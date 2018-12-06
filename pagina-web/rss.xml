@@ -22,10 +22,13 @@
             <item>
                 <title>Marcos</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos</link>
-                <description><![CDATA[Marcos incluidos con imágenes diversas <br>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_winter.jpg" alt="Cerezos en invierno wallpaper" width="384" height="108"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_forest.jpg" alt="Bosque fantasía wallpaper" width="384" height="108"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_helicopters.jpg" alt="Helicópteros puesta de sol wallpaper" width="384" height="108"></img>]]>
+                <description>
+                        <![CDATA[Marcos incluidos con imágenes diversas
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_winter.jpg" alt="Cerezos en invierno wallpaper" width="480" height="135"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_forest.jpg" alt="Bosque fantasía wallpaper" width="480" height="135"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_helicopters.jpg" alt="Helicópteros puesta de sol wallpaper" width="480" height="135"></img>]]>
                 </description>
                 <pubDate>Wed, 02 Oct 2002 13:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos</guid>
@@ -33,12 +36,15 @@
             <item>
                 <title>Galería de imágenes</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html</link>
-                <description><![CDATA[Galería de imágenes añadida: Wallpapers de Linux <br>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/arch_logo.jpg" alt="Arch wallpaper" width="384" height="216"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/mint_logo.jpg" alt="Mint wallpaper" width="384" height="216"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/ubuntu_logo.jpg" alt="Ubuntu wallpaper" width="384" height="216"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian1_logo.jpg" alt="Debian dark wallpaper" width="384" height="216"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian2_logo.jpg" alt="Debian light wallpaper" width="384" height="216"></img>]]>
+                <description>
+                        <![CDATA[Galería de imágenes añadida: Wallpapers de Linux
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/arch_logo.jpg" alt="Arch wallpaper" width="364.8" height="205.2"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/mint_logo.jpg" alt="Mint wallpaper" width="364.8" height="205.2"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/ubuntu_logo.jpg" alt="Ubuntu wallpaper" width="364.8" height="205.2"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian1_logo.jpg" alt="Debian dark wallpaper" width="364.8" height="205.2"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian2_logo.jpg" alt="Debian light wallpaper" width="364.8" height="205.2"></img>]]>
                 </description>
                 <pubDate>Wed, 02 Oct 2002 13:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html</guid>
@@ -54,7 +60,11 @@
             <item>
                 <title>Vídeo dominó YouTube</title>
                 <link>http://www.youtube.com/embed/0PG8lw4PVRM</link>
-                <description><![CDATA[Vídeo de un dominó de YouTube <br> <iframe width="560" height="315" src="https://www.youtube.com/embed/0PG8lw4PVRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></description>
+                <description>
+                        <![CDATA[Vídeo de un dominó de YouTube
+                        <br>
+                        <br
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0PG8lw4PVRM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>]]></description>
                 <pubDate>Wed, 02 Oct 2002 13:00:00 GMT</pubDate>
                 <guid>http://www.youtube.com/embed/0PG8lw4PVRM</guid>
             </item>
@@ -155,10 +165,13 @@
             <item>
                 <title>Mapa</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa</link>
-                <description><![CDATA[Mapa interactivo de una pista de baloncesto, para poder interactuar con diversos elementos]]></description>
+                <description>
+                        <![CDATA[Mapa interactivo de una pista de baloncesto, para poder interactuar con diversos elementos
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/cancha_baloncesto_old.png" alt="Cancha de baloncesto" width="144" height="90"></img>]]></description>
                 <pubDate>Wed, 02 Oct 2002 13:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa</guid>
-                <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/cancha_baloncesto_old.png" length="525454" type="image/png"></enclosure>
             </item>
             <item>
                 <title>Contacto</title>
@@ -182,12 +195,16 @@
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#asignaturas</guid>
             </item>
             <item>
-                <title>Mi primera imagen</title>
+                <title>Primera imagen</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html</link>
-                <description><![CDATA[Primera imagen incluida: Logo del IES Avellaneda]]></description>
+                <description>
+                        <![CDATA[Primera imagen incluida: Logo del IES Avellaneda
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/logo_avellaneda.png" alt="Logo IES Avellaneda" width="104" height="145"></img>]]>
+                </description>
                 <pubDate>Wed, 02 Oct 2002 13:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html</guid>
-                <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/logo_avellaneda.png" length="30134" type="image/png"></enclosure>
             </item>
             <item>
                 <title>Inicio</title>

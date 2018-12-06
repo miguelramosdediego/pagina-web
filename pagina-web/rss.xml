@@ -8,14 +8,24 @@
             <item>
                 <title>Tiempo que hará mañana en Alcalá de Henares</title>
                 <link>http://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</link>
-                <description><![CDATA[Tiempo diario en Alcalá de Henares]]></description>
+                <description>
+                        <![CDATA[Tiempo diario en Alcalá de Henares
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/tiempo.png" alt="Tiempo" width="400" height="300"></img>]]>
+                </description>
                 <pubDate>Sat, 24 Nov 2018 20:00:00 GMT</pubDate>
                 <guid>http://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</guid>
             </item>
             <item>
                 <title>Artículos: ¿Finlandés o finés?</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</link>
-                <description><![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finlandés» y «finés»]]></description>
+                <description>
+                        <![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finlandés» y «finés»
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/bandera_finlandia.png" alt="Tiempo" width="464" height="283.2"></img>]]>
+                </description>
                 <pubDate>Mon, 15 Oct 2018 08:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</guid>
             </item>
@@ -67,74 +77,74 @@
             </item>
             <item>
                 <title>Música</title>
-                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
+                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3</link>
                 <description><![CDATA[Décima canción añadida de Les Hayden - Proverbs: 10 - Want]]></description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
-                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
+                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3" length="8006232" type="audio/mpeg3"></enclosure>
             </item>
             <item>
                 <title>Música</title>
-                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
+                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3</link>
                 <description><![CDATA[Novena canción añadida de Les Hayden - Proverbs: 09 - Three]]></description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
-                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
+                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3" length="7143846" type="audio/mpeg3"></enclosure>
             </item>
             <item>
                 <title>Música</title>
-                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
+                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3</link>
                 <description><![CDATA[Octava canción añadida de Les Hayden - Proverbs: 08 - Need]]></description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
-                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
+                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3" length="6163253" type="audio/mpeg3"></enclosure>
             </item>
             <item>
                 <title>Música</title>
-                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
+                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3</link>
                 <description><![CDATA[Séptima canción añadida de Les Hayden - Proverbs: 07 - Oh What A Funny Joke]]></description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
-                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
+                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3" length="7572432" type="audio/mpeg3"></enclosure>
             </item>
             <item>
                 <title>Música</title>
-                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
+                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3</link>
                 <description><![CDATA[Sexta canción añadida de Les Hayden - Proverbs: 06 - Elephant Wings]]></description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
-                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
+                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3" length="4739579" type="audio/mpeg3"></enclosure>
             </item>
             <item>
                 <title>Música</title>
-                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
+                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3</link>
                 <description><![CDATA[Quinta canción añadida de Les Hayden - Proverbs: 05 - Ophelia]]></description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
-                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
+                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3" length="8103861" type="audio/mpeg3"></enclosure>
             </item>
             <item>
                 <title>Música</title>
-                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
+                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3</link>
                 <description><![CDATA[Cuarta canción añadida de Les Hayden - Proverbs: 04 - Fish to Swim]]></description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
-                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
+                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3" length="6788057" type="audio/mpeg3"></enclosure>
             </item>
             <item>
                 <title>Música</title>
-                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
+                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3</link>
                 <description><![CDATA[Tercera canción añadida de Les Hayden - Proverbs: 03 - Still]]></description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
-                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
+                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3" length="9036928" type="audio/mpeg3"></enclosure>
             </item>
             <item>
                 <title>Música</title>
-                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
+                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3</link>
                 <description><![CDATA[Segunda canción añadida de Les Hayden - Proverbs: 02 - Proverb]]></description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
-                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
+                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3" length="5693182" type="audio/mpeg3"></enclosure>
             </item>
             <item>
@@ -193,7 +203,7 @@
             </item>
             <item>
                 <title>Primera imagen</title>
-                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html</link>
+                <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/logo_avellaneda.png</link>
                 <description>
                         <![CDATA[Primera imagen incluida: Logo del IES Avellaneda
                         <br>
@@ -201,7 +211,7 @@
                         <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/logo_avellaneda.png" alt="Logo IES Avellaneda" width="104" height="145"></img>]]>
                 </description>
                 <pubDate>Tue, 18 Sep 2018 12:00:00 GMT</pubDate>
-                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html</guid>
+                <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/logo_avellaneda.png</guid>
             </item>
             <item>
                 <title>Inicio</title>

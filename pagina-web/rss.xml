@@ -36,9 +36,9 @@
                         <![CDATA[Marcos incluidos con imágenes diversas
                         <br>
                         <br>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_winter.jpg" alt="Cerezos en invierno wallpaper" width="576" height="162"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_forest.jpg" alt="Bosque fantasía wallpaper" width="576" height="162"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_helicopters.jpg" alt="Helicópteros en la puesta de sol wallpaper" width="576" height="162"></img>]]>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_winter.jpg" alt="Cerezos en invierno wallpaper" width="556.8" height="156.6"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_forest.jpg" alt="Bosque fantasía wallpaper" width="556.8" height="156.6"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_helicopters.jpg" alt="Helicópteros en la puesta de sol wallpaper" width="556.8" height="156.6"></img>]]>
                 </description>
                 <pubDate>Wed, 10 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos</guid>
@@ -50,11 +50,11 @@
                         <![CDATA[Galería de imágenes añadida: Wallpapers de Linux
                         <br>
                         <br>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/arch_logo.jpg" alt="Arch wallpaper" width="345.6" height="194.4"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/mint_logo.jpg" alt="Mint wallpaper" width="345.6" height="194.4"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/ubuntu_logo.jpg" alt="Ubuntu wallpaper" width="345.6" height="194.4"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian1_logo.jpg" alt="Debian dark wallpaper" width="345.6" height="194.4"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian2_logo.jpg" alt="Debian light wallpaper" width="345.6" height="194.4"></img>]]>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/arch_logo.jpg" alt="Arch wallpaper" width="336" height="189"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/mint_logo.jpg" alt="Mint wallpaper" width="336" height="189"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/ubuntu_logo.jpg" alt="Ubuntu wallpaper" width="336" height="189"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian1_logo.jpg" alt="Debian dark wallpaper" width="336" height="189"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian2_logo.jpg" alt="Debian light wallpaper" width="336" height="189"></img>]]>
                 </description>
                 <pubDate>Tue, 09 Oct 2018 12:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html</guid>
@@ -88,7 +88,12 @@
             <item>
                 <title>Música</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3</link>
-                <description><![CDATA[Décima canción añadida de Les Hayden - Proverbs: 10 - Want]]></description>
+                <description>
+                        <![CDATA[Décima canción añadida de Les Hayden - Proverbs: 10 - Want
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="300" height="300"></img>]]>
+                </description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3" length="8006232" type="audio/mpeg3"></enclosure>
@@ -96,7 +101,12 @@
             <item>
                 <title>Música</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3</link>
-                <description><![CDATA[Novena canción añadida de Les Hayden - Proverbs: 09 - Three]]></description>
+                <description>
+                        <![CDATA[Novena canción añadida de Les Hayden - Proverbs: 09 - Three
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="300" height="300"></img>]]>
+                </description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3" length="7143846" type="audio/mpeg3"></enclosure>
@@ -104,7 +114,12 @@
             <item>
                 <title>Música</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3</link>
-                <description><![CDATA[Octava canción añadida de Les Hayden - Proverbs: 08 - Need]]></description>
+                <description>
+                        <![CDATA[Octava canción añadida de Les Hayden - Proverbs: 08 - Need
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="300" height="300"></img>]]>
+                </description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3" length="6163253" type="audio/mpeg3"></enclosure>
@@ -112,7 +127,12 @@
             <item>
                 <title>Música</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3</link>
-                <description><![CDATA[Séptima canción añadida de Les Hayden - Proverbs: 07 - Oh What A Funny Joke]]></description>
+                <description>
+                        <![CDATA[Séptima canción añadida de Les Hayden - Proverbs: 07 - Oh What A Funny Joke
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="300" height="300"></img>]]>
+                </description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3" length="7572432" type="audio/mpeg3"></enclosure>
@@ -120,7 +140,12 @@
             <item>
                 <title>Música</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3</link>
-                <description><![CDATA[Sexta canción añadida de Les Hayden - Proverbs: 06 - Elephant Wings]]></description>
+                <description>
+                        <![CDATA[Sexta canción añadida de Les Hayden - Proverbs: 06 - Elephant Wings
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="300" height="300"></img>]]>
+                </description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3" length="4739579" type="audio/mpeg3"></enclosure>
@@ -128,7 +153,12 @@
             <item>
                 <title>Música</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3</link>
-                <description><![CDATA[Quinta canción añadida de Les Hayden - Proverbs: 05 - Ophelia]]></description>
+                <description>
+                        <![CDATA[Quinta canción añadida de Les Hayden - Proverbs: 05 - Ophelia
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="300" height="300"></img>]]>
+                </description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3" length="8103861" type="audio/mpeg3"></enclosure>
@@ -136,7 +166,12 @@
             <item>
                 <title>Música</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3</link>
-                <description><![CDATA[Cuarta canción añadida de Les Hayden - Proverbs: 04 - Fish to Swim]]></description>
+                <description>
+                        <![CDATA[Cuarta canción añadida de Les Hayden - Proverbs: 04 - Fish to Swim
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="300" height="300"></img>]]>
+                /description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3" length="6788057" type="audio/mpeg3"></enclosure>
@@ -144,7 +179,12 @@
             <item>
                 <title>Música</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3</link>
-                <description><![CDATA[Tercera canción añadida de Les Hayden - Proverbs: 03 - Still]]></description>
+                <description>
+                        <![CDATA[Tercera canción añadida de Les Hayden - Proverbs: 03 - Still
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="300" height="300"></img>]]>
+                </description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3" length="9036928" type="audio/mpeg3"></enclosure>
@@ -152,7 +192,12 @@
             <item>
                 <title>Música</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3</link>
-                <description><![CDATA[Segunda canción añadida de Les Hayden - Proverbs: 02 - Proverb]]></description>
+                <description>
+                        <![CDATA[Segunda canción añadida de Les Hayden - Proverbs: 02 - Proverb
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="300" height="300"></img>]]>
+                </description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3" length="5693182" type="audio/mpeg3"></enclosure>
@@ -160,7 +205,12 @@
             <item>
                 <title>Música</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
-                <description><![CDATA[Primera canción añadida de Les Hayden - Proverbs: 01 - Gift Horse]]></description>
+                <description>
+                        <![CDATA[Primera canción añadida de Les Hayden - Proverbs: 01 - Gift Horse
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="300" height="300"></img>]]>
+                </description>
                 <pubDate>Wed, 03 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_01_-_Gift_Horse.mp3" length="6517573" type="audio/mpeg3"></enclosure>

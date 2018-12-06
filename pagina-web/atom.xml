@@ -1,108 +1,307 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es-es">
-    <title>Mi archivo Atom</title>
+    <title>¿Qué hay de nuevo en mi página web?</title>
     <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/atom.xml</id>
     <link rel="self" type="application/atom+xml" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/atom.xml"></link>
     <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io"></link>
-    <updated>2018-11-24T16:51:00Z</updated>
+    <updated>2018-11-24T20:00:00Z</updated>
     <author>
         <name>Ramos de Diego, Miguel</name>
         <email>2990263@gmail.com</email>
     </author>
         <entry>
-            <title>Tiempo que hará mañana en Alcalá de Henares</title>
-            <id>https://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</id>
-            <link rel="alternate" type="text/html" href="https://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html"></link>
-            <updated>2018-11-24T17:00:00Z</updated>
+            <title>Tiempo diario en Alacalá de Henares</title>
+            <id>http://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</id>
+            <link rel="alternate" type="text/html" href="http://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html"></link>
+            <updated>2018-11-24T20:00:00Z</updated>
             <author>
                 <name>Desconocido</name>
             </author>
-            <summary><![CDATA[Tiempo diario en Alcalá de Henares]]></summary>
+            <summary>
+                    <![CDATA[Tiempo que hará próximamente en la ciudad de Alcalá de Henares, Madrid
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/tiempo.png" alt="Tiempo" width="240" height="180"></img>]]>
+            </summary>
         </entry>
         <entry>
             <title>Artículos: ¿Finlandés o finés?</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html"></link>
-            <updated>2018-10-28T13:00:00Z</updated>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html"></link>
+            <updated>2018-10-15T08:00:00Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary><![CDATA[Artículo de mi página web que trata sobre la distinción entre los términos «finlandés» y «finés»]]></summary>
-        </entry>
-        <entry>
-            <title>Marcos</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos"></link>
-            <updated>2018-10-28T13:00:00Z</updated>
-            <author>
-                <name>Ramos de Diego, Miguel</name>
-                <email>2990263@gmail.com</email>
-            </author>
-            <summary><![CDATA[Marcos incluidos, dos pueden reescalarse]]></summary>
-        </entry>
-        <entry>
-            <title>Galería de imágenes</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html"></link>
-            <updated>2018-10-28T13:00:00Z</updated>
-            <author>
-                <name>Ramos de Diego, Miguel</name>
-                <email>2990263@gmail.com</email>
-            </author>
-            <summary><![CDATA[Inclusión de la galería de imágenes: wallpapers de Linux]]></summary>
-        </entry>
-        <entry>
-            <title>Vídeo oso</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos"></link>
-            <updated>2018-10-28T13:00:00Z</updated>
-            <author>
-                <name>Ramos de Diego, Miguel</name>
-                <email>2990263@gmail.com</email>
-            </author>
-            <summary><![CDATA[Vídeo de oso rebuscando basura en Finlandia]]></summary>
-            <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/video/perkele_bear.mp4" length="4547987" type="video/mpeg"></enclosure>
-        </entry>
-        <entry>
-            <title>Vídeo dominó YouTube</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos"></link>
-            <updated>2018-10-28T13:00:00Z</updated>
-            <author>
-                <name>Ramos de Diego, Miguel</name>
-                <email>2990263@gmail.com</email>
-            </author>
-            <summary><![CDATA[Vídeo de un dominó de YouTube]]></summary>
-            <enclosure url="https://www.youtube.com/embed/0PG8lw4PVRM" duration="142" type="video/mpeg"></enclosure>
+            <summary>
+                    <![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finlandés» y «finés»
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/bandera_finlandia.png" alt="Bandera de Finlandia" width="290" height="177"></img>]]>
+            </summary>
         </entry>
         <entry>
             <title>Música</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html"></link>
-            <updated>2018-10-28T13:00:00Z</updated>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html"></link>
+            <updated>2018-10-13T16:00:00Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary><![CDATA[Inclusión de música]]></summary>
+            <summary>
+                    <![CDATA[Álbum añadido de una sola canción de Dee Yan-Key - Ambient Sonata
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_ambient_sonata.jpg" alt="Carátula del disco Ambient Sont de Dee Yan-Key" width="189" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Marcos</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos"></link>
+            <updated>2018-10-10T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Marcos incluidos con imágenes diversas
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_winter.jpg" alt="Cerezos en invierno wallpaper" width="556.8" height="156.6"></img>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_forest.jpg" alt="Bosque fantasía wallpaper" width="556.8" height="156.6"></img>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_helicopters.jpg" alt="Helicópteros en la puesta de sol wallpaper" width="556.8" height="156.6"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Galería de imágenes</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html"></link>
+            <updated>2018-10-09T12:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Galería de imágenes añadida: Wallpapers de Linux
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/arch_logo.jpg" alt="Arch wallpaper" width="336" height="189"></img>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/mint_logo.jpg" alt="Mint wallpaper" width="336" height="189"></img>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/ubuntu_logo.jpg" alt="Ubuntu wallpaper" width="336" height="189"></img>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian1_logo.jpg" alt="Debian dark wallpaper" width="336" height="189"></img>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian2_logo.jpg" alt="Debian light wallpaper" width="336" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Vídeo oso</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos"></link>
+            <updated>2018-10-08T08:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Vídeo de oso rebuscando en la basura en Finlandia
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/sad_bear.jpg" alt="Osito triste" width="336" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Vídeo dominó YouTube</title>
+            <id>http://www.youtube.com/embed/0PG8lw4PVRM</id>
+            <link rel="alternate" type="text/html" href="http://www.youtube.com/embed/0PG8lw4PVRM"></link>
+            <updated>2018-10-08T08:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Vídeo de un dominó de Mario y Luigi de YouTube
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/domino_mario.jpg" alt="Dominó Mario y Luigi" width="336" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Música</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3"></link>
+            <updated>2018-10-03T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Décima canción añadida de Les Hayden - Proverbs: 10 - Want
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="189" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Música</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3"></link>
+            <updated>2018-10-03T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Novena canción añadida de Les Hayden - Proverbs: 09 - Three
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="189" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Música</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3"></link>
+            <updated>2018-10-03T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Octava canción añadida de Les Hayden - Proverbs: 08 - Need
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="189" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Música</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3"></link>
+            <updated>2018-10-03T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Séptima canción añadida de Les Hayden - Proverbs: 07 - Oh What A Funny Joke
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="189" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Música</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3"></link>
+            <updated>2018-10-03T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Sexta canción añadida de Les Hayden - Proverbs: 06 - Elephant Wings
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="189" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Música</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3"></link>
+            <updated>2018-10-03T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Quinta canción añadida de Les Hayden - Proverbs: 05 - Ophelia
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="189" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Música</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3"></link>
+            <updated>2018-10-03T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Cuarta canción añadida de Les Hayden - Proverbs: 04 - Fish to Swim
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="189" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Música</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3"></link>
+            <updated>2018-10-03T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Tercera canción añadida de Les Hayden - Proverbs: 03 - Still
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="189" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Música</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3"></link>
+            <updated>2018-10-03T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Segunda canción añadida de Les Hayden - Proverbs: 02 - Proverb
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="189" height="189"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Música</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_01_-_Gift_Horse.mp3</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_01_-_Gift_Horse.mp3"></link>
+            <updated>2018-10-03T09:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary>
+                    <![CDATA[Primera canción añadida de Les Hayden - Proverbs: 01 - Gift Horse
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/disco_proverbs.jpg" alt="Carátula del disco Proverbs de Les Hayden" width="189" height="189"></img>]]>
+            </summary>
         </entry>
         <entry>
             <title>Multimedia</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia"></link>
-            <updated>2018-10-28T13:00:00Z</updated>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia"></link>
+            <updated>2018-10-02T12:00:00Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary><![CDATA[Inicio del apartado multimedia: música, vídeos y galería de imágenes]]></summary>
+            <summary><![CDATA[Inicio del apartado multimedia: música, vídeos y galería de imágenes. Incluido un menú desplegable con estos apartados]]></summary>
         </entry>
         <entry>
             <title>Formulario</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/formulario.html</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/formulario.html"></link>
-            <updated>2018-10-28T13:00:00Z</updated>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/formulario.html</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/formulario.html"></link>
+            <updated>2018-10-01T08:00:00Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
@@ -111,20 +310,25 @@
         </entry>
         <entry>
             <title>Mapa</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa"></link>
-            <updated>2018-10-01T10:00:00Z</updated>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#mapa"></link>
+            <updated>2018-09-26T09:00:00Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary><![CDATA[Mapa interactivo de una pista de baloncesto, para poder interactuar con diversos elementos]]></summary>
+            <summary>
+                    <![CDATA[Mapa interactivo de una pista de baloncesto, para poder interactuar con diversos elementos
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/cancha_baloncesto_old.png" alt="Cancha de baloncesto" width="288" height="180"></img>]]>
+            </summary>
         </entry>
         <entry>
             <title>Contacto</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#contacto</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#contacto"></link>
-            <updated>2018-10-01T10:00:00Z</updated>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#contacto</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#contacto"></link>
+            <updated>2018-09-25T12:00:00Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
@@ -133,20 +337,20 @@
         </entry>
         <entry>
             <title>Horario</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#horario</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#horario"></link>
-            <updated>2018-10-28T13:00:00Z</updated>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#horario</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#horario"></link>
+            <updated>2018-09-24T08:00:00Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary><![CDATA[Horario del curso 2018-2019 de ASIR]]></summary>
+            <summary><![CDATA[Horario del curso 2018-2019 de primero de ASIR]]></summary>
         </entry>
         <entry>
             <title>Lista de asignaturas</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#asignaturas</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#asignaturas"></link>
-            <updated>2018-09-16T09:00:00Z</updated>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#asignaturas</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#asignaturas"></link>
+            <updated>2018-09-19T09:00:00Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
@@ -154,14 +358,30 @@
             <summary><![CDATA[Lista de asignaturas del curso, tanto en una lista desordenada como en una lista ordenada]]></summary>
         </entry>
         <entry>
-            <title>Inicio</title>
-            <id>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html</id>
-            <link rel="alternate" type="text/html" href="https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html"></link>
-            <updated>2018-09-15T18:00:00Z</updated>
+            <title>Primera imagen</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/logo_avellaneda.png</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/logo_avellaneda.png"></link>
+            <updated>2018-09-18T12:00:00Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary><![CDATA[Inicio de mi página web realizada en la asignatura de lenguaje de marcas de ASIR]]></summary>
+            <summary>
+                    <![CDATA[Primera imagen incluida: Logo del IES Avellaneda
+                    <br>
+                    <br>
+                    <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/logo_avellaneda.png" alt="Logo IES Avellaneda" width="104" height="145"></img>]]>
+            </summary>
+        </entry>
+        <entry>
+            <title>Inicio</title>
+            <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html</id>
+            <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html"></link>
+            <updated>2018-09-17T08:00:00Z</updated>
+            <author>
+                <name>Ramos de Diego, Miguel</name>
+                <email>2990263@gmail.com</email>
+            </author>
+            <summary><![CDATA[Inicio de mi página web realizada en la asignatura de lenguaje de marcas de primero de ASIR]]></summary>
         </entry>
 </feed>

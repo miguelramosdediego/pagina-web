@@ -17,7 +17,7 @@
             <author>
                 <name>Desconocido</name>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Tiempo que hará próximamente en la ciudad de Alcalá de Henares, Madrid
                     <br>
                     <br>
@@ -33,7 +33,7 @@
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finlandés» y «finés»
                     <br>
                     <br>
@@ -49,7 +49,7 @@
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Álbum añadido de una sola canción de Dee Yan-Key - Ambient Sonata
                     <br>
                     <br>
@@ -65,7 +65,7 @@
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Marcos incluidos con imágenes diversas
                     <br>
                     <br>
@@ -83,7 +83,7 @@
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Galería de imágenes añadida: Wallpapers de Linux
                     <br>
                     <br>
@@ -98,12 +98,12 @@
             <title>Vídeo oso</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos"></link>
-            <updated>2018-10-08T08:00:00Z</updated>
+            <updated>2018-10-08T08:00:02Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Vídeo de oso rebuscando en la basura en Finlandia
                     <br>
                     <br>
@@ -114,12 +114,12 @@
             <title>Vídeo dominó YouTube</title>
             <id>http://www.youtube.com/embed/0PG8lw4PVRM</id>
             <link rel="alternate" type="text/html" href="http://www.youtube.com/embed/0PG8lw4PVRM"></link>
-            <updated>2018-10-08T08:00:00Z</updated>
+            <updated>2018-10-08T08:00:01Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Vídeo de un dominó de Mario y Luigi de YouTube
                     <br>
                     <br>
@@ -130,12 +130,12 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3"></link>
-            <updated>2018-10-03T09:00:00Z</updated>
+            <updated>2018-10-03T09:00:10Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Décima canción añadida de Les Hayden - Proverbs: 10 - Want
                     <br>
                     <br>
@@ -146,12 +146,12 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3"></link>
-            <updated>2018-10-03T09:00:00Z</updated>
+            <updated>2018-10-03T09:00:09Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Novena canción añadida de Les Hayden - Proverbs: 09 - Three
                     <br>
                     <br>
@@ -162,12 +162,12 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3"></link>
-            <updated>2018-10-03T09:00:00Z</updated>
+            <updated>2018-10-03T09:00:08Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Octava canción añadida de Les Hayden - Proverbs: 08 - Need
                     <br>
                     <br>
@@ -178,12 +178,12 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3"></link>
-            <updated>2018-10-03T09:00:00Z</updated>
+            <updated>2018-10-03T09:00:07Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Séptima canción añadida de Les Hayden - Proverbs: 07 - Oh What A Funny Joke
                     <br>
                     <br>
@@ -194,12 +194,12 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3"></link>
-            <updated>2018-10-03T09:00:00Z</updated>
+            <updated>2018-10-03T09:00:06Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Sexta canción añadida de Les Hayden - Proverbs: 06 - Elephant Wings
                     <br>
                     <br>
@@ -210,12 +210,12 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3"></link>
-            <updated>2018-10-03T09:00:00Z</updated>
+            <updated>2018-10-03T09:00:05Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Quinta canción añadida de Les Hayden - Proverbs: 05 - Ophelia
                     <br>
                     <br>
@@ -226,12 +226,12 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3"></link>
-            <updated>2018-10-03T09:00:00Z</updated>
+            <updated>2018-10-03T09:00:04Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Cuarta canción añadida de Les Hayden - Proverbs: 04 - Fish to Swim
                     <br>
                     <br>
@@ -242,12 +242,12 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3"></link>
-            <updated>2018-10-03T09:00:00Z</updated>
+            <updated>2018-10-03T09:00:03Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Tercera canción añadida de Les Hayden - Proverbs: 03 - Still
                     <br>
                     <br>
@@ -258,12 +258,12 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3"></link>
-            <updated>2018-10-03T09:00:00Z</updated>
+            <updated>2018-10-03T09:00:02Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Segunda canción añadida de Les Hayden - Proverbs: 02 - Proverb
                     <br>
                     <br>
@@ -274,12 +274,12 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_01_-_Gift_Horse.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_01_-_Gift_Horse.mp3"></link>
-            <updated>2018-10-03T09:00:00Z</updated>
+            <updated>2018-10-03T09:00:01Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Primera canción añadida de Les Hayden - Proverbs: 01 - Gift Horse
                     <br>
                     <br>
@@ -317,7 +317,7 @@
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Mapa interactivo de una pista de baloncesto, para poder interactuar con diversos elementos
                     <br>
                     <br>
@@ -366,7 +366,7 @@
                 <name>Ramos de Diego, Miguel</name>
                 <email>2990263@gmail.com</email>
             </author>
-            <summary>
+            <summary type="html">
                     <![CDATA[Primera imagen incluida: Logo del IES Avellaneda
                     <br>
                     <br>

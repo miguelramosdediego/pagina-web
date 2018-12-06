@@ -97,7 +97,7 @@ ul.menudesplegable-contenido li {
     margin-bottom: -7px; /*Quitar espaciado entre elementos del menú desplegable*/
 }
 ul.menudesplegable-contenido li a { /*Enlaces introducidos en el menú desplegable, particularidades respecto a los elementos del menú principal*/
-    padding: 4px;   
+    padding: 4px;
     border-top: none; /*Eliminar el borde superior. Es necesario para que no entre en conflicto con aquel ya definido en "nav a" y, por ende, se duplique en tamaño*/
     border-right: 2px solid #7c6250;
     border-left: 2px solid #7c6250;
@@ -435,7 +435,7 @@ input[type=text], [type=password], [type=email], [type=tel], [type=url], [type=n
     border: 1px solid #e6e2d3;
     padding: 5px 0;
 }
-input[type=search]:focus { 
+input[type=search]:focus {
     width: 20.1%;
 }
 input[type=date], [type=datetime-local] { /*Tratados de forma aislada debido a que los tamaños internos son el doble que en el resto de "inputs"*/
@@ -471,7 +471,7 @@ textarea {
     padding: 5px 0;
     background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-709-paragraph.png');
     background-size: 10px;
-    background-position: 1% 5px; 
+    background-position: 1% 5px;
     background-repeat: no-repeat;
 }
 textarea:focus { /*El "border-radius" del "taxtarea" es diferente al resto al ser más ancho*/
@@ -482,7 +482,7 @@ textarea:focus { /*El "border-radius" del "taxtarea" es diferente al resto al se
 /*Inicio iconos formulario*/ /*Los iconos de "option", "input[type=date], [type=datetime-local]" y "textarea" ya han sido incluidos con anterioridad aprovechando su exclusividad*/
 [type=email], [type=url], [type=date], [type=datetime-local], [type=password], [type=tel], [name=usuario] { /*Características comunes*/
     background-size: 10px;
-    background-position: 2% 60%; 
+    background-position: 2% 60%;
     background-repeat: no-repeat;
 }
 input[name=usuario] {
@@ -505,7 +505,7 @@ input[type=search], [list] { /*"List" es "Datalist", la transición no le será 
     transition: width 1s ease-in-out;
     background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-28-search.png');
     background-size: 10px;
-    background-position: 8px 8px; 
+    background-position: 8px 8px;
     background-repeat: no-repeat;
 }
 /*Fin iconos formulario*/
@@ -545,7 +545,7 @@ input[type=search]:focus + span.burbujainformacionsearch { /*Animación propia d
     from {left: 55%;}
     to {left: 65%;}
 }
-/*Fin burbujas de información*/ 
+/*Fin burbujas de información*/
 /*Fin dentro del "fieldset"*/
 input[type=checkbox], input[type=radio] {
     margin-left: 25%;
@@ -701,7 +701,7 @@ iframe.videoyt, video {
 #playlist {
     margin-top: -4px;
     border: 1px solid #7c6250;
-    
+
 }
 .songactive a {
     text-decoration: none;
@@ -787,14 +787,14 @@ div.banderablanco {
     animation: movblanco 3s;
 } /*Definir por segundos*/ /*Pendiente*/
 @-webkit-keyframes movblanco { /*Safari 4.0 - 8.0*/
-    0% {opacity: 0} 
+    0% {opacity: 0}
     50% {opacity: 0.5}
-    100% {opacity: 1} 
+    100% {opacity: 1}
 }
 @keyframes movblanco { /*Sintaxis estándar*/
-    0% {opacity: 0} 
+    0% {opacity: 0}
     50% {opacity: 0.5}
-    100% {opacity: 1} 
+    100% {opacity: 1}
 }
 /*Fin artículos (noticias)*/
 

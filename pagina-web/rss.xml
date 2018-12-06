@@ -6,10 +6,10 @@
         <description>Mantente actualizado sobre las novedades de mi página web</description>
         <language>es</language>
             <item>
-                <title>Tiempo que hará próximamente en la ciudad de Alcalá de Henares, Madrid</title>
+                <title>Tiempo diario en Alacalá de Henares</title>
                 <link>http://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</link>
                 <description>
-                        <![CDATA[Tiempo diario en Alcalá de Henares
+                        <![CDATA[Tiempo que hará próximamente en la ciudad de Alcalá de Henares, Madrid
                         <br>
                         <br>
                         <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/tiempo.png" alt="Tiempo" width="240" height="180"></img>]]>
@@ -89,7 +89,7 @@
                 <title>Vídeo dominó YouTube</title>
                 <link>http://www.youtube.com/embed/0PG8lw4PVRM</link>
                 <description>
-                        <![CDATA[Vídeo de un dominó de YouTube
+                        <![CDATA[Vídeo de un dominó de Mario y Luigi de YouTube
                         <br>
                         <br>
                         <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/domino_mario.jpg" alt="Dominó Mario y Luigi" width="336" height="189"></img>]]>
@@ -231,7 +231,7 @@
             <item>
                 <title>Multimedia</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia</link>
-                <description><![CDATA[Inicio del apartado multimedia: música, vídeos y galería de imágenes. Inclusión de un menú desplegable]]></description>
+                <description><![CDATA[Inicio del apartado multimedia: música, vídeos y galería de imágenes. Incluido un menú desplegable con estos apartados]]></description>
                 <pubDate>Tue, 02 Oct 2018 12:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia</guid>
             </item>

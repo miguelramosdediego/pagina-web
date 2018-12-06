@@ -171,16 +171,12 @@
         <section><!--Mapa interactivo-->
             <h2 id="mapa">Mapa</h2><!--Pendiente de cambiar los tamaños de las áreas-->
                 <br>
-                <img src="imagenes/cancha_baloncesto_old.png" class="cancha" alt="Cancha de baloncesto" usemap="#cancha" width="720px" height="450px"><!--El atributo "usemap" indica que dicha imagen es una de tipo interactivo, esto es, que se pueden delimitar zonas dentro de la propia imagen para que ocurran distintas cosas al hacer clic en ellas-->
-                    <map name="cancha"><!--Atributo para indicar que als acciones indicadas están relacionadas con dicha imagen. Para poder establecer las coordenadas, se ha hecho uso de la página http://imagemap-generator.dariodomi.de/-->
-                        <area shape="poly" coords="369,85,413,71,719,170,719,201,669,212" 
-                        href="http://www.dasding.es/media/k2/items/cache/4965657af186b9092c7a96976ffe881c_XL.jpg" target="_blank" alt="Grada frontal"><!--Grada frontal. El atributo "poly" indica que el área delimitada tiene unas coordenadas con la forma de un polígono-->
-                        <area shape="poly" coords="470,85,509,68,564,80,558,101,529,106" 
-                        href="https://www.equidesa.com/media/productos/grada_desmontable_galvanizada_comprar_equidesa.jpg" target="_blank" alt="Grada trasera izquierda"><!--Grada trasera izquierda-->
-                        <area shape="poly" coords="588,83,548,108,626,134,659,130,667,105" 
-                        href="https://www.equidesa.com/media/productos/grada_desmontable_galvanizada_comprar_equidesa.jpg" target="_blank" alt="Grada trasera derecha"><!--Grada trasera derecha-->
-                        <area shape="poly" coords="75,108,349,82,719,247,719,309,362,450,90,450" 
-                        href="https://es.wikipedia.org/wiki/Pista_de_juego" target="_blank" alt="Pista de baloncesto"><!--Pista de baloncesto-->
+                <img src="imagenes/cancha_baloncesto.png" class="cancha" alt="Cancha de baloncesto" usemap="#cancha" width="720px" height="450px"><!--El atributo "usemap" indica que dicha imagen es una de tipo interactivo, esto es, que se pueden delimitar zonas dentro de la propia imagen y asignarles distintas funciones al hacer clic en ellas-->
+                    <map name="cancha"><!--Atributo para indicar que las acciones indicadas están relacionadas con dicha imagen. Para poder establecer las coordenadas, se ha hecho uso de la página http://imagemap-generator.dariodomi.de/-->
+                        <area shape="poly" coords="369,85,413,71,719,170,719,201,669,212" onclick="alert('Grada frontal. A continuación, se le abrirá un enlace externo en relación a este elemento.');" href="http://www.dasding.es/media/k2/items/cache/4965657af186b9092c7a96976ffe881c_XL.jpg" target="_blank" alt="Grada frontal" title="Grada frontal"><!--Grada frontal. El atributo "poly" indica que el área delimitada tiene unas coordenadas con la forma de un polígono-->
+                        <area shape="poly" coords="470,85,509,68,564,80,558,101,529,106" onclick="alert('Grada trasera izquierda. A continuación, se le abrirá un enlace externo en relación a este elemento.');" href="https://www.equidesa.com/media/productos/grada_desmontable_galvanizada_comprar_equidesa.jpg" target="_blank" alt="Grada trasera izquierda" title="Grada trasera izquierda"><!--Grada trasera izquierda-->
+                        <area shape="poly" coords="588,83,548,108,626,134,659,130,667,105" onclick="alert('Grada trasera derecha. A continuación, se le abrirá un enlace externo en relación a este elemento.');" href="https://www.equidesa.com/media/productos/grada_desmontable_galvanizada_comprar_equidesa.jpg" target="_blank" alt="Grada trasera derecha" title="Grada trasera derecha"><!--Grada trasera derecha-->
+                        <area shape="poly" coords="75,108,349,82,719,247,719,309,362,450,90,450" onclick="alert('Pista de baloncesto. A continuación, se le abrirá un enlace externo en relación a este elemento.');" href="https://es.wikipedia.org/wiki/Pista_de_juego" target="_blank" alt="Pista de baloncesto" title="Pista de baloncesto"><!--Pista de baloncesto-->
                     </map>
                 <br>
                 <br>

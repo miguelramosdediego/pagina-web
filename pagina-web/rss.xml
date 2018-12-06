@@ -6,13 +6,13 @@
         <description>Mantente actualizado sobre las novedades de mi página web</description>
         <language>es</language>
             <item>
-                <title>Tiempo que hará mañana en Alcalá de Henares</title>
+                <title>Tiempo que hará próximamente en la ciudad de Alcalá de Henares, Madrid</title>
                 <link>http://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</link>
                 <description>
                         <![CDATA[Tiempo diario en Alcalá de Henares
                         <br>
                         <br>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/tiempo.png" alt="Tiempo" width="400" height="300"></img>]]>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/tiempo.png" alt="Tiempo" width="200" height="150"></img>]]>
                 </description>
                 <pubDate>Sat, 24 Nov 2018 20:00:00 GMT</pubDate>
                 <guid>http://www.tiempo.es/el-tiempo-manana/madrid-alcala_de_henares-es0ma0005.html</guid>
@@ -24,7 +24,7 @@
                         <![CDATA[Artículo de mi página web que trata sobre la distinción de los términos de «finlandés» y «finés»
                         <br>
                         <br>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/bandera_finlandia.png" alt="Tiempo" width="464" height="283.2"></img>]]>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/bandera_finlandia.png" alt="Bandera de Finlandia" width="290" height="177"></img>]]>
                 </description>
                 <pubDate>Mon, 15 Oct 2018 08:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/articulos.html</guid>
@@ -36,9 +36,9 @@
                         <![CDATA[Marcos incluidos con imágenes diversas
                         <br>
                         <br>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_winter.jpg" alt="Cerezos en invierno wallpaper" width="537.6" height="151.2"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_forest.jpg" alt="Bosque fantasía wallpaper" width="537.6" height="151.2"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_helicopters.jpg" alt="Helicópteros puesta de sol wallpaper" width="537.6" height="151.2"></img>]]>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_winter.jpg" alt="Cerezos en invierno wallpaper" width="576" height="162"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_forest.jpg" alt="Bosque fantasía wallpaper" width="576" height="162"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/wallpaper_helicopters.jpg" alt="Helicópteros en la puesta de sol wallpaper" width="576" height="162"></img>]]>
                 </description>
                 <pubDate>Wed, 10 Oct 2018 09:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#marcos</guid>
@@ -50,11 +50,11 @@
                         <![CDATA[Galería de imágenes añadida: Wallpapers de Linux
                         <br>
                         <br>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/arch_logo.jpg" alt="Arch wallpaper" width="326.4" height="183.6"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/mint_logo.jpg" alt="Mint wallpaper" width="326.4" height="183.6"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/ubuntu_logo.jpg" alt="Ubuntu wallpaper" width="326.4" height="183.6"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian1_logo.jpg" alt="Debian dark wallpaper" width="326.4" height="183.6"></img>
-                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian2_logo.jpg" alt="Debian light wallpaper" width="326.4" height="183.6"></img>]]>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/arch_logo.jpg" alt="Arch wallpaper" width="345.6" height="194.4"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/mint_logo.jpg" alt="Mint wallpaper" width="345.6" height="194.4"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/ubuntu_logo.jpg" alt="Ubuntu wallpaper" width="345.6" height="194.4"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian1_logo.jpg" alt="Debian dark wallpaper" width="345.6" height="194.4"></img>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/debian2_logo.jpg" alt="Debian light wallpaper" width="345.6" height="194.4"></img>]]>
                 </description>
                 <pubDate>Tue, 09 Oct 2018 12:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/galeria.html</guid>
@@ -62,7 +62,12 @@
             <item>
                 <title>Vídeo oso</title>
                 <link>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</link>
-                <description><![CDATA[Vídeo de oso rebuscando basura en Finlandia]]></description>
+                <description>
+                        <![CDATA[Vídeo de oso rebuscando basura en Finlandia
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/sad_bear.jpg" alt="Osito triste" width="326.4" height="183.6"></img>]]>
+                </description>
                 <pubDate>Mon, 08 Oct 2018 08:00:00 GMT</pubDate>
                 <guid>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</guid>
                 <enclosure url="http://miguelramosdediego.github.io/pagina-web/pagina-web/video/perkele_bear.mp4" length="4547987" type="video/mpeg"></enclosure>
@@ -70,7 +75,12 @@
             <item>
                 <title>Vídeo dominó YouTube</title>
                 <link>http://www.youtube.com/embed/0PG8lw4PVRM</link>
-                <description><![CDATA[Vídeo de un dominó de YouTube]]></description>
+                <description>
+                        <![CDATA[Vídeo de un dominó de YouTube
+                        <br>
+                        <br>
+                        <img src="http://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/sad_bear.jpg" alt="Dominó Mario y Luigi" width="326.4" height="183.6"></img>]]>
+                </description>
                 <pubDate>Mon, 08 Oct 2018 08:00:00 GMT</pubDate>
                 <guid>http://www.youtube.com/embed/0PG8lw4PVRM</guid>
                 <enclosure url="http://www.youtube.com/embed/0PG8lw4PVRM" length="4547987" type="video/mpeg"></enclosure>

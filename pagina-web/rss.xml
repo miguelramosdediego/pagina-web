@@ -3,7 +3,7 @@
     <channel>
         <title>¿Qué hay de nuevo en mi página web?</title>
         <link>https://miguelramosdediego.github.io</link>
-        <description>Mi RSS con un enlace externo y otro a mi página web</description>
+        <description>Mantente actualizado sobre las novedades de mi página web</description>
         <language>es</language>
             <item>
                 <title>Tiempo que hará mañana en Alcalá de Henares</title>
@@ -48,11 +48,21 @@
                 <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</link>
                 <description><![CDATA[Música añadida: Les Hayden - Proverbs]]></description>
                 <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</guid>
+                <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_01_-_Gift_Horse.mp3" length="6517573" type="audio/mpeg3"></enclosure>
+                <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3" length="5693182" type="audio/mpeg3"></enclosure>
+                <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3" length="9036928" type="audio/mpeg3"></enclosure>
+                <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3" length="6788057" type="audio/mpeg3"></enclosure>
+                <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3" length="8103861" type="audio/mpeg3"></enclosure>
+                <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3" length="4739579" type="audio/mpeg3"></enclosure>
+                <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3" length="7572432" type="audio/mpeg3"></enclosure>
+                <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3" length="6163253" type="audio/mpeg3"></enclosure>
+                <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3" length="7143846" type="audio/mpeg3"></enclosure>
+                <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3" length="8006232" type="audio/mpeg3"></enclosure>
             </item>
             <item>
                 <title>Multimedia</title>
                 <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia</link>
-                <description><![CDATA[Inicio del apartado multimedia: música, vídeos y galería de imágenes]]></description>
+                <description><![CDATA[Inicio del apartado multimedia: música, vídeos y galería de imágenes. Inclusión de un menú desplegable]]></description>
                 <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#multimedia</guid>
             </item>
             <item>
@@ -85,6 +95,13 @@
                 <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#asignaturas</link>
                 <description><![CDATA[Lista de asignaturas del curso, tanto en una lista desordenada como en una lista ordenada]]></description>
                 <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#asignaturas</guid>
+            </item>
+            <item>
+                <title>Mi primera imagen</title>
+                <link>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html</link>
+                <description><![CDATA[Primera imagen incluida: Logo del IES Avellaneda]]></description>
+                <guid>https://miguelramosdediego.github.io/pagina-web/pagina-web/index.html</guid>
+                <enclosure url="https://miguelramosdediego.github.io/pagina-web/pagina-web/imagenes/logo_avellaneda.png" length="30134" type="image/png"></enclosure>
             </item>
             <item>
                 <title>Inicio</title>

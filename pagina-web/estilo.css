@@ -243,7 +243,7 @@ div:hover img.iconobrackets {  /*Transición y animación*/
     transform-origin: -200% center;
     animation: rotate 1.5s linear;
 }
-li:not(.nomargenlista), div.esqueletotabla, img.cancha, h3, iframe.videoyt, video, audio, p:not(.introductorio), span.iconosvalidacion { /*Poner todos los párrafos con margen excepto el párrafo introductorio. Actualización: Debido al cambio que ha sufrido todo el "nav", ha sido necesario introducir la clase ".nomargenlista" para excluirlos del margen*/
+li:not(.nomargenlista), div.esqueletotabla, img.cancha, h3, iframe.videoyt, video, audio, p:not(.introductorio):not(.firmarealizada), span.iconosvalidacion { /*Poner todos los párrafos con margen excepto el párrafo introductorio. Actualización: Debido al cambio que ha sufrido todo el "nav", ha sido necesario introducir la clase ".nomargenlista" para excluirlos del margen*/
     margin: 0 1vw 0 2.6vw;
 }
 h1, h2, h3, h4, h5, h6, caption, legend, #listadesordenada, #listaordenada {
@@ -824,13 +824,14 @@ div.banderablanco {
 
 /*Inicio "footer"*/
 /*Inicio firma*/
-p.firmarealizada {
+footer p.firmarealizada { /*Error demasiado raro que, si se quita este margen que no afecta en nada, se estropea el definido posteriormente. Pendiente*/
     margin-left: 35%;
 }
-span.realizada {
-    margin-right: 25%;
+footer p.firmarealizada span.realizada {
+    margin-right: 16%;
+    margin-left: 35%;
 }
-span.firma {
+footer p.firmarealizada span.firma {
     font-family: 'Charmonman', cursive;
     font-weight: bold;
     color: #7c6250;

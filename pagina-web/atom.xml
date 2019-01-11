@@ -44,6 +44,7 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica.html"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Dee_Yan-Key_-_Ambient_Sonata/Dee_Yan-Key_-_01_-_Ambient_Sonata.mp3" length="81762250" type="audio/mpeg3"></link>
             <updated>2018-10-13T16:00:00Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -98,6 +99,7 @@
             <title>Vídeo oso</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/index.html#videos"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/video/perkele_bear.mp4" length="4547987" type="video/mpeg"></link>
             <updated>2018-10-08T08:00:02Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -114,6 +116,7 @@
             <title>Vídeo dominó YouTube</title>
             <id>http://www.youtube.com/embed/0PG8lw4PVRM</id>
             <link rel="alternate" type="text/html" href="http://www.youtube.com/embed/0PG8lw4PVRM"></link>
+            <link rel="enclosure" href="http://www.youtube.com/embed/0PG8lw4PVRM" length="4547987" type="video/mpeg"></link>
             <updated>2018-10-08T08:00:01Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -130,6 +133,7 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_10_-_Want.mp3" length="8006232" type="audio/mpeg3"></link>
             <updated>2018-10-03T09:00:10Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -146,6 +150,7 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_09_-_Three.mp3" length="7143846" type="audio/mpeg3"></link>
             <updated>2018-10-03T09:00:09Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -162,6 +167,7 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_08_-_Need.mp3" length="6163253" type="audio/mpeg3"></link>
             <updated>2018-10-03T09:00:08Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -178,6 +184,7 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_07_-_Oh_What_A_Funny_Joke.mp3" length="7572432" type="audio/mpeg3"></link>
             <updated>2018-10-03T09:00:07Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -194,6 +201,7 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_06_-_Elephant_Wings.mp3" length="4739579" type="audio/mpeg3"></link>
             <updated>2018-10-03T09:00:06Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -210,6 +218,7 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_05_-_Ophelia.mp3" length="8103861" type="audio/mpeg3"></link>
             <updated>2018-10-03T09:00:05Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -226,6 +235,7 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_04_-_Fish_to_Swim.mp3" length="6788057" type="audio/mpeg3"></link>
             <updated>2018-10-03T09:00:04Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -242,6 +252,7 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_03_-_Still.mp3" length="9036928" type="audio/mpeg3"></link>
             <updated>2018-10-03T09:00:03Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -258,6 +269,7 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_02_-_Proverb.mp3" length="5693182" type="audio/mpeg3"></link>
             <updated>2018-10-03T09:00:02Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>
@@ -274,6 +286,7 @@
             <title>Música</title>
             <id>http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_01_-_Gift_Horse.mp3</id>
             <link rel="alternate" type="text/html" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_01_-_Gift_Horse.mp3"></link>
+            <link rel="enclosure" href="http://miguelramosdediego.github.io/pagina-web/pagina-web/musica/Les_Hayden_-_Proverbs/Les_Hayden_-_01_-_Gift_Horse.mp3" length="6517573" type="audio/mpeg3"></link>
             <updated>2018-10-03T09:00:01Z</updated>
             <author>
                 <name>Ramos de Diego, Miguel</name>

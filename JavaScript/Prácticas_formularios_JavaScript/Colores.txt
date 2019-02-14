@@ -1,0 +1,4 @@
+Fondo: #D7ABCC
+Letra: #651845
+Fondo tabla: #FFC0CC
+Borde tabla: white

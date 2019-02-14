@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del apartado "date"-->
+            function fechayhora() {
+                var fecha=new Date();
+                document.write('Hoy es día '+fecha.getDate()+' del '+(fecha.getMonth()+1)+' de '+fecha.getFullYear()+', y son las '+fecha.getHours()+':'+fecha.getMinutes()+':'+fecha.getSeconds());
+            }
+            document.write('<h1>Fecha y hora actual</h1>');
+            document.write('<br>');
+            fechayhora();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 29-->
+            var veces=1;
+            var sumar=0;
+            document.write('<h1>Empresa con cinco empleados</h1>');
+            document.write('<br>');
+            while (veces<=5) {
+                var sueldo=prompt('Ingrese el sueldo de un empleado entre 100 y 500 €:', 'Sueldo');
+                sueldo=parseFloat(sueldo);
+                document.write('El empleado número '+veces+', con un sueldo de <b>'+sueldo+' €</b>: ');
+                if (sueldo>=100 && sueldo<=500) {
+                    if (sueldo<300) {
+                        document.write('Cobra menos de 300 €');
+                    }
+                    else {<!--(sueldo>=300)-->
+                        document.write('Cobra más de 300 €');
+                    }
+                }
+                if (sueldo<100 || sueldo>500) {
+                    document.write('Ningún empleado puede cobrar menos de 100 € o más de 500 €');
+                    sumar=-10000;
+                }
+                document.write('<br>'+'<br>');
+                sumar=sueldo+sumar;
+                veces=veces+1;
+            }
+            document.write('<br>'+'<hr>');
+            if (sumar>=500 && sumar<=2500) {
+                document.write('El total del salario de los empleados es de <b>'+sumar+' €</b>');
+            }
+            if (sumar<500 || sumar>2500) {
+                document.write('Error, algún empleado no cumple la cuantía adecuada');
+            }
+        </script>
+    </body>
+</html>

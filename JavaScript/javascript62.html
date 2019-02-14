@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del apartado "Math"-->
+            var numero=prompt('Ingrese un número entre 1 y 10:', 'Número');
+            var numeroaleatorio=parseInt(Math.random()*10+1);<!--Hay que multiplicar el número aleatorio por 10 y sumarle 1 para que sea entre 1 y 10, ambos incluidos-->
+            numero=parseInt(numero);
+            document.write('<h1>Número aleatorio</h1>');
+            document.write('<br>');
+            document.write('El número introducido es '+numero+' y, el aleatorio, '+numeroaleatorio+', por lo que: ');
+            if (numero==numeroaleatorio) {
+            document.write('Ha ganado');
+            }
+            else {
+                document.write('Ha perdido');
+            }
+        </script>
+    </body>
+</html>

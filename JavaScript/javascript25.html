@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 19-->
+            var numero1=prompt('Ingrese el primer número:', 'Primer número');
+            var numero2=prompt('Ingrese el segundo número:', 'Segundo número');
+            var numero3=prompt('Ingrese el tercer número:', 'Tercer número');
+            numero1=parseFloat(numero1);
+            numero2=parseFloat(numero2);
+            numero3=parseFloat(numero3);
+            document.write('<h1>Tres números menores que diez</h1>');
+            document.write('<br>');
+            document.write('Los números primero ('+numero1+'), segundo ('+numero2+') y tercero ('+numero3+'):');
+            document.write('<br>'+'<br>');
+            if (numero1<10 && numero2<10 && numero3<10) {
+                document.write('Todos son menores que 10');
+            }
+            if (numero1>=10 && numero2<10 && numero3<10) {
+                document.write('El primero es mayor que 10');
+            }
+            if (numero2>=10 && numero1<10 && numero3<10) {
+                document.write('El segundo es mayor que 10');
+            }
+            if (numero3>=10 && numero1<10 && numero2<10) {
+                document.write('El tercer es mayor que 10');
+            }
+            if (numero1>=10 && numero2>=10 && numero3<10) {
+                document.write('Tanto el primero como el segundo son mayores que 10');
+            }
+            if (numero1>=10 && numero3>=10 && numero2<10) {
+                document.write('Tanto el primero como el tercero son mayores que 10');
+            }
+            if (numero2>=10 && numero3>=10 && numero1<10) {
+                document.write('Tanto el segundo como el tercero son mayores que 10');
+            }
+            if (numero1>=10 && numero2>=10 && numero3>=10) {
+                document.write('Todos los números son mayores que 10');
+            };
+        </script>
+    </body>
+</html>

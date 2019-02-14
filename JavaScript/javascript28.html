@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del problema 21-->
+            var dia=prompt('Ingrese un día:', 'Día');
+            var mes=prompt('Ingrese un mes:', 'Mes');
+            var agno=prompt('Ingrese un año:', 'Año');
+            dia=parseFloat(dia);
+            mes=parseFloat(mes);
+            agno=parseFloat(agno);
+            document.write('<h1>Trimestres del año</h1>');
+            document.write('<br>');
+            document.write('La fecha '+dia+'/'+mes+'/'+agno+' está ubicada en:');
+            document.write('<br>'+'<br>');
+            if (mes==1 || mes==2 || mes==3) {
+                document.write('El primer trimestre del año');
+            }
+            if (mes==4 || mes==5 || mes==6) {
+                document.write('El segundo trimestre del año');
+            }
+            if (mes==7 || mes==8 || mes==9) {
+                document.write('El tercer trimestre del año');
+            }
+            if (mes==10 || mes==11 || mes==12) {
+                document.write('El cuarto trimestre del año');
+            }
+        </script>
+    </body>
+</html>

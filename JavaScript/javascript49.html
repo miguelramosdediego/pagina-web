@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 32-->
+            var sumar=0;
+            document.write('<h1>Acumulación de valores</h1>');
+            document.write('<br>');
+            do {
+                var numero=prompt('Ingrese un número (9999 para terminar):', 'Número');
+                numero=parseFloat(numero);
+                sumar=numero+sumar;
+            }
+            while (numero!=9999);
+            sumar=sumar-9999;
+            if (sumar==0) {
+                document.write('El valor acumulado ('+sumar+') es cero');
+            }
+            if (sumar>0) {
+                document.write('El valor acumulado ('+sumar+') es mayor que cero');
+            }
+            if (sumar<0) {
+                document.write('El valor acumulado ('+sumar+') es menor que cero');
+            }
+        </script>
+    </body>
+</html>

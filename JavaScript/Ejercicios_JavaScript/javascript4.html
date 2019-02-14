@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 4-->
+            var numero1=prompt('Ingrese el primer número:', 'Primer número');
+            var numero2=prompt('Ingrese el segundo número:', 'Segundo número');
+            numero1=parseFloat(numero1);
+            numero2=parseFloat(numero2);
+            document.write('<h1>Primer número mayor que el segundo</h1>');
+            var restar=numero1-numero2;
+            var dividir=numero2/numero1;
+            document.write('<br>');
+            document.write('Para el primer número '+numero1+' y el segundo '+numero2+':');
+            document.write('<br>'+'<br>');
+            if (numero1>numero2) {
+                document.write('El primero es mayor que el segundo, por lo que su diferencia es de '+restar);
+            }
+            if (numero2>numero1) {
+                document.write('El segundo es mayor que el primero, por lo que su división es de '+dividir);
+            }
+            if (numero1==numero2) {
+                document.write('Los números son iguales');
+            }
+        </script>
+    </body>
+</html>

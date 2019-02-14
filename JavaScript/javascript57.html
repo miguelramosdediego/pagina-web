@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema -->
+            function traduccionnumeros() {
+                if (numero==1) {
+                    document.write('Uno');
+                }
+                if (numero==2) {
+                    document.write('Dos');
+                }
+                if (numero==3) {
+                    document.write('Tres');
+                }
+                if (numero==4) {
+                    document.write('Cuatro');
+                }
+                if (numero==5) {
+                    document.write('Cinco');
+                }
+            }
+            var numero=prompt('Ingrese un número entre 1 y 5:', 'Número');
+            numero=parseInt(numero);
+            document.write('<h1>Transcripción de números</h1>');
+            document.write('<br>');
+            if (numero<1) {
+                document.write('El número introducido no se encuentra en el rango propuesto. Por favor, inténtelo nuevamente');
+            }
+            if (numero>=1 && numero<=5) {
+                traduccionnumeros();
+            }
+            if (numero>5) {
+                document.write('El número introducido no se encuentra en el rango propuesto. Por favor, inténtelo nuevamente');
+            }
+        </script>
+    </body>
+</html>

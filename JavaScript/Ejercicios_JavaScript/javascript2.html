@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 2-->
+            var veces=1;
+            var sumar=0;
+            var nombre=prompt('Ingrese el nombre del alumno:', 'Nombre');
+            document.write('<h1>Alumno y tres notas</h1>');
+            document.write('<br>');
+            while (veces<=3) {
+                var nota=prompt('Ingrese una nota del alumno:', 'Nota');
+                nota=parseFloat(nota);
+                sumar=nota+sumar;
+                veces=veces+1;
+            }
+            var media=sumar/(veces-1);
+            if (media>=7) {
+                document.write('El alumno <b>'+nombre+'</b> ha obtenido muy buenos resultados con una media de <b>'+media+'</b>');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del apartado "acumulador"-->
+            var veces=1;
+            var sumar=0;
+            document.write('<h1>Acumulador: cinco valores y su suma</h1>');
+            document.write('<br>');
+            while (veces<=5) {
+                var numero=prompt('Ingrese un número:', 'Número');
+                numero=parseFloat(numero);
+                sumar=sumar+numero;
+                veces=veces+1;
+            }
+            document.write(sumar);
+        </script>
+    </body>
+</html>

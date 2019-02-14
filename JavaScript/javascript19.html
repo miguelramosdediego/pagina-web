@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 14-->
+        var numero=prompt('Ingrese un número entero:', 'Número');
+        numero=parseFloat(numero);
+        document.write('<h1>Número positivo, cero o negativo</h1>');
+        document.write('<br>');
+        document.write('El número entero introducido ('+numero+') es:');
+        document.write('<br>'+'<br>');
+        if (numero==0) {
+            document.write('Cero');
+        }
+        else { <!--(numero!=0)-->
+            if (numero>0) {
+                document.write('Mayor que cero');
+            }
+            else { <!--(numero<0)-->
+                document.write('Menor que cero');
+            }
+        }
+        </script>
+    </body>
+</html>

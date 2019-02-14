@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 5-->
+            var veces=1;
+            var sumar=0;
+            var nombre=prompt('Ingrese el nombre de un alumno:', 'Alumno');
+            document.write('<h1>Notas medias de un alumno</h1>');
+            document.write('<br>');
+            while (veces<=3) {
+                var nota=prompt('Ingrese una nota:', 'Nota');
+                nota=parseFloat(nota);
+                sumar=nota+sumar;
+                veces=veces+1;
+            }
+            var media=sumar/(veces-1);
+            document.write('El alumno '+nombre+', con una media de '+media+', obtiene un:');
+            document.write('<br>'+'<br>');
+            if (media>=8) {
+                document.write('Muy bien');
+            }
+            if (media<8 && media>=5) {
+                document.write('Bien');
+            }
+            if (media<5) {
+                document.write('Necesita mejorar');
+            }
+        </script>
+    </body>
+</html>

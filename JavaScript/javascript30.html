@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 23-->
+            var nombre=prompt('Ingrese su nombre de usuario:');
+            document.write('<h1>Usuario y edad</h1>');
+            document.write('<br>');
+            if (nombre=='') {
+                alert('No has introducido ningún nombre');
+                document.write('No has introducido ningún nombre');
+            }
+            else { <!--(nombre!='')-->
+                alert('Bienvenido, '+nombre);
+                document.write('Bienvenido, '+nombre);
+            }
+            document.write('<br>'+'<br>');
+            edad=prompt('Ingrese su edad:');
+            if (edad=='') {
+                alert('No has introducido una edad válida');
+                document.write('No has introducido una edad válida');
+            }
+            if (edad!='') {
+                edad=parseFloat(edad);<!--Si se pone antes de la edad igual a nada y la edad distinta a nada, no se interpreta de la manera correcta-->
+                if (edad<0) {
+                    alert('Aún no existes');
+                    document.write('Aún no existes');
+                }
+                if (edad>=0 && edad<4) {
+                    alert('Eres un bebé');
+                    document.write('Eres un bebé');
+                }
+                if (edad>=4 && edad<10) {
+                    alert('Eres un niño');
+                    document.write('Eres un niño');
+                }
+                if (edad>=10 && edad<18) {
+                    alert('Eres un jovencito');
+                    document.write('Eres un jovencito');
+                }
+                if (edad>=18 && edad<90) {
+                    alert('Eres mayor de edad');
+                    document.write('Eres mayor de edad');
+                }
+                if (edad>=90 && edad<200) {
+                    alert('Tienes muchos años encima...');
+                    document.write('Tienes muchos años encima...');
+                }
+                if (edad>=200) {
+                    alert('¿Has descubierto la inmortalidad? Sorprendente...');
+                    document.write('¿Has descubierto la inmortalidad? Sorprendente...');
+                }
+            }
+        </script>
+    </body>
+</html>

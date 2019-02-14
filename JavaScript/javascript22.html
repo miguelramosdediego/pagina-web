@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del problema 16-->
+            var numero1=prompt('Ingrese el primer número:', 'Primer número');
+            var numero2=prompt('Ingrese el segundo número:', 'Segundo número');
+            var numero3=prompt('Ingrese el tercer número:', 'Tercer número');
+            numero1=parseFloat(numero1);
+            numero2=parseFloat(numero2);
+            numero3=parseFloat(numero3);
+            document.write('<h1>Mayor de tres</h1>');
+            document.write('<br>');
+            document.write('Para los números primero ('+numero1+'), segundo ('+numero2+') y tercero ('+numero3+'):');
+            document.write('<br>'+'<br>');
+            if (numero1>numero2 && numero1>numero3) {
+                document.write('El primero es el mayor');
+            }
+            if (numero2>numero1 && numero2>numero3) {
+                document.write('El segundo es el mayor');
+            }
+            if (numero3>numero1 && numero3>numero2) {
+                document.write('El tercero es el mayor');
+            }
+            if (numero1==numero2 && numero1>numero3) {
+                document.write('Tanto el primero como el segundo son mayores');
+            }
+            if (numero1==numero3 && numero1>numero2) {
+                document.write('Tanto el primero como el tercero son mayores');
+            }
+            if (numero2==numero3 && numero2>numero1) {
+                document.write('Tanto el segundo como el tercero son mayores');
+            }
+            if (numero1==numero2 && numero2==numero3) {
+                document.write('Has puesto el mismo número tres veces, ¡so melón!');
+            }
+        </script>
+    </body>
+</html>

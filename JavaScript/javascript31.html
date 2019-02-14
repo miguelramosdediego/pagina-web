@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del problema 23-->
+            var numero=prompt('Ingrese un número entero entre 1 y 5:');
+            document.write('<h1>Número entre 1 y 5</h1>');
+            document.write('<br>');
+            if (numero=='') {
+                document.write('No ha introducido ningún número');
+            }
+            if (numero!='') {
+                numero=parseFloat(numero);
+                if (numero<1) {
+                    document.write('El número introducido ('+numero+') no es válido, ya que es inferior a 1');
+                }
+                if (numero==1) {
+                    document.write('El número introducido es '+numero);
+                }
+                if (numero==2) {
+                    document.write('El número introducido es '+numero);
+                }
+                if (numero==3) {
+                    document.write('El numero introducido es '+numero);
+                }
+                if (numero==4) {
+                    document.write('El número introducido es '+numero);
+                }
+                if (numero==5) {
+                    document.write('El número introducido es '+numero);
+                }
+                if (numero>5) {
+                    document.write('El número introducido ('+numero+') no es válido, ya que es superior a 5');
+                }
+            }
+        </script>
+    </body>
+</html>

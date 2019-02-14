@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 30-->
+        var veces=1;
+        var sumar_primera=0;
+        var sumar_segunda=0;
+        document.write('<h1>Dos listas de 3 valores</h1>');
+        document.write('<br>');
+        while (veces<=3) {
+            var numero_primera=prompt('Ingrese un número de la primera lista:', 'Número');
+            numero_primera=parseFloat(numero_primera);
+            sumar_primera=numero_primera+sumar_primera;
+            veces=veces+1;
+        }
+        while (veces<=6) {
+            var numero_segunda=prompt('Ingrese un número de la segunda lista:', 'Número');
+            numero_segunda=parseFloat(numero_segunda);
+            sumar_segunda=numero_segunda+sumar_segunda;
+            veces=veces+1;
+        }
+        if (sumar_primera>sumar_segunda) {
+            document.write('La primera lista ('+sumar_primera+') es mayor que la segunda ('+sumar_segunda+')');
+        }
+        if (sumar_segunda>sumar_primera) {
+            document.write('La segunda lista ('+sumar_segunda+') es mayor que la primera ('+sumar_primera+')');
+        }
+        if (sumar_primera==sumar_segunda) {
+            document.write('La primera lista ('+sumar_primera+') es igual que la segunda ('+sumar_segunda+')');
+        }
+        </script>
+    </body>
+</html>

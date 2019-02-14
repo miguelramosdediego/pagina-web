@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 8-->
+            var nota1=prompt('Ingrese la primera nota: ', 'Nota 1');
+            var nota2=prompt('Ingrese la segunda nota: ', 'Nota 2');
+            var nota3=prompt('Ingrese la tercera nota: ', 'Nota 3');
+            var sumatorio=parseInt(nota1)+parseInt(nota2)+parseInt(nota3);
+            var media=parseInt(sumatorio)/parseInt(3);
+            document.write('<h1>Nota media de un alumno</h1>');
+            document.write('<br>');
+            document.write('Si el alumno ha obtenido en la primera evaluación una nota de '+nota1+', en la segunda, una de '+nota2+' y, en la tercera, una de '+nota3+', entonces el alumno ha sido:');
+            document.write('<br>'+'<br>');
+            if (media>=7) {
+                document.write('Promocionado, con una nota media de '+media);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 15-->
+            var numero=prompt('Ingrese un número entero positivo de hasta tres cifras:', 'Número');
+            numero=parseFloat(numero);
+            document.write('<h1>Número de una, dos o tres cifras</h1>');
+            document.write('<br>');
+            document.write('El número que ha introducido ('+numero+') tiene:');
+            document.write('<br>'+'<br>');
+            if (numero<0) {
+                document.write('¡Un número entero POSITIVO, he dicho!');
+            }
+            else { <!--(numero>=0)-->
+                if (numero<10) {
+                    document.write('Una cifra');
+                }
+                else { <!--(numero>=10)-->
+                    if (numero<100) {
+                        document.write('Dos cifras');
+                    }
+                    else { <!--(numero>=100)-->
+                        if (numero<1000) {
+                            document.write('Tres cifras');
+                        }
+                        else { <!--numero>=1000-->
+                            document.write('¡Un número de HASTA tres cifras, he dicho');
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

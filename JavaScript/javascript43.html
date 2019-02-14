@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 28-->
+            var veces=1;
+            var sumar=0;
+            document.write('<h1>Media de 5 alturas</h1>');
+            document.write('<br>');
+            while (veces<=5) {
+                var altura=prompt('Ingrese la altura de una persona en metros:', 'Altura');
+                altura=parseFloat(altura);
+                document.write('La altura número '+veces+' introducida es: <b>'+altura+' m</b>');
+                document.write('<br>'+'<br>');
+                sumar=altura+sumar;
+                veces=veces+1;
+            }
+            var media=sumar/(veces-1);
+            document.write('<br>'+'<hr>');
+            document.write('La altura promedio de las estaturas introducidas es: <b>'+media+' m</b>');
+        </script>
+    </body>
+</html>

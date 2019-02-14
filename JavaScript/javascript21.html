@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 16-->
+            var postulante=prompt('Ingrese el nombre del postulante:', 'Postulante');
+            var preguntas_realizadas=prompt('Ingrese el número de preguntas realizadas:', 'Preguntas realizadas');
+            var respuestas_correctas=prompt('Ingrese el número de respuestas correctas:', 'Respuestas correctas');
+            var previo_porcentaje=parseFloat(respuestas_correctas)/parseFloat(preguntas_realizadas);
+            var porcentaje=(previo_porcentaje)*parseFloat(100);
+            document.write('<h1>Postulante a un empleo</h1>');
+            document.write('<br>');
+            document.write('Al postulante '+postulante+' se le han realizado '+preguntas_realizadas+' preguntas y ha respondido correctamente a un total de '+respuestas_correctas+'. Por ello, con un porcentaje de acierto del '+porcentaje+' %, obtiene:');
+            document.write('<br>'+'<br>');
+            if (porcentaje<50) {
+                document.write('Fuera de nivel');
+            }
+            else { <!--(porcentaje>=50)-->
+                if (porcentaje<75) {
+                    document.write('Nivel regular');
+                }
+                else { <!--(porcentaje>=75)-->
+                    if (porcentaje<90) {
+                        document.write('Nivel medio');
+                    }
+                    else { <!--(porcentaje>=90)-->
+                        document.write('Nivel superior');
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

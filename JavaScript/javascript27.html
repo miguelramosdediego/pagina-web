@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 21-->
+        var sueldo=prompt('Ingrese el sueldo del trabajador:', 'Sueldo');
+        var antiguedad=prompt('Ingrese los años de antigüedad del trabajador:', 'Años de antigüedad');
+        sueldo=parseFloat(sueldo);
+        antiguedad=parseFloat(antiguedad);
+        var menos_antiguedad=((sueldo)*(0.05))+sueldo;
+        var mas_antiguedad=((sueldo)*(0.20))+sueldo;
+        document.write('<h1>Sueldo y antigüedad de un trabajador</h1>');
+        document.write('<br>');
+        document.write('Con un sueldo de '+sueldo+' € y una antigüedad de '+antiguedad+' año/s, el trabajador:');
+        document.write('<br>'+'<br>');
+        if (sueldo<500) {
+            if (sueldo<100) {
+                document.write('No es posible que el sueldo de un trabajador sea inferior a 100 €. Por favor, ingrese una cantidad válida');
+            }
+            if (sueldo>=100 && antiguedad<10) {
+                document.write('Tendrá un aumento del 5 % del salario y, por lo tanto, pasará a cobrar '+menos_antiguedad+' €');
+            }
+            if (sueldo>=100 && antiguedad>=10) {
+                document.write('Tendrá un aumento del 20 % del salario y, por lo tanto, pasará a cobrar '+mas_antiguedad+' €');
+            }
+        }
+        else { <!--(sueldo>=500)-->
+            document.write('Tendrá el mismo salario');
+        }
+        </script>
+    </body>
+</html>

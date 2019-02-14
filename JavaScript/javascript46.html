@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 31-->
+            var veces=1;
+            document.write('<h1>Números pares e impares</h1>');
+            document.write('<br>');
+            while (veces<=5) {
+                var numero=prompt('Ingrese un número:', 'Número');
+                numero=parseInt(numero);
+                document.write('El número <b>'+numero+'</b>, introducido en el lugar '+veces+': ');
+                var condicion_par=new RegExp(/[0,2,4,6,8]$/);
+                var condicion_impar=new RegExp(/[1,3,5,7,9]$/);
+                if (condicion_par.test(numero)) {
+                    document.write('Es <b>par</b>');
+                }
+                if (condicion_impar.test(numero)) {
+                    document.write('Es <b>impar</b>');
+                }
+                document.write('<br>'+'<br>');
+                veces=veces+1;
+            }
+        </script>
+    </body>
+</html>

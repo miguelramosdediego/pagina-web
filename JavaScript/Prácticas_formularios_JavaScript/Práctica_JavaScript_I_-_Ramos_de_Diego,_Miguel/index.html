@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        <meta charset="utf-8">
+        <script type="text/javascript" src="funciones.js"></script>
+        <title>Práctica fomulario con JavaScript I</title><!--Restricciones con «pattern»: https://www.w3schools.com/tags/att_input_pattern.asp. Mas información con «regex», «expresiones regulares»-->
+    </head>
+    <body>
+        <script type="text/javascript">fechayhora();</script>
+        <table>
+            <form>
+                <tr>
+                    <td>
+                        <label>Usuario:</label>
+                        <input type="text" name="usuario" pattern=".{8,}" title="Mínimo 8 caracteres alfanuméricos" required autofocus>
+                    </td>
+                    <td colspan="2">
+                        <label>Contraseña:</label>
+                        <input type="password" pattern="[a-zA-Z0-9-]{8,}" title="Mínimo 8 caracteres, solo letras y números permitidos. No se permiten los siguientes caracteres del castellano: «ñ», «á», «é», «í», «ó», «ú», «ü»" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label>Correo electrónico:</label>
+                        <input type="email" required><!--Los «input» de tipo «email» "por debajo" ya tienen un patrón en el que haya al menos un arroba (@) entre medias-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Nombre:</label>
+                        <input type="text" name="nombre" pattern="[a-zA-Z]+" title="Solo letras permitidas. No se permiten los siguientes caracteres del castellano: «ñ», «á», «é», «í», «ó», «ú», «ü»" required><!--No admitiría, por ejemplo, eñes, ni tampoco caracteres especiales-->
+                    </td>
+                    <td><script type="text/javascript">maxfecha();</script>
+                        <label>F.Nacimiento: <input type="date" required> dd/mm/yyyy</label>
+                    </td>
+                    <td>
+                        <label>DNI:</label> <input type="text" name="DNI" maxlength="9" pattern="[0-9]{8}([A-Z]|[a-z])" title="8 números y una letra, maýuscula o minúscula, distinta de «ñ»" required><!--Como la letra del DNI es calculada a partir de números, habría que restringirlo-->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label>Apellidos:</label>
+                        <input type="text" name="apellidos" pattern="[a-zA-Z]+" title="Solo letras permitidas. No se permiten los siguientes caracteres del castellano: «ñ», «á», «é», «í», «ó», «ú», «ü»" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label>Calle y número:</label>
+                        <input type="text" name="calle" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>¿Tienes hijos?:</label>
+                        <br>
+                        <input type="radio" name="hijos" target="sihijos" required><span class="radio-checkbox">Sí</span><!--Pendiente-->
+                        <br>
+                        <input type="radio" name="hijos" required checked><span class="radio-checkbox">No</span>
+                    </td>
+                    <td colspan="2">
+                        <div name="sihjos" class="despuessihijos">
+                            <input type="radio" name="cuantoshijos" required><span class="radio-checkbox">1</span>
+                            <br>
+                            <input type="radio" name="cuantoshijos" required><span class="radio-checkbox">2</span>
+                            <br>
+                            <input type="radio" name="cuantoshijos" required><span class="radio-checkbox">3 o más</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Código Postal: </label>
+                        <input type="text" name="codigopostal" maxlength="5" pattern="[0-9]{5}" title="5 números" required>
+                    </td>
+                    <td>
+                        <label>Ciudad: </label>
+                        <select id="ciudades" name="Ciudades" size="1">
+                            <option value="nadaciudad">Escoja una opción</option>
+                            <option value="Albacete">Albacete</option>
+                            <option value="Alicante">Alicante</option>
+                            <option value="Almería">Almería</option>
+                            <option value="Ávila">Ávila</option>
+                            <option value="Badajoz">Badajoz</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Bilbao">Bilbao</option>
+                            <option value="Burgos">Burgos</option>
+                            <option value="Cáceres">Cáceres</option>
+                            <option value="Cádiz">Cádiz</option>
+                            <option value="Castellón de la Plana">Castellón de la Plana</option>
+                            <option value="Ciudad Real">Ciudad Real</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Cuenca">Cuenca</option>
+                            <option value="Gerona">Gerona</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Guadalajara">Guadalajara</option>
+                            <option value="Huelva">Huelva</option>
+                            <option value="Huesca">Huesca</option>
+                            <option value="Jaén">Jaén</option>
+                            <option value="La Coruña">La Coruña</option>
+                            <option value="Las Palmas de Gran Canaria">Las Palmas de Gran Canaria</option>
+                            <option value="León">León</option>
+                            <option value="Lérida">Lérida</option>
+                            <option value="Logroño">Logroño</option>
+                            <option value="Lugo">Lugo</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Málaga">Málaga</option>
+                            <option value="Murcia">Murcia</option>
+                            <option value="Orense">Orense</option>
+                            <option value="Oviedo">Oviedo</option>
+                            <option value="Palma de Mallorca">Palma de Mallorca</option>
+                            <option value="Pamplona">Pamplona</option>
+                            <option value="Pontevedra">Pontevedra</option>
+                            <option value="Salamanca">Salamanca</option>
+                            <option value="Santa Cuz de Tenerife">Santa Cuz de Tenerife</option>
+                            <option value="San Sebastián">San Sebastián</option>
+                            <option value="Santander">Santander</option>
+                            <option value="Segovia">Segovia</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="Soria">Soria</option>
+                            <option value="Tarragona">Tarragona</option>
+                            <option value="Teruel">Teruel</option>
+                            <option value="Toledo">Toledo</option>
+                            <option value="Valencia">Valencia</option>
+                            <option value="Valladolid">Valladolid</option>
+                            <option value="Vitoria">Vitoria</option>
+                            <option value="Zamora">Zamora</option>
+                            <option value="Zaragoza">Zaragoza</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>Teléfono: </label>
+                        <input type="tel" maxlength="9" pattern="([6|7|9]){1}[0-9]{8}" title="9 números. Para móviles, ha de comenzar por el 6 o 7 y, para fijos por el 9" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Ocupación:</label>
+                        <select id="ocupacion" name="Ocupación" size="1">
+                            <option value="nadaocupacion">Escoja una opción</option>
+                            <option value="aaaa">Agentes comerciales</option>
+                            <option value="aaab">Asistentes domiciliarios</option>
+                            <option value="aaba">Ayudantes de servicios (hostelería)</option>
+                            <option value="aabb">Azafatos o auxiliares de información</option>
+                            <option value="abaa">Bármanes</option>
+                            <option value="abab">Cajeros de comercio</option>
+                            <option value="abba">Camareros de barra y/o dependientes de cafetería</option>
+                            <option value="abbb">Camareros de piso (hostelería)</option>
+                            <option value="baaa">Camareros de sala o jefes de rango</option>
+                            <option value="baab">Camareros y cocineros propietarios</option>
+                            <option value="baba">Camareros, en general</option>
+                            <option value="babb">Clasificadores-repartidores de correspondencia</option>
+                            <option value="bbaa">Cocineros en general </option>
+                            <option value="bbab">Conductores-operadores de carretilla elevadora, en general</option>
+                            <option value="bbba">Conserjes de hotel</option>
+                            <option value="bbbb">Cristaleros de edificios</option>
+                            <option value="bbbc">Cuidadores de personas con discapacidad y/o dependencia, en instituciones</option>
+                            <option value="bbcb">Delegados comerciales, en general</option>
+                            <option value="bbcc">Dependientes de artículos de deporte, caza y pesca</option>
+                            <option value="bcbb">Dependientes de artículos de regalo</option>
+                            <option value="bcbc">Dependientes de calzado y artículos de piel</option>
+                            <option value="bccb">Dependientes de comercio, en general</option>
+                            <option value="bccc">Dependientes de electrodomésticos</option>
+                            <option value="cbbb">Dependientes de grandes superficies</option>
+                            <option value="cbbc">Dependientes de juguetería</option>
+                            <option value="cbcb">Dependientes de muebles y artículos de decoración</option>
+                            <option value="cbcc">Dependientes de peletería</option>
+                            <option value="ccbb">Dependientes de perfumería y droguería</option>
+                            <option value="ccbc">Dependientes de ropa de hogar</option>
+                            <option value="cccb">Dependientes de tejidos y prendas de vestir</option>
+                            <option value="cccc">Digitalizadores de documentos</option>
+                            <option value="cccd">Embaladores-empaquetadores-etiquetadores, a mano</option>
+                            <option value="ccdc">Empleados administrativos comerciales, en general</option>
+                            <option value="ccdd">Empleados administrativos con tareas de atención al público no clasificados bajo otros epígrafes</option>
+                            <option value="cdcc">Empleados administrativos de contabilidad, en general</option>
+                            <option value="cdcd">Empleados administrativos de los servicios de almacenamiento y recepción</option>
+                            <option value="cddc">Empleados administrativos de servicios de personal</option>
+                            <option value="cddd">Empleados administrativos, en general</option>
+                            <option value="dccc">Empleados de gestión financiera de empresas</option>
+                            <option value="dccd">Empleados de servicio de personal</option>
+                            <option value="dcdc">Empleados de ventanilla de correos</option>
+                            <option value="dcdd">Encargados de economato y bodega (hostelería)</option>
+                            <option value="ddcc">Encargados de lencería y lavandería (hostelería)</option>
+                            <option value="ddcd">Encargados de tienda</option>
+                            <option value="dddc">Formadores de formación no reglada</option>
+                            <option value="dddd">Formadores de formación ocupacional no reglada</option>
+                            <option value="ddde">Formadores de formadores</option>
+                            <option value="dded">Galleteros</option>
+                            <option value="ddee">Gerentes de empresa de actividades turísticas, con menos de 10 asalariados</option>
+                            <option value="dedd">Gerentes de empresa de comercio al por mayor, con menos de 10 asalariados</option>
+                            <option value="dede">Gerentes de empresa de comercio al por menor con menos de 10 asalariados</option>
+                            <option value="deed">Gerentes de empresa de intermediación, en general, con menos de 10 asalariados</option>
+                            <option value="deee">Gerentes de empresa de servicios a otras empresas, en general, con menos de 10 asalariados</option>
+                            <option value="eddd">Gerentes de empresa de servicios personales de limpieza o similares, con menos de 10 asalariados</option>
+                            <option value="edde">Gerentes de empresa de transportes, almacenamiento,  comunicaciones y/o logística, con menos de 10 asalariados</option>
+                            <option value="eded">Gerentes de empresas educativa y/o sociocultural, con menos de 10 asalariados</option>
+                            <option value="edee">Gestores de solvencia y cobro</option>
+                            <option value="eedd">Gobernantes (hostelería)</option>
+                            <option value="eede">Jardineros, en general</option>
+                            <option value="eeed">Jefes de barra o cafetería</option>
+                            <option value="eeee">Jefes de cocina</option>
+                            <option value="eeef">Limpiadores de ventanas</option>
+                            <option value="eefe">Marmitones</option>
+                            <option value="eeff">Mecánicos de mantenimiento y reparación de automoción, en general</option>
+                            <option value="efee">Mecánicos-ajustadores de camiones y autobuses, en general</option>
+                            <option value="efef">Mecánicos-ajustadores de motocicletas y ciclomotores</option>
+                            <option value="effe">Mecánicos-ajustadores de motores diésel (vehículos)</option>
+                            <option value="efff">Mecánicos-ajustadores de motores en maquinaria pesada, agrícola y/o industrial autopropulsada</option>
+                            <option value="feee">Mecánicos-ajustadores de motores y equipos de inyección (diésel y gasolina)</option>
+                            <option value="feef">Mecánicos-ajustadores del automóvil, en general (turismos y furgonetas)</option>
+                            <option value="fefe">Mozos de carga y descarga, almacén y/o mercado de abastos</option>
+                            <option value="feff">Mozos de habitación o valets</option>
+                            <option value="ffee">Operadores de central telefónica</option>
+                            <option value="ffef">Operadores de máquinas para elaborar productos cárnicos, en general</option>
+                            <option value="fffe">Operadores-grabadores de datos en ordenador</option>
+                            <option value="ffff">Ordenanzas</option>
+                            <option value="fffg">Organizadores de puntos de venta en autoservicios</option>
+                            <option value="ffgf">Pasteleros</option>
+                            <option value="ffgg">Peones de la industria de la alimentación, bebidas y tabaco</option>
+                            <option value="fgff">Peones del transporte, en general</option>
+                            <option value="fgfg">Personal de limpieza o limpiadores en general</option>
+                            <option value="fggf">Pinches de cocina</option>
+                            <option value="fggg">Preparadores de catering</option>
+                            <option value="gfff">Recepcionistas de hotel</option>
+                            <option value="gffg">Recepcionistas en establecimientos distintos de oficinas, en general</option>
+                            <option value="gfgf">Recepcionistas-telefonistas en oficinas, en general</option>
+                            <option value="gfgg">Repartidores a domicilio, a pie</option>
+                            <option value="ggff">Reponedores de hipermercado</option>
+                            <option value="ggfg">Reposteros-pasteleros (hostelería)</option>
+                            <option value="gggf">Representantes de comercio, en general</option>
+                            <option value="gggg">Taquilleros</option>
+                            <option value="gggh">Técnico de operativa interna de entidad financiera</option>
+                            <option value="gghg">Técnicos de apoyo en auditoria y/u operaciones financieras</option>
+                            <option value="gghh">Técnicos superiores en contabilidad y/o finanzas, en general</option>
+                            <option value="ghgg">Técnicos superiores en organización y administración de empresas, en general</option>
+                            <option value="ghgh">Técnicos superiores en recursos humanos, en general</option>
+                            <option value="ghhg">Teleoperadores</option>
+                            <option value="ghhh">Trabajadores de conservación de parques urbanos, jardines históricos y botánicos</option>
+                            <option value="hggg">Trabajadores de huertas, invernaderos, viveros y jardines, en general</option>
+                            <option value="hggh">Trabajadores de la elaboración de caramelos y dulces</option>
+                            <option value="hghg">Trabajadores del cultivo de plantas para flor cortada</option>
+                            <option value="hghh">Trabajadores en centros de jardinería</option>
+                            <option value="hhgg">Vendedores no clasificados bajo otros epígrafes</option>
+                            <option value="hhgh">Vendedores por teléfono</option>
+                            <option value="hhhg">Vendedores técnicos, en general</option>
+                        </select>
+                    </td>
+                    <td colspan="2">
+                        <label>Estado civil:</label>
+                        <br>
+                        <input type="radio" name="estadocivil" checked><span class="radio-checkbox">Soltero</span>
+                        <br>
+                        <input type="radio" name="estadocivil"><span class="radio-checkbox">Casado</span>
+                        <br>
+                        <input type="radio" name="estadocivil"><span class="radio-checkbox">Pareja de hecho</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Hobbies:</label>
+                            <br>
+                            <input type="checkbox" name="confirmacion1"><span class="radio-checkbox">Deporte</span>
+                            <br>
+                            <input type="checkbox" name="confirmacion1"><span class="radio-checkbox">Cine</span>
+                            <br>
+                            <input type="checkbox" name="confirmacion1"><span class="radio-checkbox">Copas</span>
+                    </td>
+                    <td>
+                        <label>¿Tienes móvil?:</label>
+                        <br>
+                        <input type="radio" name="móvil"><span class="radio-checkbox">Sí</span><!--Pendiente-->
+                        <br>
+                        <input type="radio" name="móvil" checked><span class="radio-checkbox">No</span>
+                    </td>
+                    <td>
+                        <label>Marca:</label>
+                        <select id="marca" name="Marca" size="1">
+                            <option value="españa">Seleccione una opción</option>
+                            <option value="francia">Francia</option>
+                            <option value="potugal">Portugal</option>
+                            <option value="otro">Otro...</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Comentarios personales:</label>
+                    </td>
+                    <td  colspan="2">
+                        <textarea name="comentarios" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td  colspan="3">
+                        <button onclick="alert('¡Alerta, usted está saliendo de nuestro sitio web! ¿Está usted seguro de esto?');">Enviar datos</button>
+                        <button onclick="alert('¡Alerta, usted está saliendo de nuestro sitio web! ¿Está usted seguro de esto?');">Borrar los datos</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>

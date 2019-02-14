@@ -1,0 +1,85 @@
+body {
+    background-color: #D7ABCC;
+}
+table {
+    margin: auto;
+    border: 5px solid white;
+    border-collapse: collapse;
+    width: 41.9%;
+}
+td {
+    background-color: #FFC0CC;
+    border: 3px dotted white;
+    border-collapse: collapse;
+    padding: 8px;
+}
+label {
+    color: #820e88;
+}
+input[type=text], [type=password], [type=email], [type=tel], [type=url], [type=number], [list], select {
+	height: auto;
+    border: 1px solid #737373;
+}
+input[type=date], [type=datetime-local] {
+	width: 113px;
+    border: 1px solid #737373;
+}
+input:focus, textarea:focus {
+    border: 1px solid #7c6250;
+    box-shadow: 0 0 5px 1px #820e88;
+}
+textarea {
+    resize: vertical;
+    border: 1px solid #737373;
+    width: 403px;
+}
+div.despuessihijos {
+    visibility: hidden;
+}
+input[name=codigopostal] {
+    width: 40px;
+}
+input[name=DNI] {
+    width: 77px;
+}
+input[type=tel] {
+    width: 72px;
+}
+input[name=usuario] {
+    width: 131px;
+}
+input[type=password] {
+    width: 71px;
+}
+input[type=email] {
+    width: 311px;
+}
+input[name=nombre] {
+    width: 131px;
+}
+input[name=apellidos] {
+    width: 311px;
+}
+input[name=calle] {
+    width: 311px;
+}
+select[id=ocupacion] {
+    max-width: 130px;
+}
+/*textarea {
+    display: block;
+    position: static;
+    margin-left: 25%;
+    resize: vertical;
+    min-height: 100px;
+    width: 35.45%;
+    max-height: 200px;
+    text-indent: 25px;
+    border: 1px solid #e6e2d3;
+    padding: 5px 0;
+    background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-709-paragraph.png');
+    background-size: 10px;
+    background-position: 1% 5px;
+    background-repeat: no-repeat;*/
+
+    /*Diseño validaciones: https://webdesign.tutsplus.com/es/tutorials/html5-form-validation-with-the-pattern-attribute--cms-25145*/

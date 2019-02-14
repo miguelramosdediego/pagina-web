@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 27-->
+            var veces=1;
+            document.write('<h1>10 notas mayores o iguales a 7</h1>');
+            document.write('<br>');
+            while (veces<=10) {
+                var nota=prompt('Ingrese una nota sobre 10:', 'Nota');
+                nota=parseFloat(nota);
+                document.write('La nota número '+veces+', que ha obtenido un <b>'+nota+'</b>: ');
+                if (nota>=0 && nota<=10) {
+                    if (nota>=7) {
+                        document.write('Es mayor que 7');
+                    }
+                    else {<!--(nota<7)-->
+                        document.write('No es mayor que 7');
+                    }
+                }
+                if (nota<0 || nota>10) {
+                    document.write('La nota ha de estar comprendida entre 0 y 10');
+                }
+                document.write('<br>'+'<br>');
+                veces=veces+1;
+            }
+        </script>
+    </body>
+</html>

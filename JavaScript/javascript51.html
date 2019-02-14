@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 34-->
+            var veces=0;
+            var varones=0;
+            var mujeres=0;
+            var varones_edad=0;
+            document.write('<h1>Censo provincial</h1>');
+            document.write('<br>');
+            do {
+                var dni=prompt('Ingrese el DNI:', 'DNI');
+                var edad=prompt('Ingrese la edad:', 'Edad');
+                edad=parseFloat(edad);
+                var genero=prompt('Ingrese el género («masculino» o «femenino»):', 'Género');
+                veces=veces+1;
+                document.write('Para la persona número '+veces+':');
+                document.write('<br>'+'<br>');
+                document.write('DNI: '+dni);
+                document.write('<br>');
+                document.write('Edad: '+edad);
+                document.write('<br>');
+                if (genero=='masculino' || genero=='femenino') {
+                    document.write('Género: '+genero);
+                    if (genero=='femenino') {
+                        mujeres=mujeres+1;
+                    }
+                    if (genero=='masculino') {
+                        varones=varones+1;
+                        if (edad>=16 && edad<=65) {
+                            varones_edad=varones_edad+1;
+                        }
+                    }
+                }
+                if (genero!='masculino' && genero!='femenino') {
+                    document.write('Error al introducir el género');
+                }
+                document.write('<br>'+'<br>'+'<hr>'+'<br>'+'<br>');
+            }
+            while (dni!=0);
+            document.write('El número total de personas censadas es de: '+veces);
+            document.write('<br>'+'<br>');
+            document.write('El número total de varones censados es de: '+varones);
+            document.write('<br>'+'<br>');
+            document.write('El número total de mujeres censadas es de: '+mujeres);
+            document.write('<br>'+'<br>');
+            document.write('El número total de varones de entre 16 y 65 años es de: '+varones_edad);
+        </script>
+    </body>
+</html>

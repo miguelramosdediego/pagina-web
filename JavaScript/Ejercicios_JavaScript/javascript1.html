@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 1-->
+            var veces=1;
+            var sumar=0;
+            var multiplicar=1;
+            document.write('<h1>Cuatro números y operaciones</h1>');
+            document.write('<br>');
+            while (veces<=4) {
+                var numero=prompt('Ingrese un número:', 'Número');
+                numero=parseFloat(numero);
+                sumar=numero+sumar;
+                multiplicar=numero*multiplicar;
+                veces=veces+1;
+            }
+            document.write('La suma total es <b>'+sumar+'</b>');
+            document.write('<br>'+'<br>');
+            document.write('El producto total es <b>'+multiplicar+'</b>');
+        </script>
+    </body>
+</html>

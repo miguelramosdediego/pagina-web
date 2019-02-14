@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 24-->
+            var palabra=prompt('Ingrese una palabra que sea «­casa», «mesa, «perro» o «gato»:', 'Palabra');
+            document.write('<h1>Traducción de palabras al inglés</h1>');
+            document.write('<br>');
+            if (palabra=='') {
+                document.write('No ha introducido ninguna palabra');
+            }
+            if (palabra!='') {
+                if (palabra=='casa' || palabra=='casA' || palabra=='caSa' || palabra=='caSA' || palabra=='cAsa' || palabra=='cAsA' || palabra=='cASa' || palabra=='cASA' || palabra=='Casa' || palabra=='CasA' || palabra=='CaSa' || palabra=='CaSA' || palabra=='CAsa' || palabra=='CAsA' || palabra=='CASa' || palabra=='CASA') {
+                    document.write('House');
+                }
+                if (palabra=='mesa' || palabra=='mesA' || palabra=='meSa' || palabra=='meSA' || palabra=='mEsa' || palabra=='mEsA' || palabra=='mESa' || palabra=='mESA' || palabra=='Mesa' || palabra=='MesA' || palabra=='MeSa' || palabra=='MeSA' || palabra=='MOsa' || palabra=='MEsA' || palabra=='MESa' || palabra=='MESA') {
+                    document.write('Table');
+                }
+                if (palabra=='perro' || palabra=='perrO' || palabra=='perRo' || palabra=='perRO' || palabra=='peRro' || palabra=='peRrO' || palabra=='peRRo' || palabra=='peRRO' || palabra=='pErro' || palabra=='pErrO' || palabra=='pErRo' || palabra=='pErRO' || palabra=='pERro' || palabra=='pERrO' || palabra=='pERRo' || palabra=='pERRO' || palabra=='Perro' || palabra=='PerrO' || palabra=='PerRo' || palabra=='PerRO' || palabra=='PeRro' || palabra=='PeRrO' || palabra=='PeRRo' || palabra=='PeRRO' || palabra=='PErro' || palabra=='PErrO' || palabra=='PErRo' || palabra=='PErRO' || palabra=='PERro' || palabra=='PERrO' || palabra=='PERRo' || palabra=='PERRO') {
+                    document.write('Dog');
+                }
+                if (palabra=='gato' || palabra=='gatO' || palabra=='gaTo' || palabra=='gaTO' || palabra=='gAto' || palabra=='gAtO' || palabra=='gATo' || palabra=='gATO' || palabra=='Gato' || palabra=='GatO' || palabra=='GaTo' || palabra=='GaTO' || palabra=='GAto' || palabra=='GAtO' || palabra=='GATo' || palabra=='GATO') {
+                    document.write('Cat');
+                }
+                if (palabra!='casa' && palabra!='casA' && palabra!='caSa' && palabra!='caSA' && palabra!='cAsa' && palabra!='cAsA' && palabra!='cASa' && palabra!='cASA' && palabra!='Casa' && palabra!='CasA' && palabra!='CaSa' && palabra!='CaSA' && palabra!='CAsa' && palabra!='CAsA' && palabra!='CASa' && palabra!='CASA' && palabra!='mesa' && palabra!='mesA' && palabra!='meSa' && palabra!='meSA' && palabra!='mEsa' && palabra!='mEsA' && palabra!='mESa' && palabra!='mESA' && palabra!='Mesa' && palabra!='MesA' && palabra!='MeSa' && palabra!='MeSA' && palabra!='MOsa' && palabra!='MEsA' && palabra!='MESa' && palabra!='MESA' && palabra!='perro' && palabra!='perrO' && palabra!='perRo' && palabra!='perRO' && palabra!='peRro' && palabra!='peRrO' && palabra!='peRRo' && palabra!='peRRO' && palabra!='pErro' && palabra!='pErrO' && palabra!='pErRo' && palabra!='pErRO' && palabra!='pERro' && palabra!='pERrO' && palabra!='pERRo' && palabra!='pERRO' && palabra!='Perro' && palabra!='PerrO' && palabra!='PerRo' && palabra!='PerRO' && palabra!='PeRro' && palabra!='PeRrO' && palabra!='PeRRo' && palabra!='PeRRO' && palabra!='PErro' && palabra!='PErrO' && palabra!='PErRo' && palabra!='PErRO' && palabra!='PERro' && palabra!='PERrO' && palabra!='PERRo' && palabra!='PERRO' && palabra!='gato' && palabra!='gatO' && palabra!='gaTo' && palabra!='gaTO' && palabra!='gAto' && palabra!='gAtO' && palabra!='gATo' && palabra!='gATO' && palabra!='Gato' && palabra!='GatO' && palabra!='GaTo' && palabra!='GaTO' && palabra!='GAto' && palabra!='GAtO' && palabra!='GATo' && palabra!='GATO') {
+                    document.write('La palabara que ha introducido es distinta a las propuestas. Por favor, inténtelo nuevamente');
+                }
+            }
+        </script>
+    </body>
+</html>

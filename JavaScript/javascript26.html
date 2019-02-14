@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 20-->
+            var coordenadax=prompt('Ingrese un punto en el eje X:', 'Eje X');
+            var coordenaday=prompt('Ingrese un punto en el eje Y:', 'Eje Y');
+            coordanadax=parseFloat(coordenadax);
+            coordenaday=parseFloat(coordenaday);
+            document.write('<h1>Ubicación de las coordenadas en un plano</h1>');
+            document.write('<br>');
+            document.write('El punto ('+coordanadax+','+coordenaday+') está situado:');
+            document.write('<br>'+'<br>');
+            if (coordenadax>0 && coordenaday>0) {
+                document.write('En el primer cuadrante');
+            }
+            if (coordenadax<0 && coordenaday>0) {
+                document.write('En el segundo cuadrante');
+            }
+            if (coordenadax<0 && coordenaday<0) {
+                document.write('En el tercer cuadrante');
+            }
+            if (coordanadax>0 && coordenaday<0) {
+                document.write('En el cuarto cuadrante');
+            }
+            if (coordenadax==0 && coordenaday==0) {
+                document.write('En el punto de origen');
+            }
+            if (coordenadax==0 && coordenaday>0) {
+                document.write('Entre el primer cuadrante y el segundo');
+            }
+            if (coordenadax<0 && coordenaday==0) {
+                document.write('Entre el segundo cuadrante y el tercero');
+            }
+            if (coordenadax==0 && coordenaday<0) {
+                document.write('Entre el tercer cuadrante y el cuarto');
+            }
+            if (coordenadax>0 && coordenaday==0) {
+                document.write('Entre el primer cuadrante y el cuarto');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 33-->
+            var sumar=0;
+            document.write('<h1>Datos bancarios</h1>');
+            document.write('<br>');
+            do {
+                var cuenta=prompt('Ingrese el número de cuenta:', 'Número de cuenta');
+                cuenta=parseFloat(cuenta);
+                var nombre=prompt('Ingrese el nombre del cliente:', 'Nombre del cliente');
+                var saldo=prompt('Ingrese el saldo del cliente:', 'Saldo');
+                saldo=parseFloat(saldo);
+                document.write('El número de cuenta es '+cuenta);
+                document.write('<br>'+'<br>');
+                document.write('El nombre del cliente es '+nombre);
+                document.write('<br>'+'<br>');
+                document.write('El saldo es '+saldo);
+                document.write('<br>'+'<br>');
+                if (saldo>0) {
+                    document.write('Acreedor');
+                    sumar=sumar+saldo;
+                }
+                if (saldo<0) {
+                    document.write('Deudor');
+                }
+                if (saldo==0) {
+                    document.write('Nulo');
+                }
+                document.write('<br>'+'<br>'+'<hr>'+'<br>');
+            }
+            while (cuenta>=0);
+            document.write('Total de todos los acreedores: '+sumar);
+        </script>
+    </body>
+</html>

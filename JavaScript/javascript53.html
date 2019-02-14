@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 35-->
+            var veces=1;
+            var primer_cuadrante=0;
+            var segundo_cuadrante=0;
+            var tercer_cuadrante=0;
+            var cuarto_cuadrante=0;
+            var origen=0;
+            var primer_segundo=0;
+            var segundo_tercero=0;
+            var tercer_cuarto=0;
+            var primer_cuarto=0;
+            var puntos_maximos=prompt('Ingrese el número de puntos que desea introducir:', 'Número de puntos');
+            puntos=parseFloat(puntos);
+            var puntos;
+            document.write('<h1>Coordenadas en un plano</h1>');
+            document.write('<br>');
+            for (puntos=1; puntos<=puntos_maximos; puntos=puntos+1) {
+                var coordenadax=prompt('Ingrese la coordeneda X:', 'Coordenada X');
+                coordenadax=parseFloat(coordenadax);
+                var coordenaday=prompt('Ingrese la coordenada Y:', 'Coordenada Y');
+                coordenaday=parseFloat(coordenaday);
+                document.write('El punto número '+veces+' ('+coordenadax+','+coordenaday+') ');
+                if (coordenadax>0 && coordenaday>0) {
+                    document.write('pertenece al primer cuadrante');
+                    primer_cuadrante=primer_cuadrante+1;
+                }
+                if (coordenadax<0 && coordenaday>0) {
+                    document.write('pertenece al segundo cuadrante');
+                    segundo_cuadrante=segundo_cuadrante+1;
+                }
+                if (coordenadax<0 && coordenaday<0) {
+                    document.write('pertenece al tercer cuadrante');
+                    tercer_cuadrante=tercer_cuadrante+1;
+                }
+                if (coordenadax>0 && coordenaday<0) {
+                    document.write('pertenece al cuarto cuadrante');
+                    cuarto_cuadrante=cuarto_cuadrante+1;
+                }
+                if (coordenadax==0 && coordenaday==0) {
+                    document.write('está situado en el punto de origen');
+                    origen=origen+1;
+                }
+                if (coordenadax==0 && coordenaday>0) {
+                    document.write('está a caballo entre el primer y segundo cuadrante');
+                    primer_segundo=primer_segundo+1;
+                }
+                if (coordenadax<0 && coordenaday==0) {
+                    document.write('está a caballo entre el segundo y tercer cuadrante');
+                    segundo_tercer=segundo_tercer+1;
+                }
+                if (coordenadax==0 && coordenaday<0) {
+                    document.write('está a caballo entre el tercer y cuarto cuadrante');
+                    tercer_cuarto=tercer_cuarto+1;
+                }
+                if (coordenadax>0 && coordenaday==0) {
+                    document.write('está a caballo entre el primer y cuarto cuadrante');
+                    primer_cuarto=primer_cuarto+1;
+                }
+                document.write('<br>'+'<br>');
+                veces=veces+1;
+            }
+            document.write('<br>'+'<br>'+'<hr>'+'<br>'+'<br>');
+            document.write('En el primer cuadrante se ha(n) ingresado un total de '+primer_cuadrante+' punto(s)');
+            document.write('<br>'+'<br>');
+            document.write('En el segundo cuadrante se ha(n) ingresado un total de '+segundo_cuadrante+' punto(s)');
+            document.write('<br>'+'<br>');
+            document.write('En el tercer cuadrante se ha(n) ingresado un total de '+tercer_cuadrante+' punto(s)');
+            document.write('<br>'+'<br>');
+            document.write('En el cuarto cuadrante se ha(n) ingresado un total de '+cuarto_cuadrante+' punto(s)');
+            document.write('<br>'+'<br>');
+            document.write('En el punto de origen se ha(n) ingresado un total de '+origen+' punto(s)');
+            document.write('<br>'+'<br>');
+            document.write('Entre el primer y segundo cuadrante se ha(n) ingresado un total de '+primer_segundo+' punto(s)');
+            document.write('<br>'+'<br>');
+            document.write('Entre el segundo y tercer cuadrante se ha(n) ingresado un total de '+segundo_tercero+' punto(s)');
+            document.write('<br>'+'<br>');
+            document.write('Entre el tercer y cuarto cuadrante se ha(n) ingresado un total de '+tercer_cuarto+' punto(s)');
+            document.write('<br>'+'<br>');
+            document.write('Entre el primer y cuarto cuadrante se ha(n) ingresado un total de '+primer_cuarto+' punto(s)');
+        </script>
+    </body>
+</html>

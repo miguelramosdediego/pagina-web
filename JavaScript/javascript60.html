@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del apartado "Array", ejemplo 1-->
+            var sumar=0;
+            var veces;
+            document.write('<h1>Sueldo de 5 operarios</h1>');
+            document.write('<br>');
+            for (veces=1; veces<=5; veces=veces+1) {
+                var sueldo=prompt('Ingrese el sueldo de un operario:', 'Sueldo');
+                sueldo=parseFloat(sueldo);
+                document.write('El operario número '+veces+' tiene un salario de '+sueldo+' €');
+                document.write('<br>'+'<br>');
+                sumar=sueldo+sumar;
+            }
+            document.write('<hr>'+'<br>'+'<br>');
+            document.write('El total de los salarios es de '+sumar+' €');
+        </script>
+    </body>
+</html>

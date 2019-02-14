@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 7-->
+            var color=prompt('Ingrese un color:', 'Color');
+            document.write('<h1>Colores</h1>');
+            document.write('<br>');
+            if (color=='amarillo' || color=='naranja' || color=='rojo') {
+                document.write('Color cálido detectado');
+            }
+            if (color=='azul' || color=='verde' || color=='gris') {
+                document.write('Color frío detectado');
+            }
+            if (color!='amarillo' && color!='naranja' && color!='rojo' && color!='azul' && color!='verde' && color!='gris') {
+                document.write('Inténtelo con otro color');
+            }
+        </script>
+    </body>
+</html>

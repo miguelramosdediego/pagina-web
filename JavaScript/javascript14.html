@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 10-->
+            var numero1=prompt('Ingrese el primer número:', 'Primer número');
+            var numero2=prompt('Ingrese el segundo número:', 'Segundo número');
+            var sumar=parseInt(numero1)+parseInt(numero2);
+            var restar=parseInt(numero1)-parseInt(numero2);
+            var multiplicar=parseInt(numero1)*parseInt(numero2);
+            var dividir=parseInt(numero1)/parseInt(numero2);
+            document.write('<h1>Número mayor con suma y diferencia</h1>');
+            document.write('<br>');
+            if (numero1>numero2) {
+                document.write('Sabiendo que el primer número ('+numero1+') es mayor que el segundo ('+numero2+'), entonces su suma será '+sumar+' y, su diferencia, '+restar);
+            }
+            else {
+                document.write('Sabiendo que el segundo número ('+numero2+') es mayor que el primero ('+numero1+'), entonces su producto será '+multiplicar+' y, su división, '+dividir);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var precio=prompt('Ingrese el precio que oferta (ha de ser un número entero, sin decimales):', 'Precio');
+            var cantidad=prompt('Ingrese la cantidad deseada:', 'Cantidad');
+            var total=parseInt(precio)*parseInt(cantidad);
+            document.write('<h1>Precio de un artículo y cantidad</h1>');
+            document.write('<br>');
+            document.write('Con un precio ofertado de '+precio+' € y una cantidad deseada de '+cantidad+' unidades, el total será de '+total+' €');
+        </script>
+    </body>
+</html>
+
+<!--En el ejercicio se pide que solo pueda ingresarse un número entero, pero en la resolución del mismo no existe tal restricción-->

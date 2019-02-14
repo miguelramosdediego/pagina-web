@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del apartado "String"-->
+            var palabra=prompt('Ingrese una palabra:', 'Palabra');
+            document.write('<h1>Métodos de clase String</h1>');
+            document.write('<br>');
+            document.write('Para la palabra '+palabra+':');
+            document.write('<br>'+'<br>');
+            document.write('La palabra tiene: '+palabra.length+' caracteres');
+            document.write('<br>'+'<br>');
+            document.write('La primera letra es la: '+palabra.charAt(0));
+            document.write('<br>'+'<br>');
+            document.write('La tercera y quinta letra son: '+palabra.substring(2,4));
+            document.write('<br>'+'<br>');
+            document.write('La palabra en mayúsculas es: '+palabra.toUpperCase());
+            document.write('<br>'+'<br>');
+            document.write('La palabra en minúsculas es: '+palabra.toLowerCase());
+        </script>
+    </body>
+</html>

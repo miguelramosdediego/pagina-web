@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 22-->
+            var numero1=prompt('Ingrese el primer número:', 'Primer número');
+            var numero2=prompt('Ingrese el segundo número:', 'Segundo número');
+            var numero3=prompt('Ingrese el tercer número:', 'Tercer número')
+            numero1=parseFloat(numero1);
+            numero2=parseFloat(numero2);
+            numero3=parseFloat(numero3);
+            document.write('<h1>Menores que diez</h1>');
+            document.write('<br>');
+            document.write('Con los números primero ('+numero1+'), segundo ('+numero2+') y tercero ('+numero3+'):');
+            document.write('<br>'+'<br>');
+            if (numero1<10 || numero2<10 || numero3<10) {
+                document.write('Alguno de los números es menor que 10');
+            }
+            if (numero1>=10 && numero2>=10 && numero3>=10) {
+                document.write('Ningún número es menor que 10');
+            }
+        </script>
+    </body>
+</html>

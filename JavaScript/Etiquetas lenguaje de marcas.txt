@@ -1,0 +1,716 @@
+Comienzo <p> Párrafo (solo texto, no imágenes, botones...) </p> Final.
+<i> Cursiva/Itálica </i>
+<b> Negrita </b>
+<br> Salto de línea (sin cierre).
+
+Poner etiqueta de apertura seguido de etiqueta de cierre, para que no se olvide. Las etiquetas han de estar pegadas al texto, pero si la etiqueta viene justo después del texto, dejar un espacio. Las etiquetas pueden estar en mayúsculas o en minúsculas, pero usar minúsculas.
+
+Página web para aprender: https://www.w3schools.com/
+
+Página web:
+
+<!DOCTYPE html> HTML 5
+
+<!Doctype> Solo de apertura. Es la versión de HTML en la que está escrito nuestro archivo. Ejemplo: HTML 4.01 Strict <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title> Nombre de pestaña </title>
+</head>
+<body>
+<!-- Comentario -->
+<h1> Encabezado de nivel 1 (hasta el 6). Los del mismo nivel pueden repetirse, por ejemplo dos h2 </h1>
+<p> Párrafo en el que
+las líneas salen pegadas aunque dejemos
+espacios o saltos de líneas <br> Esto es un salto de línea </p>
+</body>
+</html>
+
+
+Ampliación <!Doctype>:
+
+<!DOCTYPE html> HTML 5
+
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+
+<a> Enlazar web </a> Ejemplo: <a HREF="web.org"> HREF="..." -> Modificador para enlazar web. El texto aquí mostrado es el que contiene el enlace, es la parte visible. Esta reemplazará a la página actual que se está viendo </a>
+
+<font> Fuente </font>
+
+<font color="red" size="7" face="arial"> Modificadores: color="red" size="7" face="arial". EL texto aquí mostrado adquirirá el color rojo, tamaño 7 y fuente Arial, en este caso </font>
+
+__________________________
+
+
+Práctica 1:
+
+Realizar una página web en conjunto: Poner nombres de la pareja.
+
+Títulos: Nombres.
+
+<h1>Lenguaje de marcas</h1>
+
+<p>Página web... IES Alonso de Avellaneda (enlazado)</p>
+
+Para poner tildes si no se puede: &(vocal que se quiere acentuar)acute o <meta charset="utf-8"> Para solventar el tener que poner &(vocal)acute todo el rato. Va después de <head>. Es para los navegadores.
+
+Es aconsejable tabular al incluir una nueva etiqueta para que se vea todo más ordenado.
+
+
+
+
+
+
+
+Más elementos para crear una página web:
+
+<img src="NombreImagen.jpg" (si está en la misma carpeta) alt="Texto descritivo de la imagen, para personas invidentes" width="ancho (número [píxeles] o porcentaje)" height="altura (número [píxeles] o procentaje)">Insertar una imagen, solo de apertura. No hacer uso de imágenes con derechos de autor. En Google, en las herramientas, se pueden usar sin derechos de autor: Herramientas -> Derechos de uso.
+
+<button>Haz clic aquí</button>
+
+<ul>Lista desordenada 
+<li>Elemento lista</li>
+<li>Otro elemento lista</li></ul>
+
+<ol>Lista ordenada 
+<li>1. Elemento lista</li>
+<li>2. Elemento lista</li></ol>
+
+<pre>El navegador respeta los espacios que pongas y los saltos de línea, cosa que no ocurre con la de párrafo</pre>
+
+
+Tarea: Hacer ejercicios párrafos de https://www.w3schools.com/
+
+<p style="color:red">Párrafo de otro color</p>
+
+<html lang="es">Idioma en el que está nuestro texto.
+
+
+__________________________
+
+
+Las etiquetas han de anidarse correctamente:
+<e1><e2><e3> ... </e3></e2></e1> -> Bien (XHTML). Acostumbrarse a anidarlas así.
+<e1><e2><e3> ... </e2></e3></e1> -> Mal (XHTML).
+
+Las meta etiquetas orientadas a definir codificación, palabras clave, etc., van incluidas en <head>: <meta name="author" content="Isabel">
+
+<style> Llamadas a hojas de estilo CSS (lo veremos más adelante) </style>
+
+<script> Funciones o vínculos a archivos de script (lo veremos más adelante) </script>
+
+
+HTML: <br>
+XHTML: <br> </br> o <br /> = Apertura + Cierre. Es más estricto.
+
+
+Añadir a nuestra prática:
+
+Información para que los buscadores sean más precisos (van dentro de <head>):
+<meta name="description" content="Tutorial de HTML"> Descripción de mi página.
+<meta name="keywords" content="HTML,CSS,XML,JavaScript"> Palabras clave de mi página.
+<meta name="author" content="Isabel"> Autor del mismo.
+
+<del> Texto tachado </del>
+<sub> Subíndice </sub>
+<sup> Superíndice (añadir solo esta de las cuatro) </sup>
+<span> Permite aplicar estilos a determinadas partes de la página </span>
+
+<blockquote> Es para citas largas (una línea). El párrafo citado tendrá un salto de línea antes y después del texto. Se muestra desplazada hacia la derecha, como si tuviera una sangría. </blockquote>
+<q> Es para citas cortas (un párrafo). No cumple con las características de <blockquote>, pero muestra el texto entre comillas (") </q>
+
+
+__________________________
+
+
+<hr> Crea una línea horizontal para separar elementos. Solo de apertura. En XHTML: <hr />
+
+Atributos para listas ordenadas:
+<ol type="1"> Elementos ordenados numéricamente. Redundante, viene por defecto </ol>
+<ol type="A"> Elementos ordenados alfabéticamente con letras mayúsculas </ol>
+<ol type="a"> Elementos ordenados alfabéticamente con letras minúsculas </ol>
+<ol type="I"> Elementos ordenados alfabéticamente con números romanos </ol>
+
+Añadir en práctica sublista ordenada con atributo (de tipo albafético en minúsculas): HTML, CSS, XML.
+
+Atributos para listas desordenadas:
+<ul type="disc"> Elementos introducidos por un punto </ol>
+<ul type="circle"> Elementos introducidos por un círculo </ol>
+<ul type="square"> Elementos introducidos por un cuadrado </ol>
+<ul type="none"> Elementos no introducidos por ningún símbolo, en blanco </ol>
+
+Añadir en práctica elemento en lista desordenada con atributo.
+
+Los atributos de las listas pueden ponerse tanto para toda la lista, como para cualquier elemento de la misma (<li> </li>).
+
+Se puede crear una lista dentro de otra (anidar), para esto: 
+<ul>
+  <li> Primer elemento </li>
+  <li> Segundo elemento </li>
+    <ul>
+      <li> Primer elemento de sublista </li>
+      <li> Segundo elemento de sublista </li>
+    </ul>
+  <li> Tercer elemento de lista </li>
+</ul>
+
+
+Se puede crear un diccionario con etiquetas propias.
+
+Atributos para enlazar páginas y dónde queremos que se abran. Estos modificadores pueden ir delante o detrás del atributo href:
+<a href="http://www.web.com" target="_blank"> Se abre en una nueva pestaña, manteniéndose la actual pestaña </a>
+<a href="http://www.web.com" target="_self"> Se abre en la misma pestaña, reemplazándose la actual por la nueva. Este es redundante, ya que es así su comportamiento por defecto </a>
+
+Enlaces a páginas web:
+<a href="http://www.otrapagina.com"> Enlace a otra página web distinta </a>
+<a href="pagina.htm"> Enlaces a la misma carpeta (de tu misma página web) </a>
+<a href="subcarpeta/pagina.htm"> Enlace a página en una subcarpeta </a>
+<a href="../pagina.htm"> Enlace a página en carpeta de nivel superior </a>
+
+Añadir en práctica:
+Crear un índice: Lista de asignaturas y horario.
+<h2 id="Nombre identificativo"> Atributo de "marca", para enlazar cosas dentro de la misma página web. Todo le de dentro de esta etiqueta, quedará enlazado con el índice (al menos en esta práctica) </h2>
+Después, enlazar en el índice el elemento dentro de la etiqueta <h2 id="Nombre identificativo"> </h2> de la siguiente manera: <a href="#Nombre identificativo"> Sección en el índice enlazada </a>
+
+__________________________
+
+
+Añadir en práctica: Horario de clase en forma de tabla.
+<h2> Horario </h2> debajo de la lista de asignaturas ordenada y después una tabla:
+<table style="width:100%"> Tabla que ocupará todo el ancho de nuestra página web. No salen las celdas por defecto.
+	<tr> Primera fila de nuestra tabla
+		<th> Elemento de encabezado, centrado y en negrita </th>
+	<tr> Segunda fila
+		<td> Elemento de la tabla en la primera columna y segunda fila </td>
+	</tr>
+</table>
+
+
+Añadir en práctica: Crear el borde (las celdas) con lína continua (solid). Se pone en el <head> para que afecte a todo. Con "colapse" lo que hacemos es que no se nos duplique el borde, para que se vea bien. Con "padding" añadimos a cada celda un espacio respecto al texto que encierran. Este último puede ponerse para que afecte solamente a th y td o a la tabla entera (solo con table). Con "text-align: left/right/center", el texto dentro de las celdas <th> se alineará de la forma deseada. 
+<head><style>
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 15px;
+	}
+	}
+	th {
+	text-align: left;
+	}
+</style></head>
+
+
+Para añadir un espacio entre las celdas (no necesario en práctica):
+table {
+    border-spacing: 15px;
+}
+
+Añadir en práctica: Unificar celdas de dos columnas.
+<td colspan="2"> Elemento con dos columnas unificadas. Se pueden coger más columnas. Añadir comentarios respecto a las unificaciones </td>
+
+Añadir en práctica: Unificar celdas de dos filas.
+<td rowspan="2"> Elemento con dos filas unificadas. Se pueden coger más filas. Añadir comentarios respecto a las unificaciones </td>
+
+Añadir en práctica: Poner título a la tabla.
+<table><caption> Añadir un título a la tabla </caption></table>
+
+Añadir en práctica: Enlazar el horario con el índice.
+
+Añadir en práctica: Enlazar un correo electrónico.
+<a href="mailto:correo@gmail.com"> Correo enlazado </a>
+
+Añadir en práctica: Enlazar imagen a una página web.
+
+__________________________
+
+Añadir en práctica: Mapa interactivo con una imagen.
+Insertar imagen: <img src="Práctica_1_2.png" alt="Cancha de baloncesto" usemap="#Cancha" width="288" height="180"> Usemap (atributo): Identificador de mi elemento (para poder hacer después un mapa interactivo).
+Definir áreas (rectángulos, círculos, polígonos, por defecto). Atributo shape=rect o circle o polígono o por defecto.
+Indicar las coordenadas: coords.
+
+<map name="identificadorMapa">
+<area shape="forma" coords="coordenadas" href="destino 1" alt="texto">
+<area shape="forma" coords="coordenadas" href="destino 2" alt="texto">
+</map>
+
+<area shape="rect" coords="x1,y1,x2,y2" href="pagina1.htm">
+<area shape="circle" coords="x,y,r" href="pagina2.htm">
+<area shape="poly" coords="x1,y1,x2,y2, x3,y3,x4,y4, x5,y5" href="pagina3.htm">
+
+Cómo insertar símbolos (no añadir en práctica):
+<: &lt;
+>: &gt;
+&: &quot;
+": &amp;
+
+
+Comprobación de código HTML5:
+W3C - https://validator.w3.org/
+Validator.nu - https://html5.validator.nu/
+
+Cómo exportar el estilo a un documento externo (añadir en práctica): Copiar <style> a un nuevo documento. Suprimir etiquetas de estilo y guardarlo como CSS.
+Enlazar archivos: En mi cabecera del archivo sin estilo, añadimos: <link rel="stylesheet" type="text/css" href="rutaArchivo.css"> en el <head>
+
+Si hay más de un estilo a aplicar, será de la siguiente manera, de manera jerárquica:
+1. Lo de la línea.
+2. Lo de la cabecera.
+3. Lo del CSS externo.
+
+Si tenemos varios elementos anidados, los elementos más internos heredan los estilos de los externos en los que están anidados.
+
+Aplicar un estilo a todos los elementos: * {margin:10px; padding: 5px};
+
+Aplicar un estilo a todos los mismos elementos: p { text-align: center}
+
+Aplicar un estilo a etiquetas por separado: P, h1, h2 { text-align: center}
+
+Aplicar un estilo a elementos individuales (añadir en práctica): p.parrafoCentrado {text-align: center; } En la práctica, poner los <td> de la tabla centrados, con font-weight:bold; (negrita), font-size: 7; y font-family: Verdana;
+
+<h2 class="Recreo"> Enlace con .Recreo en el archivo CSS o en el estilo.
+
+Selector descendente: p a b i {color: blue;} (aplicación de color azul a cursiva dentro de negrita y esta dentro de un enlace, y dentro de un párrafo) vs p,a,b,i {color: blue;} (aplicación de color azul a párrafo, a enlace, a negrita, a cursiva).
+
+Selector universal: p * b {color: #0000FF;} (requiere de una etiqueta en medio de la negrita y el párrafo para la aplicación). 
+
+__________________________
+
+Selectores ID: Son únicos (uno por cada uno, no se pueden dos o más).
+
+Añadir en práctica: Definir en el horario o en las listas identificadores y aplicarlos.
+
+Selectores hijos: b > i {color:blue;}. La cursiva ha de estar sí o sí dentro de la etiqueta de negrita.
+
+Selectores adyacentes: b + i {color:blue;}. Selecciona elementos que se encuentran a continuación de otro.
+
+/* Comentario en el documento CSS */
+
+Unidades de medida: Absolutas (cualquier longitud expresada en una de estas unidades siempre se mostrará del mismo tamaño).
+		    Relativas (dependen de la longitud de otra propiedad).
+
+Unidades absolutas:
+cm -> Centímetros
+mm -> Milímetros
+In -> Pulgadas
+Px -> Píxeles
+Pt -> Puntos
+pc -> Picas
+
+Unidades relativas:
+em -> Relativa al tamaño del tipo de letra por defecto
+ex -> Relativa al valor de x-height de la fuente actual
+ch -> Relativa al ancho del cero “0”
+rem -> Relativa al tamaño de letra del elemento raíz
+vw -> Relativa al 1% del ancho del tamaño de la ventana del navegador
+vh -> Relativa al 1% del alto del tamaño de la ventana del navegador
+
+Probar distintos bardes en la tabla: hidden, dotted, dashed, solid, double, groove,ridge, inset, outset,
+initial, inherit.
+
+Elemento de bloque: Ocupan todo del ancho de la página.
+
+Elementos de línea: <span> </span>
+
+Añadir en práctica: Modificar el índice como menú horizontal y aplicar estilos en él, como "hover". Quitarle el subrayado. Después, en el apartado de barra de navegación, darle más diseño.
+
+Añadir en práctica: <header>
+
+__________________________
+
+Añadir en práctica: nav a {Display: inline;} -> Poner elementos del índice en una línea horizontal.
+
+Overflow: hidden; Para que el menú se vaya redimensionando.
+
+a:active -> Te deja en otro color qué menú es el que está señalado.
+word-spacing: px;
+
+
+	-> Preguntar cómo establecer condición para que el activo se ponga al contrario.
+
+__________________________
+
+Realizar menú desplegable en práctica:
+z-index: 1; -> Sirve para que no se superpongan los elementos.
+
+__________________________
+
+Añadir en práctica un apartado nuevo: formulario:
+<form> Atributos: name (nombre), action (función que quiero que se ejecute [PHP, Javascript...]), enctype (formato en el que se enviarán los valores del formulario, depende del contenido se enviarán de una u otra manera), method (método de envío de la transmisión de datos, se puede
+elegir entre dos métodos GET y POST:)
+Método GET: Concetenación de elementos con "&" en oa URL. No se pueden adjuntar archivos.
+Método POST: No límite de caracteres, se pueden mandar archivos.
+
+Campos de formulario:
+Nombre/Apellido/Teléfono... Son campos de texto.
+Etiqueta <input>. Atributos: name (nombre del campo, no se ve), size (número de caracteres visibles en el campo [por defecto 20]), maxlengh (límite de caracteres en dicho campo), value (texto que se borrará en el campo), placeholder (lo mismo, pero al hacer clic, se borra. En el otro no), readonly (el valor del campo no puede ser modificado por el usuario).
+<input type="submit" value="Submit"> Crea un botón para enviar.
+
+Añadir en práctica: Crear dos botones de formulario.
+
+Campo de texto:
+Atributos:
+Autofocus (sitúa el cursor del ratón en el campo una vez cargada la página).
+Required (no se podrá enviar el formulario hasta que el campo esté cumplimentado).
+Width (ancho del campo. Es recomendable sustituirlo por la propiedad css del mismo nombre).
+
+Área de texto:
+Atributos:
+Name (nombre del campo), rows (número de filas. Reemplazable por la propiedad CSS "height").
+cols (número de columnas. Reemplazable por la propiedad CSS "width").
+	El resto de atributos son similares a los especificados para input: placeholder, readonly, autofocus, maxlength, required.
+
+Añadir en práctica: nº de filas y nº de columnas.
+
+Añadir en práctica: menú desplegable.
+Atributo: name (nombre), size (mostrar un número limitado de opciones), multitple (seleccionar varias opciones), checked (el valor deseado aparece marcado. Se pueden seleccionar varios). Type="checkbox".
+
+Probar radio.
+
+Botones: Botón de borrar (añadir en práctica). <input type=“reset”> Borra el contenido del formulario.
+
+Probar la alerta del botón: <button onclick="alert('Hola mundo');">Mi botón</button>
+
+__________________________
+
+Añadir en práctica: 
+Etiqueta <fieldset>:
+Agrupa los campos de formulario que estén entre la etiqueta de apertura y cierre <fielset> y los rodea con un borde. </fieldset>
+Etiqueta <legend>
+Escrita inmediatamente a continuación de la etiqueta de apertura.
+<fieldset> Agrega un texto relacionado con los campos agrupados. </legend>
+Etiqueta <label>: Asociar una etiqueta a un campo. </label>
+
+<tabindex="1 o 2 o 3 o 4"> Atributo de <input> para organizar el orden de tabulación. Suele usarse en los formularios con elementos dispuestos de manera horizontal. Con valor negativo, salta dicha casilla.
+
+Añadir tabulaciones en los campos osbligatorios.
+
+Añadir en práctica: Datalists. <datalist id="id"> </datalist>
+
+Añadir en práctica: Tipo de cifrado <keygen name="security"> (Aparecen las opciones de grado medio y alto)
+
+__________________________
+
+Añadir en práctica: rangos.
+<input type="range"> Atributos: min (valor mínimo del rango) max (valor máximo del gango) step (valor del incremento del contador) value (valor inicial del contador)
+
+Añadir <oninput="x.value=parseInt(a.value)+parseInt(b.value)"> (solo de apertura) <output name="x" for="a b"> con el valor generado </output>
+
+Añadir en práctica: Enviar número con un máximo y mínimo <input type="number" max="" min="">.
+
+Añadir límites en fechas (han de ser en formato americano):
+
+Añadir en práctica: URL (introducir una URL).
+
+Añadir en práctica: file (adjuntar un archivo).
+
+Añadir en práctica: search (realizar una búsqueda).
+
+Añadir <footer>, <aside> para estructurar la página (punto 6)...
+
+Añadir en práctica: <audio> (atributo <source>) </audio>
+
+Añadir en práctica: <video> (atributo <source>) </video>
+
+Añadir en práctica:
+					<div class="responsive">
+						<div class="gallery">
+							<a target="_blank" href="imagenes/mint_logo.jpg">
+								<img src="imagenes/mint_logo.jpg" alt="Mint wallpaper" width="600" height="400">
+							</a>
+						<div class="desc">Add a description of the image here</div>
+					</div>
+					</div> galería de imágenes en CSS con <div> y posicionamiento (absoluto, fijo...). Los elementos han de ser redimensionados a medida que el tamaño del dispositivo es cambiado (responsive en toda la página).
+
+Añadir en práctica: Estilos en botones.
+
+Añadir: Márgenes para los formularios (CSS):
+input[type-text], select {
+margin: 10px 0px; -> 0px = margen lateral izquierdo de la caja.
+}
+
+Añadir: Formulario en otra página.
+
+__________________________
+
+<frameset> Te permite dividir como quieres. Atributo: <frameset cols="25%, 50%, 25%"> (columnas)
+	<frame src="">
+	<frame src="">
+	<frame src="">
+</frameset>
+
+<frameset> Te permite dividir como quieres. Atributo: <frameset rows="25%, 50%, 25%"> (filas)
+	<frame src="">
+	<frame src="">
+	<frame src="">
+</frameset>
+
+<frameset> Te permite dividir como quieres. Atributo: <frameset rows="25%, 25%" cols="25%, 25%"> (combinada [dos filas divididas en dos columnas])
+	<frame src="">
+	<frame src="">
+	<frame src="">
+	<frame src="">
+</frameset>
+
+Anidamiento de marcos redimensionables:
+<frameset> Te permite dividir como quieres. Atributo: <frameset rows="25%, 75%"> (filas y luego columnas)
+	<frame src="">
+	<frameset cols="25%, 75%">
+	<frame src="">
+	<frame src="">
+</frameset>
+
+-> Anidamiento de marcos redimensionables:
+<frameset> Te permite dividir como quieres. Atributo: <frameset rows="25%, 75%"> (columnas y luego filas)
+	<frame src="">
+	<frameset cols="25%, 75%">
+	<frame src="">
+	<frame src="">
+</frameset>
+
+Marco no redimensionable: <frame noresize="noresize" src="">
+
+<frameborder="0"> Quitar marcos (atributo).
+
+"20, 30, *" -> * = lo que reste.
+
+__________________________
+
+Añadir en el índice: Apartado de marcos.
+Probar los marcos dentro de la página web.
+
+Añadir en práctica: posicionamiento a las imágenes (diapositiva 57). Han de estar dentro de un <div> + borde. Usar posiciones y coordenadas para poder ordenar los elementos dentro del bloque. Poner altura al 100% o en píxeles. Posiciones estáticas (el navegador te lo coloca) y relativas (dentro del elemento <div>, el elemento padre). CSS: Left, top (en porcentaje o píxeles). (Hacer en la galería de imágenes, no en un apartado nuevo).
+
+Incluir archivo único enlazado a todos los demás, hacer index.html (contenido de mi página <a href="index.html#horario">).
+
+Lo mismo, pero con audio-video.
+
+__________________________
+
+Añadir estilo al formulario.
+- Añadir imágenes en los campos, como en el de búsqueda. Probar los de BS, glyphicons (añadir sus scripts para que funcionen).
+
+Intentar que funcionen los marcos.
+
+Probar transiciones en el CSS.
+
+Añadir en práctica: una transición a algún botón y establecer un "resize: none;" a los comentarios.
+
+Añadir en práctica: lista desplegable con diseño (select) y lo mismo al "datalist".
+
+Añadir en práctica: Hacer que todo mi formulario sea redimensionable.
+
+__________________________
+
+Añadir en el menú: uso de las columnas (para la publicación de artículos): https://www.w3schools.com/css/css3_multiple_columns.asp. Crear en un documento aparte. (Noticias)
+
+Añadir en la galería: cuatro tipos de posicionamientos en las imágenes.
+
+Añadir en práctica: transiciones 3D a los elementos.
+
+
+Noticias:
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;(atributo): modificar anchura entre columnas.
+
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid; añadir estilo a las columnas.
+
+   -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 1px; añadir grosor de la línea entre columnas.
+
+    -webkit-column-rule-color: lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule-color: lightblue; /* Firefox */
+    column-rule-color: lightblue; añadir color a las líneas separadoras de las columnas.
+
+    -webkit-column-rule: 1px solid lightblue; /* Chrome, Safari, Opera */
+    -moz-column-rule: 1px solid lightblue; /* Firefox */
+    column-rule: 1px solid lightblue; para hacer tres anteriores a la vez (rule colom, rule width, rule style).
+
+    -webkit-column-span: all; /* Chrome, Safari, Opera */
+    column-span: all; para que los títulos no entren en conflicto al ser elementos de bloque. No recomendable porque no es soportado por Mozilla.
+
+__________________________
+
+
+Añadir en práctica: Aplicar sombra en la galería de imágenes (en cada una de ellas).
+	text-shadow
+	box-shadow
+
+	Aplicar en botones:hover.
+
+Añadir en práctica: Probar gradientes en algún botón.
+
+        background-image: linear-gradient(red, yellow);
+
+__________________________
+
+Entrega práctica: Lunes de la semana siguiente.
+
+Examen: A finales de noviembre.
+
+Añadir en práctica: Paginación (número de páginas que hay en mi página web). Ha de ponerse en todas las páginas, solo que variando los botones de siguiente y anterior. Eliminar el de anterior en el inicio. Hay que poner enlaces distintos de las páginas en cada una de ellas. Poner el elemento activo de manera coherente.
+
+(Añadir en práctica) Hacer página "responsive" (que se vea bien en todos los dispositivos. Empezar con el modo móvil): Establecer box-sizing: border-box; en todos los elementos. Establecer columnas en CSS por medio de ".col-1...col-12". [class*="col-"] (a todas). Cada fila ha de estar dentro de un <div>. Establecer después un "clear". "Media Queries" (para escritorio, para móviles).
+
+Añadir en práctica: @media only screen and (max-width:) {}...
+
+Añadir en práctica: vídeo redimensionable, con un "madx-width" para que no se haga más grande.
+
+__________________________
+
+Introducción a XHTML (librosweb -> XHTML): Lenguaje más restrictivo que HTML. Reglas:
+
+1. Las etiquetas han de cerrarse en el orden en el que se abren (tienen que tener un orden lógico de anidamiento). Ejemplo: <p><b>   </b></p>
+2. Los nombres de las etiquetas siempre en minúsculas.
+3. El valor de los atributos siempre entre comillas.
+4. Los atributos no se pueden comprimir. Por ejemplo, los atributos en el formulario (required...). En XHTML: required="required".
+5. Todas las etiquetas han de cerrarse siempre. En etiquetas como <br>, se puede poner simplemente <br/> (el cierre siempre detrás).
+
+Han de eliminirase todos los espacios en blanco entre etiquetas y entre los valeros de atributos. Scripts entre etiquetas especiales. Cambio de de "name" por "id".
+
+Para hacer: Práctica XHTML aula virtual.
+
+__________________________
+
+JavaScript es un lenguaje incrustado dentro de un HTML que se ejecuta en el lado del cliente.
+
+Ejemplo de script:
+	<script type="text/javascript">document.write('Hola mundo');
+	</script>
+
+Requiere de finalizar con punto y coma. Es sensible a mayúsculas. Requiere de comillas simples. Las variables de números o de valores lógicos no van encerrados entre comillas. Insertar saltos de línea entre valores: document.write('<br>');
+Una varable es un depósito donde hay un valor. Consta de un nombre y pertenece a un tipo (numérico, cadena de caracteres...). Puede almacenar:
+- Valores enteros (10, 30...)
+- Valores reales (1.23, 3.6...)
+- Cadena de caracteres ('Hola', 'Lista'...)
+- Valores lógicos o "boolean" (verdadero, falso)
+
+El nombre de una variable también se conoce como identificador y ha de cumplir:
+- Solo puede estar formado por letras, números y los símbolos "$" y "_".
+- El primer carácter no puede ser un número.
+- No puede tener el mismo nombre de una palabra clave del lenguaje.
+
+Una variable se define anteponiéndole la palabra "var". Se pueden poner varias variables en una misma línea: "var dia, mes".
+
+Se puede definir y establecerle un valor: var edad=20;
+
+Es recomendable asignarle a todos los nombres una variable, ya que JavaScript las alignará después automáticamente.
+
+Entrada de datos por teclado: se realiza mediante la función "prompt". Ejemplo: nombre=prompt('Ingrese su nombre:', '');
+
+Estructura secuencial: Cuando solo participan operaciones, entradas y salidas.
+
+Función "parseInt" -> Sumar variables numéricas.
+
+Símbolo "+" -> Concatenación de caracteres (1 + 1 = 11).
+
+Estructuras condicionales simples: Se crean irremediablemente a las limitaciones de las estructuras secuenciales.
+
+__________________________
+
+Estructuras condicionales simples: Sirven para establecer condiciones y poder así elegir (if). Ejemplo: if (nota>=4) {(condición)}. Si la condición se verifica, se ejecutan todas las instrucciones que se encuentran entre las llaves. Condiciones: > (mayor), >= (mayor o igual), < (menor) <= (menor o igual), != (distinto), == (igual). En caso de que la condición no se verifique, no se ejecutarán las intrucciones entre llaves
+
+Para evitar poner tantos "document.write();" -> "document.write(variable+''+variable);"
+
+__________________________
+
+Estructuras condicionales compuestas: Se realizan unas u otras, nunca de unas y de otras. Ejemplo: Leer dos números y si el primero es mayor que otro (if), se ejecutará una determinada opción; en caso de que el segundo sea mayor (else), se ejecutará la segunda opción {(opción al "if")}.
+
+__________________________
+
+Estructuras condicionales anidadas: Son condiciones que se producen si otras también lo hacen, esto es, si hemos programado que por la rama del falso haya otra condición, esta última solo puede efectuarse en caso de que se produzca la primera condición falsa. Por ejemplo, if {condición verdadera} else {condición falsa if {condición verdadera si se produce la primera falsa} else {condición falsa si se produce la primera falsa}}.
+
+Comentarios en JavaScript: Pueden ponerse después de una doble barra (//comentario) o como en CSS (/*comentario*/).
+
+__________________________
+
+
+Operadores lógicos && (y) en las estructuras condicionales: Son condiciones que se producen en su totalidad si el primer resultado es verdad y, el segundo, también. Si la segunda parte no lo es, se ejecutará a medias. Ejemplo: if (condicion1==condicion2 && condicion2>condicion3) {}
+
+En las operaciones con variables pueden emplearse los paréntesis de las matemáticas para poder jerarquizar las operaciones.
+
+Consejo: si se quieren pasar las cadenas de texto de las variables a números, emplear "variable=parseFloat(variable);", para así tener que prescindir de "parseFloat" a la hora de hacer las operaciones.
+
+__________________________
+
+Operadores lógicos || (o) en las estructuras condicionales: Son condiciones que se producen si una de las dos es verdadera. Ejemplo: if (condicion1 || condicion2) {}
+
+if else if: Si se cumple la primera condición, se ejecutan ciertas instrucciones y, si no se cumple, comprobamos las condiciones siguientes. Si no se cumple ninguna de ellas, se ejecuta el "else" final en caso de existir. Su estructura es: if () {else if () {}}
+
+Provocar una alerta: alert('mensaje');
+
+Estructuras switch: Sirve para reemplazar a if/else if. Ejemplo: switch () {}
+
+Acumulador: while (condición) {repetición condición=condición+1;}
+
+__________________________
+
+Estructura repetitiva (do - while): Es aquella estructura en la que, al menos, se ejecutará una vez el bloque repetitivo. La condición a repetir está abajo del bloque, a diferencia del "while", que está arriba. Se finaliza la ejecución del bloque cuando la condición retorna falso. Ejemplo: do {bloque} while (ruptura del bucle);
+
+__________________________
+
+Estructura repetitiva (for): Es un tipo de estructura repetitiva que se emplea en aquellas situaciones en las que conocemos la cantidad de veces que queremos que se ejecute el bloque de instrucciones. Está compuesta de tres partes: var variable; for(variable=x; variable<=n; variable++) {}. La primera indica desde donde parte "(variable=x)" y, si relulta verdad, se ejecutará lo que hay dentro; la segunda, el límite de las repeticienos "(variable<=n)" y, la tercera, qué ocurrirá con la variable (en este caso, sumar). Para sumar: variable++ o variable=variable+1. Para restar: variable-- o variable=variable-1
+
+__________________________
+
+Funciones: son sentencias repetitivas que pueden emplearse por un mismo programa o por otros, pudiéndose simplificar el proceso. Está formada por un nombre y distintos parámetros. Las funciones tienen nombre, como las varablibles, y hay que elegir uno apropiado para ellas. Ejemplo: function nombredemifuncion() {setencias que quiero que se ejecuten}. No requieren de poner ninguna variable antes y, para llamar a la función, hay que escribir en este caso: nombredelafuncion;
+
+Funciones con parámetros: 
+
+Funciones que retornan un valor: 
+
+Variables locales y variables globales en funciones: Una variable local es aquella que se define dentro de una función y, por ende, solo se puede acceder a ella si se llama a la función. Por el contrario, una variable global es aquella que se define fuera de la función y tenemos acceso a ella dentro y fuera de la función.
+
+Existe un modo estricto por si se nos olvidan anteceder las variables con "var", se pone usando: 'use strict';
+
+Función para crear fechas: var fecha=new Date(con la fecha y hora de nuestro ordenador); new Date(año, mes, dia); Los meses empiezan por 0, por lo que enero es 0 y, diciembre, 11.
+
+Modos del objeto Date:
+getYear() -> Obtiene el año con 4 dígitos, excepto si está entre 1900 y 1999, que serán 2 dígitos.
+getFullYear() -> Obtiene el año con 4 dígitos.
+getMonth() -> Obtiene el mes.
+getDate() -> Obtiene el día.
+getDay() -> Devuelve el día de la semana en palabras: lunes, martes... 0 = domingo y 6 = sábado.
+getHours() -> Devuelve la hora actual.
+getMinutes() -> Devuelve los minutos actuales.
+getSeconds() -> Devuelve los segundos actuales.
+
+__________________________
+
+Clase Array: Un vector es una estructura de datos que permite almacenar un conjunto de datos. Se define un vector y por medio de un subíndice hacemos regerencia a cada componente del mismo.
+
+Clase Math: Sirve para al ejecución de diversas operaciones matemáticas (funciones trigonométricas, redondeo, números aleatorios...). Números aleatorios: variable=parseInt(Math.random()*numeromayordeseado+1)
+
+Clase String: Us "String" es una cadena de texto, aquellos caracteres que van entrecomillados. Se pueden concatenar con el operodor "+". Funciones de String: length -> (document.write(nombre.length); Cuenta los caracteres. charAt(pos) -> nombre.charAt(0); substring (posinicial, posfinal) -> Obtiene los caratcteres comprendidos entre el rango indicado, el primer carácter es 0. indexOf(subcadena). toUpperCase() -> Pone la cadena en mayúsculas. toLowerCase() -> Pone la cadena en minúsculas. 
+
+Formularios y eventos: Se emplea JavaScript en los formularios para validar los datos ingresados y que la carga del procesamiento recaiga en el lado del cliente.
+
+Controles form, button y text: 
+
+__________________________
+
+Control password: Sirve para enmascarar el texto con asteriscos. Es igual que el HTML de los formularios.
+
+El objeto window: Representa la ventana del navegador. Es us objeto global y tiene los siguientes métodos:
+alert: Muestra un diálogo de alerta con un mensaje.
+prompt: Muestra un diálogo para la entrada de un valor de tipo "string".
+confirm: Muestra un diálogo de confirmación con los botones "Confirmar" y "Cancelar".
+open y close: Abre o cierra una venatan del navegador. Podemos especificar el tamaño de esta y su contenido: [Variable=][window.]open(URL, nombre, propiedades)
+
+Archivo JavaScript externo (.js): sirven para crear funciones de JavaScript en un archivo externo y así poder llamarlas sin tener que volver a copiar todo el cuerpo de las mismas. Para poder llamarlas, en el encabezado del HTML hay que poner lo siguiente: <script type="text/javascript" src="rutademiarchivo.js"></script>
+
+Eventos: Sirven para interactuar con los elementos de nuestra página web, como por ejemplo por ratón.
+
+__________________________
+
+Lenguajes de almacenamiento y transmisión de la información: Utilizar lenguajes para almacenar información.
+DTD: Document Type Definition.

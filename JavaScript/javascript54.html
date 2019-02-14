@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 36-->
+            var veces;
+            var numero_negativo=0;
+            var numero_positivo=0;
+            var multiplo_15=0;
+            var numero_par=0;
+            document.write('<h1>Carga de 10 valores enteros</h1>');
+            document.write('<br>');
+            for (veces=1; veces<=10; veces=veces+1) {
+                var numero=prompt('Ingrese un número entero:', 'Número entero');
+                numero=parseFloat(numero);
+                document.write('El número introducido en el lugar '+veces+' es el: '+numero+', que es ');
+                if (numero<0) {
+                    document.write('negativo');
+                    if (numero%15==0) {
+                        document.write(' y múltiplo de 15');
+                        multiplo_15=multiplo_15+1;
+                    }
+                    if (numero%2==0) {
+                        document.write(' y número par');
+                        numero_par=numero_par+numero;
+                    }
+                    numero_negativo=numero_negativo+1;
+                }
+                if (numero>=0) {
+                    document.write('positivo');
+                    if (numero%15==0) {
+                        document.write(' y múltiplo de 15');
+                        multiplo_15=multiplo_15+1;
+                    }
+                    if (numero%2==0) {
+                        document.write(' y número par');
+                        numero_par=numero_par+numero;
+                    }
+                    numero_positivo=numero_positivo+1;
+                }
+                document.write('<br>'+'<br>');
+            }
+            document.write('<hr>'+'<br>');
+            document.write('El número total de números negativos introducidos es de: '+numero_negativo);
+            document.write('<br>'+'<br>');
+            document.write('El número total de números positivos introducidos es de: '+numero_positivo);
+            document.write('<br>'+'<br>');
+            document.write('El número total de múltiplos de 15 introducidos es de: '+multiplo_15);
+            document.write('<br>'+'<br>');
+            document.write('El valor acumulado de los números introducidos que son pares es de: '+numero_par);
+        </script>
+    </body>
+</html>

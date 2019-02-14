@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema después del apartado "do - while"-->
+            document.write('<h1>Númerero entre 0 y 999</h1>');
+            document.write('<br>');
+            do {
+                var numero=prompt('Ingrese un número entre 0 y 999:', 'Número');
+                if (numero>0 && numero<10) {
+                    document.write('El número '+numero+' tiene 1 cifra');
+                }
+                if (numero>=10 && numero<100) {
+                    document.write('El número '+numero +' tiene dos cifras');
+                }
+                if (numero>=100 && numero<1000) {
+                    document.write('El número '+numero+' tiene tres cifras');
+                }
+                if (numero>=1000) {
+                    document.write('El número '+numero+' no entra dentro del rango. Por favor, inténtelo nuevamente');
+                }
+                document.write('<br>');
+            }
+            while(numero!=0);
+        </script>
+    </body>
+</html>

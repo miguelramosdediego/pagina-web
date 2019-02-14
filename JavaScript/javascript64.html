@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del apartado "Formularios y eventos"-->
+            var contador=0;
+            document.write('<h1>Botón con contador</h1>');
+            document.write('<br>');
+            function sumar() {
+                contador=contador+1;
+                alert('El contador ahora vale: '+contador);
+            }
+        </script>
+        <form>
+            <input type="button" onClick="sumar()" value="¡Suma!">
+        </form>
+    </body>
+</html>

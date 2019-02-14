@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del apartado "Controles form, button y text"-->
+            document.write('<h1>Formulario con nombre y edad</h1>');
+            document.write('<br>');
+            function mostrar() {
+                var prenom=document.getElementByld('nombre').value;
+                var age=document.getElementByld('edad').value;
+                alert('Ha ingresado el nombre: '+ prenom);
+                alert('Ha ingresado la edad:'+ age);
+            }
+        </script>
+        <form>
+            <input type="text" id="nombre">
+            <br>
+            <br>
+            <input type="text" id="edad">
+            <br>
+            <br>
+            <input type="button" value="Confirmar" onClick="mostrar()">
+        </form>
+    </body>
+</html>

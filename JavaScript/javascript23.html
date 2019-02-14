@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 17-->
+            var dia=prompt('Ingrese un día:', 'Día');
+            var mes=prompt('Ingrese un mes:', 'Mes');
+            var agno=prompt('Ingrese un año:', 'Año');
+            dia=parseFloat(dia);
+            mes=parseFloat(mes);
+            agno=parseFloat(agno);
+            document.write('<h1>Fecha navideña</h1>');
+            document.write('<br>');
+            document.write('La fecha '+dia+'/'+mes+'/'+agno+' es:');
+            document.write('<br>'+'<br>');
+            if (dia==25 && mes==12) {
+                document.write('El día de Navidad');
+            }
+            else { <!--(dia!=25)-->
+                document.write('Cualquier otro día menos el de Navidad');
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del problema 12-->
+            var nota1=prompt('Ingrese la primera nota:', 'Primera nota');
+            var nota2=prompt('Ingrese la segunda nota:', 'Segunda nota');
+            var nota3=prompt('Ingrese la tercera nota:', 'Tercera nota');
+            var sumatorio=parseInt(nota1)+parseInt(nota2)+parseInt(nota3);
+            var media=parseInt(sumatorio)/parseInt(3);
+            document.write('<h1>Tres notas: promocionado, regular y suspenso</h1>');
+            document.write('<br>');
+            document.write('Con una media final de '+media+', el alumno en cuestión obtiene un:');
+            document.write('<br>'+'<br>');
+            if (media>=7) {
+                document.write('Promocionado, dado que es mayor o igual que 7');
+            }
+            else {
+                if (media>=4) {
+                    document.write('Regular, puesto que es mayor o igual que 4 y menor que 7');
+                }
+                else {
+                    document.write('Suspenso, ya que es menor que 4');
+                }
+            }
+        </script>
+    </body>
+</html>

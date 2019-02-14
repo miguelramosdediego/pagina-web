@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Problema 11-->
+            var alumno=prompt('Ingrese el nombre de un alumno:', 'Alumno');
+            var nota1=prompt('Ingrese la primera nota:', 'Primera nota');
+            var nota2=prompt('Ingrese la segunda nota:', 'Segunda nota');
+            var nota3=prompt('Ingrese la tercera nota', 'Tercera nota');
+            var sumatorio=parseInt(nota1)+parseInt(nota2)+parseInt(nota3);
+            var media=parseInt(sumatorio)/parseInt(3);
+            document.write('<h1>Notas medias: regular y mal</h1>');
+            document.write('<br>');
+            if (media>=4) {
+                document.write('Al tener el alumno '+alumno+' una nota media de '+media+' su calificación es:'+'<br>'+'<br>'+'Regular, ya que esta es mayor o igual a 4');
+            }
+            else {
+                document.write('Al tener el alumno '+alumno+' una nota media de '+media+' su calificación es:'+'<br>'+'<br>'+'Mal, ya que esta es menor a 4');
+            }
+        </script>
+    </body>
+</html>

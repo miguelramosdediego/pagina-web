@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <title>Pruebas con JavaScript</title>
+    </head>
+    <body>
+        <script type="text/javascript"><!--Después del apartado "funciones con parámetros"-->
+            function numerosentredos() {
+                if (numero1<numero2) {
+                    for (numero1=numero1; numero1<=numero2; numero1=numero1+1) {
+                        document.write(numero1+' ');
+                    }
+                }
+                if (numero2<numero1) {
+                    for (numero2=numero2; numero2<=numero1; numero2=numero2+1) {
+                        document.write(numero2+' ');
+                    }
+                }
+                if (numero1==numero2) {
+                    document.write('Al ser los números iguales, no hay ningún número entre ambos');
+                }
+            }
+            document.write('<h1>Números entre dos valores</h1>');
+            document.write('<br>');
+            var numero1=prompt('Ingrese el primer número:', 'Primer número');
+            var numero2=prompt('Ingrese el segundo número:', 'Segundo número');
+            numero1=parseFloat(numero1);
+            numero2=parseFloat(numero2);
+            numerosentredos();
+        </script>
+    </body>
+</html>

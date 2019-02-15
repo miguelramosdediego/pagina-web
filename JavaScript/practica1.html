@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="es-ES">
+    <head>
+        <link rel="stylesheet" type="text/css" href="estilopractica1.css">
+        <meta charset="utf-8">
+        <script type="text/javascript" src="funciones.js"></script>
+        <title>Práctica fomulario con JavaScript I</title><!--Restricciones con «pattern»: https://www.w3schools.com/tags/att_input_pattern.asp. Mas información con «regex», «expresiones regulares»-->
+    </head>
+    <body>
+        <script type="text/javascript">fechayhoramorado();</script>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label>Usuario: </label>
+                        <input type="text" name="usuario" pattern=".{8,}" title="Mínimo 8 caracteres alfanuméricos" required autofocus>
+                    </td>
+                    <td colspan="2">
+                        <label>Contraseña: </label>
+                        <input type="password" name="contrasega" pattern="[a-zA-Z0-9-]{8,}" title="Mínimo 8 caracteres, solo letras y números permitidos. No se permiten los siguientes caracteres del castellano: «ñ», «á», «é», «í», «ó», «ú», «ü»" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label>Correo electrónico: </label>
+                        <input type="email" name="correoelectronico" required><!--Los «input» de tipo «email» "por debajo" ya tienen un patrón en el que haya al menos un arroba (@) entre medias-->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Nombre: </label>
+                        <input type="text" name="nombre" pattern="[a-zA-Z]+" title="Solo letras permitidas. No se permiten los siguientes caracteres del castellano: «ñ», «á», «é», «í», «ó», «ú», «ü»" required><!--No admitiría, por ejemplo, eñes, ni tampoco caracteres especiales-->
+                    </td>
+                    <td><script type="text/javascript">maxfecha();</script>
+                        <label>F.Nacimiento: <input type="date" name="fechanacimiento" id="fechanacimiento" onclick="javascript:limitefecha();" required> dd/mm/yyyy</label>
+                    </td>
+                    <td>
+                        <label>DNI: </label><input type="text" name="DNI" maxlength="9" pattern="[0-9]{8}([A-Z]|[a-z])" title="8 números y una letra, maýuscula o minúscula, distinta de «ñ»" required><!--Como la letra del DNI es calculada a partir de números, habría que restringirlo-->
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label>Apellidos: </label>
+                        <input type="text" name="apellidos" pattern="[a-zA-Z]+" title="Solo letras permitidas. No se permiten los siguientes caracteres del castellano: «ñ», «á», «é», «í», «ó», «ú», «ü»" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <label>Calle y número: </label>
+                        <input type="text" name="calle" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>¿Tienes hijos?: </label>
+                        <br>
+                        <input type="radio" name="hijos" id="hijossi" onclick="javascript:despueshijossi();">Sí
+                        <br>
+                        <input type="radio" name="hijos" onclick="javascript:despueshijossi();" checked>No
+                    </td>
+                    <td colspan="2">
+                        <div id="cuantoshijos" style="display:none"><!--Si se pone en el CSS, aparecerá por defecto-->
+                            <input type="radio" name="numerodehijos" checked>1
+                            <br>
+                            <input type="radio" name="numerodehijos">2
+                            <br>
+                            <input type="radio" name="numerodehijos">3 o más
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Código Postal: </label>
+                        <input type="text" name="codigopostal" maxlength="5" pattern="[0-9]{5}" title="5 números" required>
+                    </td>
+                    <td>
+                        <label>Ciudad: </label>
+                        <select name="ciudades" size="1">
+                            <option value="" selected disabled hidden>Escoja una opción</option><!--https://stackoverflow.com/questions/3518002/how-can-i-set-the-default-value-for-an-html-select-element-->
+                            <option value="Albacete">Albacete</option>
+                            <option value="Alicante">Alicante</option>
+                            <option value="Almería">Almería</option>
+                            <option value="Ávila">Ávila</option>
+                            <option value="Badajoz">Badajoz</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Bilbao">Bilbao</option>
+                            <option value="Burgos">Burgos</option>
+                            <option value="Cáceres">Cáceres</option>
+                            <option value="Cádiz">Cádiz</option>
+                            <option value="Castellón de la Plana">Castellón de la Plana</option>
+                            <option value="Ciudad Real">Ciudad Real</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Cuenca">Cuenca</option>
+                            <option value="Gerona">Gerona</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Guadalajara">Guadalajara</option>
+                            <option value="Huelva">Huelva</option>
+                            <option value="Huesca">Huesca</option>
+                            <option value="Jaén">Jaén</option>
+                            <option value="La Coruña">La Coruña</option>
+                            <option value="Las Palmas de Gran Canaria">Las Palmas de Gran Canaria</option>
+                            <option value="León">León</option>
+                            <option value="Lérida">Lérida</option>
+                            <option value="Logroño">Logroño</option>
+                            <option value="Lugo">Lugo</option>
+                            <option value="Madrid">Madrid</option>
+                            <option value="Málaga">Málaga</option>
+                            <option value="Murcia">Murcia</option>
+                            <option value="Orense">Orense</option>
+                            <option value="Oviedo">Oviedo</option>
+                            <option value="Palma de Mallorca">Palma de Mallorca</option>
+                            <option value="Pamplona">Pamplona</option>
+                            <option value="Pontevedra">Pontevedra</option>
+                            <option value="Salamanca">Salamanca</option>
+                            <option value="Santa Cuz de Tenerife">Santa Cuz de Tenerife</option>
+                            <option value="San Sebastián">San Sebastián</option>
+                            <option value="Santander">Santander</option>
+                            <option value="Segovia">Segovia</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="Soria">Soria</option>
+                            <option value="Tarragona">Tarragona</option>
+                            <option value="Teruel">Teruel</option>
+                            <option value="Toledo">Toledo</option>
+                            <option value="Valencia">Valencia</option>
+                            <option value="Valladolid">Valladolid</option>
+                            <option value="Vitoria">Vitoria</option>
+                            <option value="Zamora">Zamora</option>
+                            <option value="Zaragoza">Zaragoza</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label>Teléfono: </label>
+                        <input type="tel" name="telefono" maxlength="9" pattern="([6|7|9]){1}[0-9]{8}" title="9 números. Para móviles, ha de comenzar por el 6 o 7 y, para fijos por el 9" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Ocupación: </label>
+                        <select name="ocupacion" size="1">
+                            <option value="" selected disabled hidden>Escoja una opción</option>
+                            <option value="Agentes comerciales">Agentes comerciales</option>
+                            <option value="Asistentes domiciliarios">Asistentes domiciliarios</option>
+                            <option value="Ayudantes de servicios (hostelería)">Ayudantes de servicios (hostelería)</option>
+                            <option value="Azafatos o auxiliares de información">Azafatos o auxiliares de información</option>
+                            <option value="Bármanes">Bármanes</option>
+                            <option value="Cajeros de comercio">Cajeros de comercio</option>
+                            <option value="Camareros de barra y/o dependientes de cafetería">Camareros de barra y/o dependientes de cafetería</option>
+                            <option value="Camareros de piso (hostelería)">Camareros de piso (hostelería)</option>
+                            <option value="Camareros de sala o jefes de rango">Camareros de sala o jefes de rango</option>
+                            <option value="Camareros y cocineros propietarios">Camareros y cocineros propietarios</option>
+                            <option value="Camareros, en general">Camareros, en general</option>
+                            <option value="Clasificadores-repartidores de correspondencia">Clasificadores-repartidores de correspondencia</option>
+                            <option value="Cocineros en general ">Cocineros en general </option>
+                            <option value="Conductores-operadores de carretilla elevadora, en general">Conductores-operadores de carretilla elevadora, en general</option>
+                            <option value="Conserjes de hotel">Conserjes de hotel</option>
+                            <option value="Cristaleros de edificios">Cristaleros de edificios</option>
+                            <option value="Cuidadores de personas con discapacidad y/o dependencia, en instituciones">Cuidadores de personas con discapacidad y/o dependencia, en instituciones</option>
+                            <option value="Delegados comerciales, en general">Delegados comerciales, en general</option>
+                            <option value="Dependientes de artículos de deporte, caza y pesca">Dependientes de artículos de deporte, caza y pesca</option>
+                            <option value="Dependientes de artículos de regalo">Dependientes de artículos de regalo</option>
+                            <option value="Dependientes de calzado y artículos de piel">Dependientes de calzado y artículos de piel</option>
+                            <option value="Dependientes de comercio, en general">Dependientes de comercio, en general</option>
+                            <option value="Dependientes de electrodomésticos">Dependientes de electrodomésticos</option>
+                            <option value="Dependientes de grandes superficies">Dependientes de grandes superficies</option>
+                            <option value="Dependientes de juguetería">Dependientes de juguetería</option>
+                            <option value="Dependientes de muebles y artículos de decoración">Dependientes de muebles y artículos de decoración</option>
+                            <option value="Dependientes de peletería">Dependientes de peletería</option>
+                            <option value="Dependientes de perfumería y droguería">Dependientes de perfumería y droguería</option>
+                            <option value="Dependientes de ropa de hogar">Dependientes de ropa de hogar</option>
+                            <option value="Dependientes de tejidos y prendas de vestir">Dependientes de tejidos y prendas de vestir</option>
+                            <option value="Digitalizadores de documentos">Digitalizadores de documentos</option>
+                            <option value="Embaladores-empaquetadores-etiquetadores, a mano">Embaladores-empaquetadores-etiquetadores, a mano</option>
+                            <option value="Empleados administrativos comerciales, en general">Empleados administrativos comerciales, en general</option>
+                            <option value="Empleados administrativos con tareas de atención al público no clasificados bajo otros epígrafes">Empleados administrativos con tareas de atención al público no clasificados bajo otros epígrafes</option>
+                            <option value="Empleados administrativos de contabilidad, en general">Empleados administrativos de contabilidad, en general</option>
+                            <option value="Empleados administrativos de los servicios de almacenamiento y recepción">Empleados administrativos de los servicios de almacenamiento y recepción</option>
+                            <option value="Empleados administrativos de servicios de personal">Empleados administrativos de servicios de personal</option>
+                            <option value="Empleados administrativos, en general">Empleados administrativos, en general</option>
+                            <option value="Empleados de gestión financiera de empresas">Empleados de gestión financiera de empresas</option>
+                            <option value="Empleados de servicio de personal">Empleados de servicio de personal</option>
+                            <option value="Empleados de ventanilla de correos">Empleados de ventanilla de correos</option>
+                            <option value="Encargados de economato y bodega (hostelería)">Encargados de economato y bodega (hostelería)</option>
+                            <option value="Encargados de lencería y lavandería (hostelería)">Encargados de lencería y lavandería (hostelería)</option>
+                            <option value="Encargados de tienda">Encargados de tienda</option>
+                            <option value="Formadores de formación no reglada">Formadores de formación no reglada</option>
+                            <option value="Formadores de formación ocupacional no reglada">Formadores de formación ocupacional no reglada</option>
+                            <option value="Formadores de formadores">Formadores de formadores</option>
+                            <option value="Galleteros">Galleteros</option>
+                            <option value="Gerentes de empresa de actividades turísticas, con menos de 10 asalariados">Gerentes de empresa de actividades turísticas, con menos de 10 asalariados</option>
+                            <option value="Gerentes de empresa de comercio al por mayor, con menos de 10 asalariados">Gerentes de empresa de comercio al por mayor, con menos de 10 asalariados</option>
+                            <option value="Gerentes de empresa de comercio al por menor con menos de 10 asalariados">Gerentes de empresa de comercio al por menor con menos de 10 asalariados</option>
+                            <option value="Gerentes de empresa de intermediación, en general, con menos de 10 asalariados">Gerentes de empresa de intermediación, en general, con menos de 10 asalariados</option>
+                            <option value="Gerentes de empresa de servicios a otras empresas, en general, con menos de 10 asalariados">Gerentes de empresa de servicios a otras empresas, en general, con menos de 10 asalariados</option>
+                            <option value="Gerentes de empresa de servicios personales de limpieza o similares, con menos de 10 asalariados">Gerentes de empresa de servicios personales de limpieza o similares, con menos de 10 asalariados</option>
+                            <option value="Gerentes de empresa de transportes, almacenamiento,  comunicaciones y/o logística, con menos de 10 asalariados">Gerentes de empresa de transportes, almacenamiento,  comunicaciones y/o logística, con menos de 10 asalariados</option>
+                            <option value="Gerentes de empresas educativa y/o sociocultural, con menos de 10 asalariados">Gerentes de empresas educativa y/o sociocultural, con menos de 10 asalariados</option>
+                            <option value="Gestores de solvencia y cobro">Gestores de solvencia y cobro</option>
+                            <option value="Gobernantes (hostelería)">Gobernantes (hostelería)</option>
+                            <option value="Jardineros, en general">Jardineros, en general</option>
+                            <option value="Jefes de barra o cafetería">Jefes de barra o cafetería</option>
+                            <option value="Jefes de cocina">Jefes de cocina</option>
+                            <option value="Limpiadores de ventanas">Limpiadores de ventanas</option>
+                            <option value="Marmitones">Marmitones</option>
+                            <option value="Mecánicos de mantenimiento y reparación de automoción, en general">Mecánicos de mantenimiento y reparación de automoción, en general</option>
+                            <option value="Mecánicos-ajustadores de camiones y autobuses, en general">Mecánicos-ajustadores de camiones y autobuses, en general</option>
+                            <option value="Mecánicos-ajustadores de motocicletas y ciclomotores">Mecánicos-ajustadores de motocicletas y ciclomotores</option>
+                            <option value="Mecánicos-ajustadores de motores diésel (vehículos)">Mecánicos-ajustadores de motores diésel (vehículos)</option>
+                            <option value="Mecánicos-ajustadores de motores en maquinaria pesada, agrícola y/o industrial autopropulsada">Mecánicos-ajustadores de motores en maquinaria pesada, agrícola y/o industrial autopropulsada</option>
+                            <option value="Mecánicos-ajustadores de motores y equipos de inyección (diésel y gasolina)">Mecánicos-ajustadores de motores y equipos de inyección (diésel y gasolina)</option>
+                            <option value="Mecánicos-ajustadores del automóvil, en general (turismos y furgonetas)">Mecánicos-ajustadores del automóvil, en general (turismos y furgonetas)</option>
+                            <option value="Mozos de carga y descarga, almacén y/o mercado de abastos">Mozos de carga y descarga, almacén y/o mercado de abastos</option>
+                            <option value="Mozos de habitación o valets">Mozos de habitación o valets</option>
+                            <option value="Operadores de central telefónica">Operadores de central telefónica</option>
+                            <option value="Operadores de máquinas para elaborar productos cárnicos, en general">Operadores de máquinas para elaborar productos cárnicos, en general</option>
+                            <option value="Operadores-grabadores de datos en ordenador">Operadores-grabadores de datos en ordenador</option>
+                            <option value="Ordenanzas">Ordenanzas</option>
+                            <option value="Organizadores de puntos de venta en autoservicios">Organizadores de puntos de venta en autoservicios</option>
+                            <option value="Pasteleros">Pasteleros</option>
+                            <option value="Peones de la industria de la alimentación, bebidas y tabaco">Peones de la industria de la alimentación, bebidas y tabaco</option>
+                            <option value="Peones del transporte, en general">Peones del transporte, en general</option>
+                            <option value="Personal de limpieza o limpiadores en general">Personal de limpieza o limpiadores en general</option>
+                            <option value="Pinches de cocina">Pinches de cocina</option>
+                            <option value="Preparadores de catering">Preparadores de catering</option>
+                            <option value="Recepcionistas de hotel">Recepcionistas de hotel</option>
+                            <option value="Recepcionistas en establecimientos distintos de oficinas, en general">Recepcionistas en establecimientos distintos de oficinas, en general</option>
+                            <option value="Recepcionistas-telefonistas en oficinas, en general">Recepcionistas-telefonistas en oficinas, en general</option>
+                            <option value="Repartidores a domicilio, a pie">Repartidores a domicilio, a pie</option>
+                            <option value="Reponedores de hipermercado">Reponedores de hipermercado</option>
+                            <option value="Reposteros-pasteleros (hostelería)">Reposteros-pasteleros (hostelería)</option>
+                            <option value="Representantes de comercio, en general">Representantes de comercio, en general</option>
+                            <option value="Taquilleros">Taquilleros</option>
+                            <option value="Técnico de operativa interna de entidad financiera">Técnico de operativa interna de entidad financiera</option>
+                            <option value="Técnicos de apoyo en auditoria y/u operaciones financieras">Técnicos de apoyo en auditoria y/u operaciones financieras</option>
+                            <option value="Técnicos superiores en contabilidad y/o finanzas, en general">Técnicos superiores en contabilidad y/o finanzas, en general</option>
+                            <option value="Técnicos superiores en organización y administración de empresas, en general">Técnicos superiores en organización y administración de empresas, en general</option>
+                            <option value="Técnicos superiores en recursos humanos, en general">Técnicos superiores en recursos humanos, en general</option>
+                            <option value="Teleoperadores">Teleoperadores</option>
+                            <option value="Trabajadores de conservación de parques urbanos, jardines históricos y botánicos">Trabajadores de conservación de parques urbanos, jardines históricos y botánicos</option>
+                            <option value="Trabajadores de huertas, invernaderos, viveros y jardines, en general">Trabajadores de huertas, invernaderos, viveros y jardines, en general</option>
+                            <option value="Trabajadores de la elaboración de caramelos y dulces">Trabajadores de la elaboración de caramelos y dulces</option>
+                            <option value="Trabajadores del cultivo de plantas para flor cortada">Trabajadores del cultivo de plantas para flor cortada</option>
+                            <option value="Trabajadores en centros de jardinería">Trabajadores en centros de jardinería</option>
+                            <option value="Vendedores no clasificados bajo otros epígrafes">Vendedores no clasificados bajo otros epígrafes</option>
+                            <option value="Vendedores por teléfono">Vendedores por teléfono</option>
+                            <option value="Vendedores técnicos, en general">Vendedores técnicos, en general</option>
+                        </select>
+                    </td>
+                    <td colspan="2">
+                        <label>Estado civil: </label>
+                        <br>
+                        <input type="radio" name="estadocivil" checked>Soltero
+                        <br>
+                        <input type="radio" name="estadocivil">Casado
+                        <br>
+                        <input type="radio" name="estadocivil">Pareja de hecho
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Hobbies: </label>
+                            <br>
+                            <input type="checkbox" name="confirmacion1">Deporte
+                            <br>
+                            <input type="checkbox" name="confirmacion1">Cine
+                            <br>
+                            <input type="checkbox" name="confirmacion1">Copas
+                    </td>
+                    <td>
+                        <label>¿Tienes móvil?: </label>
+                        <br>
+                        <input type="radio" name="movil" id="marcamovilsi" onclick="javascript:habilitarmarcamovil();">Sí
+                        <br>
+                        <input type="radio" name="movil" onclick="javascript:habilitarmarcamovil();" checked>No
+                    </td>
+                    <td>
+                        <label>Marca: </label>
+                        <select name="marcamovil" id="marcamovil" size="1" disabled required>
+                            <option value="" selected disabled hidden>Seleccione una opción</option>
+                            <option value="10.Or">10.Or</option>
+                            <option value="Acer">Acer</option>
+                            <option value="Advan">Advan</option>
+                            <option value="AIS">AIS</option>
+                            <option value="Alcatel">Alcatel</option>
+                            <option value="Allview">Allview</option>
+                            <option value="Amoi">Amoi</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Archos">Archos</option>
+                            <option value="Aselsan">Aselsan</option>
+                            <option value="Asus">Asus</option>
+                            <option value="BBK">BBK</option>
+                            <option value="Beeline">Beeline</option>
+                            <option value="BenQ">BenQ</option>
+                            <option value="Binatone">Binatone</option>
+                            <option value="BlackBerry Limited">BlackBerry Limited</option>
+                            <option value="BLU Products">BLU Products</option>
+                            <option value="BQ">BQ</option>
+                            <option value="Brand">Brand</option>
+                            <option value="Brondi">Brondi</option>
+                            <option value="Bullitt">Bullitt Group</option>
+                            <option value="Caterpillar">Caterpillar</option>
+                            <option value="Celkon">Celkon</option>
+                            <option value="Cherry Mobile">Cherry Mobile</option>
+                            <option value="Condor">Condor</option>
+                            <option value="Coolpad">Coolpad</option>
+                            <option value="CREO">CREO</option>
+                            <option value="Cubot">Cubot</option>
+                            <option value="DataWind">DataWind</option>
+                            <option value="DBTel">DBTel</option>
+                            <option value="DoCoMo">DoCoMo</option>
+                            <option value="Dopod">Dopod</option>
+                            <option value="Doro">Doro</option>
+                            <option value="DTAC">DTAC</option>
+                            <option value="E-Boda">E-Boda</option>
+                            <option value="Essential Products">Essential Products</option>
+                            <option value="Evercoss">Evercoss</option>
+                            <option value="EvertekTunisie">EvertekTunisie</option>
+                            <option value="Evolio">Evolio</option>
+                            <option value="Explay">Explay</option>
+                            <option value="Fairphone">Fairphone</option>
+                            <option value="Firefly">Firefly</option>
+                            <option value="Foxconn">Foxconn</option>
+                            <option value="Fujitsu">Fujitsu</option>
+                            <option value="Garmin">Garmin</option>
+                            <option value="GeeksPhone">GeeksPhone</option>
+                            <option value="Gfive">Gfive</option>
+                            <option value="Gigabyte Technology">Gigabyte Technology</option>
+                            <option value="Gigaset">Gigaset</option>
+                            <option value="Gionee">Gionee</option>
+                            <option value="Google">Google</option>
+                            <option value="Gradiente">Gradiente</option>
+                            <option value="Gresso">Gresso</option>
+                            <option value="Groupe Bull">Groupe Bull</option>
+                            <option value="GTel">GTel</option>
+                            <option value="Haier">Haier</option>
+                            <option value="Handheld Group">Handheld Group</option>
+                            <option value="HCL">HCL</option>
+                            <option value="Highscreen">Highscreen</option>
+                            <option value="Hisense">Hisense</option>
+                            <option value="HMD Global">HMD Global</option>
+                            <option value="Honor">Honor</option>
+                            <option value="HP">HP</option>
+                            <option value="HTC">HTC</option>
+                            <option value="Huawei">Huawei</option>
+                            <option value="I-Mobile">I-Mobile</option>
+                            <option value="iball">iball</option>
+                            <option value="InFocus">InFocus</option>
+                            <option value="InfoSonics">InfoSonics</option>
+                            <option value="Intex Technologies">Intex Technologies</option>
+                            <option value="Jablotron">Jablotron</option>
+                            <option value="Jio">Jio</option>
+                            <option value="John's Phone">John's Phone</option>
+                            <option value="Jolla">Jolla</option>
+                            <option value="Just5">Just5</option>
+                            <option value="Karbonn Mobiles">Karbonn Mobiles</option>
+                            <option value="Kazam">Kazam</option>
+                            <option value="Konka">Konka</option>
+                            <option value="Koryolink">Koryolink</option>
+                            <option value="Kruger&Matz">Kruger&Matz</option>
+                            <option value="KT Tech">KT Tech</option>
+                            <option value="Kyocera">Kyocera</option>
+                            <option value="Kyoto Electronics">Kyoto Electronics</option>
+                            <option value="Lanix">Lanix</option>
+                            <option value="Lava International">Lava International</option>
+                            <option value="LeEco">LeEco</option>
+                            <option value="Lenovo">Lenovo</option>
+                            <option value="LG">LG</option>
+                            <option value="LYF">LYF</option>
+                            <option value="M Dot">M Dot</option>
+                            <option value="Manta Multimedia">Manta Multimedia</option>
+                            <option value="Marshall Amplification">Marshall Amplification</option>
+                            <option value="Medion">Medion</option>
+                            <option value="Megafon">Megafon</option>
+                            <option value="Meizu">Meizu</option>
+                            <option value="Micromax Informatics">Micromax Informatics</option>
+                            <option value="MITO">MITO</option>
+                            <option value="MLS">MLS</option>
+                            <option value="MobiWire">MobiWire</option>
+                            <option value="Motorola Mobility">Motorola Mobility</option>
+                            <option value="MTS">MTS</option>
+                            <option value="MyPhone">MyPhone</option>
+                            <option value="myPhone">myPhone</option>
+                            <option value="Myria">Myria</option>
+                            <option value="NEC-Casio">NEC-Casio</option>
+                            <option value="Nexian">Nexian</option>
+                            <option value="Nextbit">Nextbit</option>
+                            <option value="NGM">NGM</option>
+                            <option value="Ninetology">Ninetology</option>
+                            <option value="Ningbo Bird">Ningbo Bird</option>
+                            <option value="Nokia Corporation">Nokia Corporation</option>
+                            <option value="Obi Worldphone">Obi Worldphone</option>
+                            <option value="Olivetti">Olivetti</option>
+                            <option value="Onda Mobile Communication">Onda Mobile Communication</option>
+                            <option value="OnePlus">OnePlus</option>
+                            <option value="Onida Electronics">Onida Electronics</option>
+                            <option value="Oppo">Oppo</option>
+                            <option value="Panasonic">Panasonic</option>
+                            <option value="Pantech">Pantech</option>
+                            <option value="Philips">Philips</option>
+                            <option value="Polytron">Polytron</option>
+                            <option value="Positivo">Positivo</option>
+                            <option value="QMobile">QMobile</option>
+                            <option value="RoverPC">RoverPC</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Sansui">Sansui</option>
+                            <option value="Sharp">Sharp</option>
+                            <option value="SICO Technology">SICO Technology</option>
+                            <option value="Sitronics">Sitronics</option>
+                            <option value="Smartisan">Smartisan</option>
+                            <option value="Sony">Sony</option>
+                            <option value="Spice Digital">Spice Digital</option>
+                            <option value="Spice X">Spice X</option>
+                            <option value="Starmobile">Starmobile</option>
+                            <option value="TCL Corporation">TCL Corporation</option>
+                            <option value="TechniSat">TechniSat</option>
+                            <option value="Technology Happy Life">Technology Happy Life</option>
+                            <option value="Tecno Mobile">Tecno Mobile</option>
+                            <option value="teXet">teXet</option>
+                            <option value="Thuraya">Thuraya</option>
+                            <option value="Tiptel">Tiptel</option>
+                            <option value="Torque">Torque</option>
+                            <option value="True">True</option>
+                            <option value="Utok">Utok</option>
+                            <option value="Verzo">Verzo</option>
+                            <option value="Vestel">Vestel</option>
+                            <option value="Videocon">Videocon</option>
+                            <option value="Vivo">Vivo</option>
+                            <option value="Vodafone">Vodafone</option>
+                            <option value="Voice Mobile">Voice Mobile</option>
+                            <option value="Vsun">Vsun</option>
+                            <option value="Walton">Walton</option>
+                            <option value="Wasam">Wasam</option>
+                            <option value="Wellcom">Wellcom</option>
+                            <option value="Wiko">Wiko</option>
+                            <option value="Wileyfox">Wileyfox</option>
+                            <option value="X-tigi Mobile">X-tigi Mobile</option>
+                            <option value="Xiaomi">Xiaomi</option>
+                            <option value="Xolo">Xolo</option>
+                            <option value="Yotaphone">Yotaphone</option>
+                            <option value="YU Televentures">YU Televentures</option>
+                            <option value="Zonda">Zonda</option>
+                            <option value="Zopo Mobile">Zopo Mobile</option>
+                            <option value="ZTE">ZTE</option>
+                            <option value="ZUK Mobile">ZUK Mobile</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Comentarios personales: </label>
+                    </td>
+                    <td  colspan="2">
+                        <textarea name="comentarios" id="comentarios" rows="3"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <button type="submit">Enviar datos</button>
+                        <button type="reset" onclick="javascript:borrar();">Borrar los datos</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmiguelramosdediego.github.io%2Fpagina-web%2FJavaScript%2FPr%25C3%25A1cticas_formularios_JavaScript%2Fpractica1.html" target="_blank">
+                <img style="border:0;width:88px;height:31px" src="valid-html401-v.svg" alt="Valid HTML!" />
+            </a>
+        </span>
+        <span>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmiguelramosdediego.github.io%2Fpagina-web%2FJavaScript%2FPr%25C3%25A1cticas_formularios_JavaScript%2Festilopractica1.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+            </a>
+        </span>
+    </body>
+</html>

@@ -79,7 +79,7 @@ fieldset.dos label {
     color: #B404AE;
     font-weight: bold;
 }
-fieldset.dos label[name=fecha] {
+fieldset.dos label.fecha {
     color: black;
     font-weight: normal;
 }

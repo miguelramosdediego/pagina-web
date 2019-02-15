@@ -1,0 +1,73 @@
+body {
+    background-color: #D7ABCC;
+}
+table { /*Tamaño original: 800px*/
+    margin: auto;
+    border: 5px solid white;
+    border-collapse: collapse;
+    width: 799px;
+}
+td {
+    background-color: #FFC0CC;
+    border: 3px dotted white;
+    border-collapse: collapse;
+    padding: 8px;
+}
+label {
+    color: #820e88;
+}
+input[name=usuario] { /*Tamaño original: 136px*/
+    width: 131px;
+}
+input[name=contrasegna] { /*Tamaño original: 76px*/
+    width: 71px;
+}
+input[name=correoelectronico] { /*Tamaño original: 316px*/
+    width: 311px;
+}
+input[name=nombre] { /*Tamaño original: 136px*/
+    width: 131px;
+}
+input[name=fechanacimiento] { /*Tamaño original: 88px. No respetado*/
+	width: 114px;
+    border: 1px solid #737373;
+}
+input[name=DNI] { /*Tamaño original: 82px*/
+    width: 77px;
+}
+input[name=apellidos] { /*Tamaño original: 316px*/
+    width: 311px;
+}
+input[name=calle] {
+    width: 311px;
+}
+input[name=codigopostal] { /*Tamaño original: 58px*/
+    width: 53px;
+}
+select[name=ciudades] { /*Tamaño original: 131px*/
+    width: 130px;
+}
+input[name=telefono] { /*Tamaño original: 142px*/
+    width: 137px;
+}
+select[name=ocupacion] { /*Tamaño original: 131px*/
+    width: 130px;
+}
+select[name=marcamovil] { /*Tamaño original: 155px*/
+    width: 154px;
+}
+textarea[name=comentarios] { /*Tamaño original: 408px*/
+    resize: vertical;
+    border: 1px solid #737373;
+    width: 403px;
+}
+input, select {
+	height: auto;
+    border: 1px solid #737373;
+}
+input:focus, textarea:focus {
+    border: 1px solid #7c6250;
+    box-shadow: 0 0 5px 1px #820e88;
+}
+
+/* Diseño validaciones: https://webdesign.tutsplus.com/es/tutorials/html5-form-validation-with-the-pattern-attribute--cms-25145 */

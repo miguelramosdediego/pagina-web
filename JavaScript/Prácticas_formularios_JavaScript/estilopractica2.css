@@ -1,26 +1,44 @@
 header {
-    text-align: center;
     background-color: #01A9DB;
     height: 80px;
 }
+header div {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 8px;
+}
 header span {
+    margin-left: 25.15%;
     color: white;
     font-size: 30px;
     font-weight: bold;
 }
-aside {
-    position: absolute;
-    background-color: white;
-    top: 107px;
-    right: 0%;
-    width: 405px;
-    height: 82.5%;
-}
 section {
+    display: inline-block;
     background-color: #CCCCCC;
     width: 78.99%;
-    height: 770px;
-    margin-top: -12px;
+    height: 760px;
+}
+aside {
+    position: fixed; /*Requerida para que no le afecte el "textarea"*/
+    display: inline-block;
+    background-color: white;
+    width: 20.8%;
+    height: 81.2%;
+}
+aside div, aside p {
+    font-weight: bold;
+    padding: 5%;
+    text-align: center;
+}
+aside hr {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+aside div:hover {
+    background-color: #FFFE99;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 footer {
     color: white;
@@ -28,72 +46,47 @@ footer {
     text-align: center;
     height: 50px;
 }
-a[name=logow3schools] {
-    position: absolute;
-    top: 3.4%;
-    left: 15px;
-}
 section p {
     color: #CC0000;
     font-weight: bold;
     font-size: 12px;
+    margin-left: 8px;
 }
-form.uno {
+fieldset.uno, fieldset.dos, fieldset.tres, fieldset.cuatro {
     display: inline-block;
-    width: 40%;
+    width: 47.7%;
 }
-form.dos {
+fieldset.cinco, fieldset.seis {
     display: inline-block;
-    width: 40%;
-}
-form.tres {
-    display: inline-block;
-    width: 40%;
-}
-form.cuatro {
-    display: inline-block;
-    width: 40%;
-}
-form.cinco {
-    display: inline-block;
-    width: 100%;
-}
-form.seis {
-    display: inline-block;
-    width: 100%;
+    width: 98%;
 }
 * {
     color: black;
 }
-form.uno input, form.tres input {
+fieldset.uno input, fieldset.tres input, fieldset.tres select {
     position: absolute;
-    left: 20%;
+    left: 9.6%;
 }
-form.dos input, form.cuatro input {
+fieldset.dos input, fieldset.cuatro input {
     position: absolute;
-    left: 40%;
+    left: 48.8%;
 }
-form.uno label {
+fieldset.uno label {
     color: #CC0000;
     font-weight: bold;
 }
-form.dos label {
+fieldset.dos label {
     color: #B404AE;
     font-weight: bold;
 }
-form.dos label[name=fecha] {
+fieldset.dos label[name=fecha] {
     color: black;
     font-weight: normal;
 }
-textarea {
-    resize: vertical;
-    border: 1px solid #737373;
-    width: 70%;
-}
-input:not[type=button], select { /*Tamaño original: 267px*/
-    width: 262px;
+select, input { /*Tamaño original: 267px*/
 	height: auto;
     border: 1px solid #737373;
+    width: 262px;
 }
 input[type=date] {
     width: 116px; /*Tamaño original: 121px*/
@@ -113,6 +106,26 @@ select[name=provincia] {
 select[name=pais] {
     width: 146px; /*Tamaño original: 151px*/
 }
+input[type=submit] {
+    width:80px;
+}
 textarea {
-    width: 979px; /*Tamaño original: 984px*/
+    resize: vertical;
+    border: 1px solid #737373;
+    width: 100%; /*Tamaño original: 984px*/
+    max-height: 200px;
+}
+form {
+    margin: 8px;
+}
+section div.botones {
+    position: absolute;
+    left: 69.25%;
+}
+select[name=marcacoche] {
+    width: 130px;
+}
+input[type=color] {
+    width: 50px;
+    height: 15px;
 }

@@ -172,3 +172,39 @@ function borrar() {
     document.getElementById('marcamovil').disabled=true;
     document.getElementById('comentarios').style.height = '64px'; /* https://stackoverflow.com/questions/36087612/reset-textarea-height-in-javascript */
 }
+
+function comprobarcontrasegna(event) { /* https://stackoverflow.com/questions/22983479/how-to-check-password-field-with-confirm-password-field */
+    var x = document.getElementsByName('contrasegna')[0].value,
+        y = document.getElementsByName('repitecontrasegna')[0].value;
+
+    if (x === y) {
+        alert('Tras comprobar los datos requeridos, el formulario se envía');
+        return true;
+    }
+    else {
+        alert('Las contraseñas no son iguales');
+        alert('Tras comprobar los datos requeridos, los datos NO se envían');
+        event.preventDefault();
+        return false;
+    }
+}
+
+function despuescarnet() { /* http://jsfiddle.net/QAaHP/16/ */
+    if (document.getElementById('carnetsi').checked) {
+        document.getElementById('cochepropio').style.display = 'block';
+    }
+    else {
+        document.getElementById('cochepropio').style.display = 'none';
+    }
+}
+
+function despuescochepropio() { /* http://jsfiddle.net/QAaHP/16/ */
+    if (document.getElementById('cochepropiosi').checked) {
+        document.getElementById('color').style.display = 'block';
+        document.getElementById('marca').style.display = 'block';
+    }
+    else {
+        document.getElementById('color').style.display = 'none';
+        document.getElementById('marca').style.display = 'none';
+    }
+}

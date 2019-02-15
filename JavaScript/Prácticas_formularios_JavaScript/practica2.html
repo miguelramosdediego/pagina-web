@@ -9,40 +9,38 @@
     <body>
         <script type="text/javascript">fechayhoranegro();</script>
         <header>
+            <div>
+                <a href="https://www.w3schools.com/" name="logow3schools" target="_blank">
+                    <img src="w3schools.png" alt="w3schools" width="300px" height="45px">
+                </a>
+            </div>
             <span>FORMULARIO HTML5</span>
         </header>
-        <a href="https://www.w3schools.com/" name="logow3schools" target="_blank">
-            <img src="w3schools.png" alt="w3schools" width="300px" height="45px">
-        </a>
         <section>
             <p>Los campos coloreados son obligatorios</p>
-            <form class="uno">
-                <fieldset>
+            <form onsubmit="comprobarcontrasegna(event)">
+                <fieldset class="uno">
                     <legend>Datos de aplicación</legend>
                         <label>Usuario</label><input type="text" placeholder="Usuario" required autofocus>
                         <br>
-                        <label>Contraseña</label><input type="password" placeholder="Contraseña" required>
+                        <label>Contraseña</label><input type="password" name="contrasegna" placeholder="Contraseña" required>
                         <br>
-                        <label>Repite contraseña</label><input type="password" placeholder="Contraseña" required>
+                        <label>Repite contraseña</label><input type="password" name="repitecontrasegna" placeholder="Contraseña" required>
                 </fieldset>
-            </form>
-            <form class="dos">
-                <fieldset>
+                <fieldset class="dos">
                     <legend>Datos personales</legend>
-                        <label>Nombre</label><input type="text" placeholder="Nombre">
+                        <label>Nombre</label><input type="text" name="nombre" placeholder="Nombre">
                         <br>
-                        <label>Primer apellido</label><input type="text" placeholder="Primer apellido">
+                        <label>Primer apellido</label><input type="text" name="primerapellido" placeholder="Primer apellido">
                         <br>
-                        <label>Segundo apellido</label><input type="text" placeholder="Segundo apellido">
+                        <label>Segundo apellido</label><input type="text" name="segundoapellido" placeholder="Segundo apellido">
                         <br>
                         <label name="fecha">Fecha nacimiento</label><input type="date" name="fechanacimiento" id="fechanacimiento" onclick="javascript:limitefecha();">
                 </fieldset>
-            </form>
-            <br>
-            <form class="tres">
-                <fieldset>
+                <br>
+                <fieldset class="tres">
                     <legend>Dirección</legend>
-                        <label>Calle, número, piso, p...</label><input type="text" placeholder="Dirección completa">
+                        <label>Calle, número, piso...</label><input type="text" placeholder="Dirección completa">
                         <br>
                         <label>Código postal</label><input type="text" name="codigopostal" placeholder="Código postal">
                         <br>
@@ -299,9 +297,7 @@
                             <option value="Zimbabue">Zimbabue</option>
                         </select>
                 </fieldset>
-            </form>
-            <form class="cuatro">
-                <fieldset>
+                <fieldset class="cuatro">
                     <legend>Información de contacto</legend>
                         <label style="color:#CC0000; font-weight:bold">Email</label><input type="email" placeholder="Email" required>
                         <br>
@@ -309,18 +305,25 @@
                         <br>
                         <label>Teléfono móvil</label><input type="tel" placeholder="Teléfono móvil">
                 </fieldset>
-            </form>
-            <br>
-            <form class="cinco">
-                <fieldset>
+                <br>
+                <fieldset class="cinco">
                     <legend>Otros datos</legend>
                         <label>Carnet de conducir</label>
-                        <input type="radio" name="carnet">Sí
+                        <input type="radio" name="carnet" id="carnetsi" onclick="javascript:despuescarnet();">Sí
                         <input type="radio" name="carnet" checked>No
-                        <span><label>Coche propio</label><br>Sí<input type="radio"><input type="radio">No</span>
-                        <span><label>Color</label><br>Sí<input type="color"></span>
-                        <span>
-                            <label>Marca</label><select id="provincia" name="Provincia" size="1">
+                        <div id="cochepropio" style="display:none">
+                            <label>Coche propio</label>
+                            <input type="radio" name="tienescochepropio" id="cochepropiosi" onclick="javascript:despuescochepropio();">Sí
+                            <input type="radio" name="tienescochepropio" checked>No
+                        </div>
+                        <div id="color" style="display:none">
+                            <label>Color</label>
+                            <input type="color">
+                        </div>
+                        <div id="marca" style="display:none">
+                            <label>Marca</label>
+                            <select id="marcacoche" name="marcacoche" size="1">
+                                <option value="" selected disabled hidden>Selecciona marca</option>
                                 <option value="AAI Komodo">AAI Komodo</option>
                                 <option value="Abais">Abais</option>
                                 <option value="Abarth">Abarth</option>
@@ -1107,29 +1110,40 @@
                                 <option value="Zimmer">Zimmer</option>
                                 <option value="Zotye">Zotye</option>
                             </select>
-                        </span>
+                        </div>
                 </fieldset>
-            </form>
-            <br>
-            <form class="seis">
-                <fieldset>
+                <fieldset class="seis">
                     <label>Comentario</label>
                     <br>
                     <textarea></textarea>
                 </fieldset>
-            </form>
-            <input type="submit" value="Enviar">
-            <input type="submit" value="Continuar">
+                <br>
+                <br>
+                <div class="botones">
+                <button type="submit">Enviar</button>
+                <button type="submit">Continuar</button>
+            </div>
         </section>
-        <aside>Contenido Relacionado
-            <a href="na abrirá una nueva pestaña enlazanhttps://www.w3schools.com/html/
-https://www.w3schools.com/css/
-" target="_blank"><img src="imagenes/html5.png" class="" alt="Logo HTML5" width="104px" height="145px"></a>
-            <a href="https://www.w3schools.com/htmlhttps://www.w3schools.com/css/
-https://www.w3schools.com/js/
-" target="_blank"><img src="imagenes/css.png" class="" alt="Logo CSS" width="104px" height="145px"></a>
-            <a href="https://www.w3schools.com/js/
-" target="_blank"><img src="imagenes/js.png" class="" alt="Logo JavaScript" width="104px" height="145px"></a>
+        <aside>
+            <p>Contenido Relacionado</p>
+            <hr>
+            <div>
+                <a href="https://www.w3schools.com/html/" name="html5" target="_blank">
+                    <img src="HTML5.svg" alt="Logo de HTML5" width="120px" height="120px">
+                </a>
+            </div>
+            <hr>
+            <div>
+                <a href="https://www.w3schools.com/css/" name="css" target="_blank">
+                    <img src="CSS3.svg" alt="Logo de CSS3" width="120px" height="120px">
+                </a>
+            </div>
+            <hr>
+            <div>
+                <a href="https://www.w3schools.com/js/" name="js" target="_blank">
+                    <img src="JS.jpg" alt="Logo de JavaScript" width="130px" height="130px">
+                </a>
+            </div>
         </aside>
         <footer>Ramos de Diego, Miguel</footer>
     </body>

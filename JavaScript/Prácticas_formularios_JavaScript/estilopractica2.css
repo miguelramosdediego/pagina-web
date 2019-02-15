@@ -1,85 +1,118 @@
-body {
-    background-color: #D7ABCC;
+header {
+    text-align: center;
+    background-color: #01A9DB;
+    height: 80px;
 }
-table {
-    margin: auto;
-    border: 5px solid white;
-    border-collapse: collapse;
-    width: 41.9%;
+header span {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
 }
-td {
-    background-color: #FFC0CC;
-    border: 3px dotted white;
-    border-collapse: collapse;
-    padding: 8px;
+aside {
+    position: absolute;
+    background-color: white;
+    top: 107px;
+    right: 0%;
+    width: 405px;
+    height: 82.5%;
 }
-label {
-    color: #820e88;
+section {
+    background-color: #CCCCCC;
+    width: 78.99%;
+    height: 770px;
+    margin-top: -12px;
 }
-input[type=text], [type=password], [type=email], [type=tel], [type=url], [type=number], [list], select {
-	height: auto;
-    border: 1px solid #737373;
+footer {
+    color: white;
+    background-color: #01A9DB;
+    text-align: center;
+    height: 50px;
 }
-input[type=date], [type=datetime-local] {
-	width: 113px;
-    border: 1px solid #737373;
+a[name=logow3schools] {
+    position: absolute;
+    top: 3.4%;
+    left: 15px;
 }
-input:focus, textarea:focus {
-    border: 1px solid #7c6250;
-    box-shadow: 0 0 5px 1px #820e88;
+section p {
+    color: #CC0000;
+    font-weight: bold;
+    font-size: 12px;
+}
+form.uno {
+    display: inline-block;
+    width: 40%;
+}
+form.dos {
+    display: inline-block;
+    width: 40%;
+}
+form.tres {
+    display: inline-block;
+    width: 40%;
+}
+form.cuatro {
+    display: inline-block;
+    width: 40%;
+}
+form.cinco {
+    display: inline-block;
+    width: 100%;
+}
+form.seis {
+    display: inline-block;
+    width: 100%;
+}
+* {
+    color: black;
+}
+form.uno input, form.tres input {
+    position: absolute;
+    left: 20%;
+}
+form.dos input, form.cuatro input {
+    position: absolute;
+    left: 40%;
+}
+form.uno label {
+    color: #CC0000;
+    font-weight: bold;
+}
+form.dos label {
+    color: #B404AE;
+    font-weight: bold;
+}
+form.dos label[name=fecha] {
+    color: black;
+    font-weight: normal;
 }
 textarea {
     resize: vertical;
     border: 1px solid #737373;
-    width: 403px;
+    width: 70%;
 }
-div.despuessihijos {
-    visibility: hidden;
+input:not[type=button], select { /*Tamaño original: 267px*/
+    width: 262px;
+	height: auto;
+    border: 1px solid #737373;
 }
-input[name=codigopostal] {
-    width: 40px;
-}
-input[name=DNI] {
-    width: 77px;
+input[type=date] {
+    width: 116px; /*Tamaño original: 121px*/
 }
 input[type=tel] {
-    width: 72px;
+    width: 137px; /*Tamaño original: 142px*/
 }
-input[name=usuario] {
-    width: 131px;
+input[name=codigopostal] {
+    width: 82px; /*Tamaño original: 87px*/
 }
-input[type=password] {
-    width: 71px;
+input[name=municipio] {
+    width: 143px; /*Tamaño original: 148px*/
 }
-input[type=email] {
-    width: 311px;
+select[name=provincia] {
+    width: 86px; /*Tamaño original: 91px*/
 }
-input[name=nombre] {
-    width: 131px;
+select[name=pais] {
+    width: 146px; /*Tamaño original: 151px*/
 }
-input[name=apellidos] {
-    width: 311px;
+textarea {
+    width: 979px; /*Tamaño original: 984px*/
 }
-input[name=calle] {
-    width: 311px;
-}
-select[id=ocupacion] {
-    max-width: 130px;
-}
-/*textarea {
-    display: block;
-    position: static;
-    margin-left: 25%;
-    resize: vertical;
-    min-height: 100px;
-    width: 35.45%;
-    max-height: 200px;
-    text-indent: 25px;
-    border: 1px solid #e6e2d3;
-    padding: 5px 0;
-    background-image: url('imagenes/form_icons/glyphicons_free/glyphicons_free/glyphicons/png/glyphicons-709-paragraph.png');
-    background-size: 10px;
-    background-position: 1% 5px;
-    background-repeat: no-repeat;*/
-
-    /*Diseño validaciones: https://webdesign.tutsplus.com/es/tutorials/html5-form-validation-with-the-pattern-attribute--cms-25145*/

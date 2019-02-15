@@ -1,27 +1,32 @@
 <!doctype html>
 <html lang="es-ES">
     <head>
-        <link rel="stylesheet" type="text/css" href="estilopractica.css">
+        <link rel="stylesheet" type="text/css" href="estilopractica2.css">
         <meta charset="utf-8">
         <script type="text/javascript" src="funciones.js"></script>
         <title>Práctica fomulario con JavaScript I</title><!--Restricciones con «pattern»: https://www.w3schools.com/tags/att_input_pattern.asp. Mas información con «regex», «expresiones regulares»-->
     </head>
     <body>
-        <header>FORMULARIO HTML5</header>
+        <script type="text/javascript">fechayhoranegro();</script>
+        <header>
+            <span>FORMULARIO HTML5</span>
+        </header>
+        <a href="https://www.w3schools.com/" name="logow3schools" target="_blank">
+            <img src="w3schools.png" alt="w3schools" width="300px" height="45px">
+        </a>
         <section>
-            <script type="text/javascript">fechayhora();</script>
             <p>Los campos coloreados son obligatorios</p>
-            <form>
+            <form class="uno">
                 <fieldset>
                     <legend>Datos de aplicación</legend>
-                        <label>Usuario</label><input type="text" placeholder="Usuario" required>
+                        <label>Usuario</label><input type="text" placeholder="Usuario" required autofocus>
                         <br>
                         <label>Contraseña</label><input type="password" placeholder="Contraseña" required>
                         <br>
                         <label>Repite contraseña</label><input type="password" placeholder="Contraseña" required>
                 </fieldset>
             </form>
-            <form>
+            <form class="dos">
                 <fieldset>
                     <legend>Datos personales</legend>
                         <label>Nombre</label><input type="text" placeholder="Nombre">
@@ -30,21 +35,21 @@
                         <br>
                         <label>Segundo apellido</label><input type="text" placeholder="Segundo apellido">
                         <br>
-                        <label>Fecha nacimiento</label><input type="date" id="datafield" onclick="javascript:limitefecha();">
+                        <label name="fecha">Fecha nacimiento</label><input type="date" name="fechanacimiento" id="fechanacimiento" onclick="javascript:limitefecha();">
                 </fieldset>
             </form>
-            <form>
+            <br>
+            <form class="tres">
                 <fieldset>
                     <legend>Dirección</legend>
                         <label>Calle, número, piso, p...</label><input type="text" placeholder="Dirección completa">
                         <br>
-                        <label>Código postal</label><input type="text" placeholder="Código postal">
+                        <label>Código postal</label><input type="text" name="codigopostal" placeholder="Código postal">
                         <br>
-                        <label>Municipio</label><input type="text" placeholder="Municipio">
+                        <label>Municipio</label><input type="text" name="municipio" placeholder="Municipio">
                         <br>
                         <label>Provincia</label>
-                        <select id="provincia" name="Provincia" size="1">
-                            <option value="nada"></option>
+                        <select name="provincia" size="1">
                             <option value="Albacete">Albacete</option>
                             <option value="Alicante">Alicante</option>
                             <option value="Almería">Almería</option>
@@ -97,8 +102,7 @@
                         </select>
                         <br>
                         <label>País</label>
-                        <select>
-                            <option value="nada"></option>
+                        <select name="pais">
                             <option value="Afganistán">Afganistán</option>
                             <option value="Albania">Albania</option>
                             <option value="Alemania">Alemania</option>
@@ -296,31 +300,818 @@
                         </select>
                 </fieldset>
             </form>
-            <form>
+            <form class="cuatro">
                 <fieldset>
                     <legend>Información de contacto</legend>
-                        <label>Email</label><input type="email" placeholder="Email" required>
+                        <label style="color:#CC0000; font-weight:bold">Email</label><input type="email" placeholder="Email" required>
                         <br>
                         <label>Teléfono fijo</label><input type="tel" placeholder="Teléfono fijo">
                         <br>
                         <label>Teléfono móvil</label><input type="tel" placeholder="Teléfono móvil">
                 </fieldset>
             </form>
-            <form>
+            <br>
+            <form class="cinco">
                 <fieldset>
                     <legend>Otros datos</legend>
                         <label>Carnet de conducir</label>
                         <input type="radio" name="carnet">Sí
-                        <br>
-                        <input type="radio" name="carnet" selected>No
-
-                        <div><label>Coche propio</label><br>Sí<input type="radio"><input type="radio">No</div>
-                        <div><label>Color</label><br>Sí<input type=""></div>
-                        <div><label>Marca</label><select id="provincia" name="Provincia" size="1"></select></div>
-
+                        <input type="radio" name="carnet" checked>No
+                        <span><label>Coche propio</label><br>Sí<input type="radio"><input type="radio">No</span>
+                        <span><label>Color</label><br>Sí<input type="color"></span>
+                        <span>
+                            <label>Marca</label><select id="provincia" name="Provincia" size="1">
+                                <option value="AAI Komodo">AAI Komodo</option>
+                                <option value="Abais">Abais</option>
+                                <option value="Abarth">Abarth</option>
+                                <option value="AC">AC</option>
+                                <option value="Acadian">Acadian</option>
+                                <option value="Acura">Acura</option>
+                                <option value="Adam Motor Company">Adam Motor Company</option>
+                                <option value="Adamo GT">Adamo GT</option>
+                                <option value="Adelmo">Adelmo</option>
+                                <option value="Aero">Aero</option>
+                                <option value="Agrale">Agrale</option>
+                                <option value="AIL">AIL</option>
+                                <option value="Ajax">Ajax</option>
+                                <option value="Akepanich">Akepanich</option>
+                                <option value="Alfa Romeo">Alfa Romeo</option>
+                                <option value="Allard">Allard</option>
+                                <option value="Allevo">Allevo</option>
+                                <option value="Almac">Almac</option>
+                                <option value="Alpine">Alpine</option>
+                                <option value="Alta">Alta</option>
+                                <option value="Alternative Cars">Alternative Cars</option>
+                                <option value="Alvis">Alvis</option>
+                                <option value="AM General, Vehicle Production Group">AM General, Vehicle Production Group</option>
+                                <option value="AMC">AMC</option>
+                                <option value="American Simplex">American Simplex</option>
+                                <option value="Americar">Americar</option>
+                                <option value="Amherst">Amherst</option>
+                                <option value="Amoritz GT">Amoritz GT</option>
+                                <option value="Amphicar">Amphicar</option>
+                                <option value="Amplex">Amplex</option>
+                                <option value="Anadol">Anadol</option>
+                                <option value="Anasagasti">Anasagasti</option>
+                                <option value="Andino">Andino</option>
+                                <option value="Anteros">Anteros</option>
+                                <option value="Anziel">Anziel</option>
+                                <option value="Apal">Apal</option>
+                                <option value="Apal">Apal</option>
+                                <option value="Ariel">Ariel</option>
+                                <option value="Armstrong Siddeley">Armstrong Siddeley</option>
+                                <option value="ARO">ARO</option>
+                                <option value="ASA">ASA</option>
+                                <option value="ASA">ASA</option>
+                                <option value="Ascari">Ascari</option>
+                                <option value="Ascort">Ascort</option>
+                                <option value="Ashok Leyland">Ashok Leyland</option>
+                                <option value="Asia">Asia</option>
+                                <option value="Aspa">Aspa</option>
+                                <option value="Assal">Assal</option>
+                                <option value="Aston Martin">Aston Martin</option>
+                                <option value="Asüna">Asüna</option>
+                                <option value="Atax">Atax</option>
+                                <option value="Atlas Honda">Atlas Honda</option>
+                                <option value="Attica">Attica</option>
+                                <option value="Auburn">Auburn</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Aurica">Aurica</option>
+                                <option value="Austin">Austin</option>
+                                <option value="Austin">Austin</option>
+                                <option value="Austin-Healey">Austin-Healey</option>
+                                <option value="Australian Six">Australian Six</option>
+                                <option value="Australis">Australis</option>
+                                <option value="Auto Union">Auto Union</option>
+                                <option value="Autobianchi">Autobianchi</option>
+                                <option value="Autobuses King">Autobuses King</option>
+                                <option value="Autocars">Autocars</option>
+                                <option value="Autokinitoviomihania Ellados">Autokinitoviomihania Ellados</option>
+                                <option value="Automeccanica">Automeccanica</option>
+                                <option value="Autozam">Autozam</option>
+                                <option value="Avallone">Avallone</option>
+                                <option value="Avia">Avia</option>
+                                <option value="AzSamand">AzSamand</option>
+                                <option value="Baby-Brousse">Baby-Brousse</option>
+                                <option value="Badsey">Badsey</option>
+                                <option value="Bahman">Bahman</option>
+                                <option value="BAIC Group">BAIC Group</option>
+                                <option value="Bajaj">Bajaj</option>
+                                <option value="Balkania">Balkania</option>
+                                <option value="Ballot">Ballot</option>
+                                <option value="Baolong">Baolong</option>
+                                <option value="Barkia">Barkia</option>
+                                <option value="Beattie thence Redline">Beattie thence Redline</option>
+                                <option value="Beaumont">Beaumont</option>
+                                <option value="Beijing Automobile Works">Beijing Automobile Works</option>
+                                <option value="Beijing Automotive Industry Holding Corporation">Beijing Automotive Industry Holding Corporation</option>
+                                <option value="Belga Rise">Belga Rise</option>
+                                <option value="Bentley">Bentley</option>
+                                <option value="Benz">Benz</option>
+                                <option value="Berkeley">Berkeley</option>
+                                <option value="Berliet">Berliet</option>
+                                <option value="Bertone">Bertone</option>
+                                <option value="BET">BET</option>
+                                <option value="Bianco">Bianco</option>
+                                <option value="Birchfield">Birchfield</option>
+                                <option value="Birkin">Birkin</option>
+                                <option value="Bizzarrini">Bizzarrini</option>
+                                <option value="Blade">Blade</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Bolwell">Bolwell</option>
+                                <option value="Bond">Bond</option>
+                                <option value="Borgward">Borgward</option>
+                                <option value="Bourassa">Bourassa</option>
+                                <option value="Bricklin">Bricklin</option>
+                                <option value="Bristol">Bristol</option>
+                                <option value="Bristol">Bristol</option>
+                                <option value="British Salmson">British Salmson</option>
+                                <option value="BRM Buggy">BRM Buggy</option>
+                                <option value="Brock">Brock</option>
+                                <option value="Brooks">Brooks</option>
+                                <option value="Buchanan">Buchanan</option>
+                                <option value="Buckle">Buckle</option>
+                                <option value="Buckler">Buckler</option>
+                                <option value="Bufori">Bufori</option>
+                                <option value="Bugatti">Bugatti</option>
+                                <option value="Bugre">Bugre</option>
+                                <option value="Buick">Buick</option>
+                                <option value="Bulgaralpine">Bulgaralpine</option>
+                                <option value="Bulgarrenault">Bulgarrenault</option>
+                                <option value="Bullet">Bullet</option>
+                                <option value="Bush Ranger">Bush Ranger</option>
+                                <option value="BXR">BXR</option>
+                                <option value="BYD">BYD</option>
+                                <option value="C-FEE">C-FEE</option>
+                                <option value="C.AR">C.AR</option>
+                                <option value="Cadillac">Cadillac</option>
+                                <option value="Caldwell Vale">Caldwell Vale</option>
+                                <option value="Canadian">Canadian</option>
+                                <option value="Canadian Motor">Canadian Motor</option>
+                                <option value="Carbontech">Carbontech</option>
+                                <option value="Carlton">Carlton</option>
+                                <option value="Caterham Cars">Caterham Cars</option>
+                                <option value="Centaurus">Centaurus</option>
+                                <option value="Chamonix">Chamonix</option>
+                                <option value="Chang'an Motors">Chang'an Motors</option>
+                                <option value="Changfeng Motor">Changfeng Motor</option>
+                                <option value="Changhe">Changhe</option>
+                                <option value="Checker">Checker</option>
+                                <option value="Cheetah">Cheetah</option>
+                                <option value="Chenard-Walcker">Chenard-Walcker</option>
+                                <option value="Cherdchai">Cherdchai</option>
+                                <option value="Chery">Chery</option>
+                                <option value="Chevrolet">Chevrolet</option>
+                                <option value="Chevron">Chevron</option>
+                                <option value="ChienThang">ChienThang</option>
+                                <option value="Chinkara">Chinkara</option>
+                                <option value="Chrysler">Chrysler</option>
+                                <option value="Chrysler">Chrysler</option>
+                                <option value="Chrysler">Chrysler</option>
+                                <option value="Cisitalia">Cisitalia</option>
+                                <option value="Citroën">Citroën</option>
+                                <option value="Classic Glass">Classic Glass</option>
+                                <option value="Clinton">Clinton</option>
+                                <option value="CMC">CMC</option>
+                                <option value="Cobra">Cobra</option>
+                                <option value="Colonial">Colonial</option>
+                                <option value="Colt">Colt</option>
+                                <option value="Comarth">Comarth</option>
+                                <option value="Cord">Cord</option>
+                                <option value="Crosley">Crosley</option>
+                                <option value="Crowther">Crowther</option>
+                                <option value="CT&T">CT&T</option>
+                                <option value="Dacia">Dacia</option>
+                                <option value="Dacon">Dacon</option>
+                                <option value="Dadi">Dadi</option>
+                                <option value="Daewoo">Daewoo</option>
+                                <option value="DAF">DAF</option>
+                                <option value="Daihatsu">Daihatsu</option>
+                                <option value="Daimler">Daimler</option>
+                                <option value="Dardo">Dardo</option>
+                                <option value="Darracq">Darracq</option>
+                                <option value="Datsun">Datsun</option>
+                                <option value="David Brown">David Brown</option>
+                                <option value="Daytona">Daytona</option>
+                                <option value="DB">DB</option>
+                                <option value="de Carlo">de Carlo</option>
+                                <option value="De Dion-Bouton">De Dion-Bouton</option>
+                                <option value="De Joux">De Joux</option>
+                                <option value="De Tomaso">De Tomaso</option>
+                                <option value="Delage">Delage</option>
+                                <option value="Delahaye">Delahaye</option>
+                                <option value="Dellepiane">Dellepiane</option>
+                                <option value="Democrata">Democrata</option>
+                                <option value="Dennison">Dennison</option>
+                                <option value="DeSoto">DeSoto</option>
+                                <option value="Deva">Deva</option>
+                                <option value="Devaux">Devaux</option>
+                                <option value="Devrim">Devrim</option>
+                                <option value="Dewan Farooque Motors">Dewan Farooque Motors</option>
+                                <option value="Diar">Diar</option>
+                                <option value="Diardi">Diardi</option>
+                                <option value="DIM">DIM</option>
+                                <option value="Dina">Dina</option>
+                                <option value="DKW">DKW</option>
+                                <option value="Dodge">Dodge</option>
+                                <option value="Dominion Motors Frontenac">Dominion Motors Frontenac</option>
+                                <option value="Domy Auto">Domy Auto</option>
+                                <option value="Dongfeng">Dongfeng</option>
+                                <option value="Dongfeng Fengshen">Dongfeng Fengshen</option>
+                                <option value="Donkervoort">Donkervoort</option>
+                                <option value="DR">DR</option>
+                                <option value="DRB">DRB</option>
+                                <option value="DS">DS</option>
+                                <option value="DSD Design and Motorsport">DSD Design and Motorsport</option>
+                                <option value="Duesenberg">Duesenberg</option>
+                                <option value="E-Vade">E-Vade</option>
+                                <option value="E-Z-GO">E-Z-GO</option>
+                                <option value="Eagle">Eagle</option>
+                                <option value="Eagle">Eagle</option>
+                                <option value="Edra">Edra</option>
+                                <option value="Edsel">Edsel</option>
+                                <option value="Egy-Tech">Egy-Tech</option>
+                                <option value="El Terruno">El Terruno</option>
+                                <option value="ElectraMeccanica">ElectraMeccanica</option>
+                                <option value="Elfin">Elfin</option>
+                                <option value="Elio Motors">Elio Motors</option>
+                                <option value="Elva">Elva</option>
+                                <option value="ELVO">ELVO</option>
+                                <option value="Enfield">Enfield</option>
+                                <option value="Engesa">Engesa</option>
+                                <option value="Eniak">Eniak</option>
+                                <option value="Enterra">Enterra</option>
+                                <option value="Envemo">Envemo</option>
+                                <option value="Envoy">Envoy</option>
+                                <option value="Epic">Epic</option>
+                                <option value="Equus Automotive">Equus Automotive</option>
+                                <option value="Equus Thundix">Equus Thundix</option>
+                                <option value="Esemka">Esemka</option>
+                                <option value="Etox">Etox</option>
+                                <option value="Eunos">Eunos</option>
+                                <option value="Everson">Everson</option>
+                                <option value="Everus">Everus</option>
+                                <option value="Excelsior">Excelsior</option>
+                                <option value="Eysink">Eysink</option>
+                                <option value="ɛ̃fini">ɛ̃fini</option>
+                                <option value="Fabral">Fabral</option>
+                                <option value="Facel Vega">Facel Vega</option>
+                                <option value="Fairthorpe">Fairthorpe</option>
+                                <option value="Falcon">Falcon</option>
+                                <option value="FANASA">FANASA</option>
+                                <option value="Faraday">Faraday</option>
+                                <option value="Farus">Farus</option>
+                                <option value="FAW Tianjin">FAW Tianjin</option>
+                                <option value="FCA Srbija">FCA Srbija</option>
+                                <option value="Feresa">Feresa</option>
+                                <option value="Ferrari">Ferrari</option>
+                                <option value="Fiat">Fiat</option>
+                                <option value="Fiat-Abarth">Fiat-Abarth</option>
+                                <option value="Finch">Finch</option>
+                                <option value="First Automobile Works">First Automobile Works</option>
+                                <option value="Fisker">Fisker</option>
+                                <option value="FN">FN</option>
+                                <option value="FNM">FNM</option>
+                                <option value="Force Motors">Force Motors</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Ford Motor">Ford Motor</option>
+                                <option value="Ford România S.A.">Ford România S.A.</option>
+                                <option value="Formosa">Formosa</option>
+                                <option value="Forta">Forta</option>
+                                <option value="Foton">Foton</option>
+                                <option value="FPV">FPV</option>
+                                <option value="Fraser">Fraser</option>
+                                <option value="Frazer">Frazer</option>
+                                <option value="Frazer Nash">Frazer Nash</option>
+                                <option value="Frontenac">Frontenac</option>
+                                <option value="FSO">FSO</option>
+                                <option value="Fudi">Fudi</option>
+                                <option value="Fukang">Fukang</option>
+                                <option value="Fuqi">Fuqi</option>
+                                <option value="GAC Group">GAC Group</option>
+                                <option value="Ganja Machine Factory">Ganja Machine Factory</option>
+                                <option value="Gareau">Gareau</option>
+                                <option value="Gatter">Gatter</option>
+                                <option value="GAZ">GAZ</option>
+                                <option value="Geely">Geely</option>
+                                <option value="Genesis">Genesis</option>
+                                <option value="Geo">Geo</option>
+                                <option value="Ghandhara Industries">Ghandhara Industries</option>
+                                <option value="Ghandhara Nissan">Ghandhara Nissan</option>
+                                <option value="Giannini">Giannini</option>
+                                <option value="Gilbern">Gilbern</option>
+                                <option value="Ginetta">Ginetta</option>
+                                <option value="Giocattolo">Giocattolo</option>
+                                <option value="Glas">Glas</option>
+                                <option value="GMC">GMC</option>
+                                <option value="GMK">GMK</option>
+                                <option value="Gnom">Gnom</option>
+                                <option value="Gobron-Brillié">Gobron-Brillié</option>
+                                <option value="Goggomobil">Goggomobil</option>
+                                <option value="Goliath">Goliath</option>
+                                <option value="Gonow">Gonow</option>
+                                <option value="Gordon">Gordon</option>
+                                <option value="Gordon-Keeble">Gordon-Keeble</option>
+                                <option value="Gray-Dort">Gray-Dort</option>
+                                <option value="Great Wall Motors">Great Wall Motors</option>
+                                <option value="Green Field Motor">Green Field Motor</option>
+                                <option value="Grumett">Grumett</option>
+                                <option value="Grupo Electrico Motorizado">Grupo Electrico Motorizado</option>
+                                <option value="GSM">GSM</option>
+                                <option value="GTA Motor">GTA Motor</option>
+                                <option value="Guangqi Honda">Guangqi Honda</option>
+                                <option value="Guangzhou Automobile Industry Group">Guangzhou Automobile Industry Group</option>
+                                <option value="Guitolar">Guitolar</option>
+                                <option value="Guizhou / Yunque">Guizhou / Yunque</option>
+                                <option value="Gurgel">Gurgel</option>
+                                <option value="Hafei">Hafei</option>
+                                <option value="Haima Automobile">Haima Automobile</option>
+                                <option value="Hakar">Hakar</option>
+                                <option value="Hansa">Hansa</option>
+                                <option value="Harasta Ltd.">Harasta Ltd.</option>
+                                <option value="Harper Sports Cars">Harper Sports Cars</option>
+                                <option value="Hartnett">Hartnett</option>
+                                <option value="Haval">Haval</option>
+                                <option value="Hawtai">Hawtai</option>
+                                <option value="Hayden Dart">Hayden Dart</option>
+                                <option value="Healey">Healey</option>
+                                <option value="Heavy Industries Taxila">Heavy Industries Taxila</option>
+                                <option value="Heinkel">Heinkel</option>
+                                <option value="Hennessey">Hennessey</option>
+                                <option value="Henry J">Henry J</option>
+                                <option value="Hercules">Hercules</option>
+                                <option value="Heron">Heron</option>
+                                <option value="Hi-Tech">Hi-Tech</option>
+                                <option value="Hillman">Hillman</option>
+                                <option value="Hindustan">Hindustan</option>
+                                <option value="Hino">Hino</option>
+                                <option value="Hinopak">Hinopak</option>
+                                <option value="Hispano Suiza">Hispano Suiza</option>
+                                <option value="Hispano-Argentina">Hispano-Argentina</option>
+                                <option value="Hofstetter turbo">Hofstetter turbo</option>
+                                <option value="Holden">Holden</option>
+                                <option value="Holland Car">Holland Car</option>
+                                <option value="Honda">Honda</option>
+                                <option value="Honda Atlas Cars Pakistan">Honda Atlas Cars Pakistan</option>
+                                <option value="Hongqi">Hongqi</option>
+                                <option value="Horch">Horch</option>
+                                <option value="Hotchkiss">Hotchkiss</option>
+                                <option value="Hradyesh">Hradyesh</option>
+                                <option value="HSV">HSV</option>
+                                <option value="Huachen">Huachen</option>
+                                <option value="Huali">Huali</option>
+                                <option value="Huanghai">Huanghai</option>
+                                <option value="Huayang">Huayang</option>
+                                <option value="Hudson">Hudson</option>
+                                <option value="Hulme">Hulme</option>
+                                <option value="Hult Healey">Hult Healey</option>
+                                <option value="Humber">Humber</option>
+                                <option value="Hurtan">Hurtan</option>
+                                <option value="Hwanghai">Hwanghai</option>
+                                <option value="Hyundai">Hyundai</option>
+                                <option value="ICML">ICML</option>
+                                <option value="IDA-Opel">IDA-Opel</option>
+                                <option value="Ilinga">Ilinga</option>
+                                <option value="Imperia">Imperia</option>
+                                <option value="Imperial">Imperial</option>
+                                <option value="India">India</option>
+                                <option value="Indio">Indio</option>
+                                <option value="Indus Motors Company">Indus Motors Company</option>
+                                <option value="Industrias Aeronáuticas y Mecánicas del Estado">Industrias Aeronáuticas y Mecánicas del Estado</option>
+                                <option value="Industrias Eduardo Sal-Lari">Industrias Eduardo Sal-Lari</option>
+                                <option value="Industrias Kaiser Argentina">Industrias Kaiser Argentina</option>
+                                <option value="Industrias WARV">Industrias WARV</option>
+                                <option value="Industries Mécaniques Maghrébines">Industries Mécaniques Maghrébines</option>
+                                <option value="Infiniti">Infiniti</option>
+                                <option value="Innocenti">Innocenti</option>
+                                <option value="Inokom">Inokom</option>
+                                <option value="Intermeccanica">Intermeccanica</option>
+                                <option value="Intermeccanica">Intermeccanica</option>
+                                <option value="Invicta">Invicta</option>
+                                <option value="Iran Khodro">Iran Khodro</option>
+                                <option value="ISIS">ISIS</option>
+                                <option value="Iso">Iso</option>
+                                <option value="Isuzu">Isuzu</option>
+                                <option value="Ivory Coast">Ivory Coast</option>
+                                <option value="Izh">Izh</option>
+                                <option value="Izuogu">Izuogu</option>
+                                <option value="Jaguar">Jaguar</option>
+                                <option value="Jawa">Jawa</option>
+                                <option value="Jeep">Jeep</option>
+                                <option value="Jensen">Jensen</option>
+                                <option value="Jianghuai">Jianghuai</option>
+                                <option value="Jiangling">Jiangling</option>
+                                <option value="Jiangnan">Jiangnan</option>
+                                <option value="Jinbei">Jinbei</option>
+                                <option value="Jonway">Jonway</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Joss">Joss</option>
+                                <option value="Jösse Car">Jösse Car</option>
+                                <option value="Jowett">Jowett</option>
+                                <option value="Kaditcha">Kaditcha</option>
+                                <option value="Kaipan">Kaipan</option>
+                                <option value="Kaiser">Kaiser</option>
+                                <option value="Kaiser-Ilin Industries">Kaiser-Ilin Industries</option>
+                                <option value="KAN">KAN</option>
+                                <option value="Karlmann">Karlmann</option>
+                                <option value="Karma">Karma</option>
+                                <option value="Karosa">Karosa</option>
+                                <option value="Khazar">Khazar</option>
+                                <option value="Khodro Kaveer">Khodro Kaveer</option>
+                                <option value="Kia">Kia</option>
+                                <option value="Kingstar">Kingstar</option>
+                                <option value="Kish Khodro">Kish Khodro</option>
+                                <option value="Koenigsegg">Koenigsegg</option>
+                                <option value="Koller">Koller</option>
+                                <option value="Korres">Korres</option>
+                                <option value="Kremer">Kremer</option>
+                                <option value="Kwaithong">Kwaithong</option>
+                                <option value="La Dalat">La Dalat</option>
+                                <option value="Lada">Lada</option>
+                                <option value="LaFayette">LaFayette</option>
+                                <option value="Lagonda">Lagonda</option>
+                                <option value="Lamborghini">Lamborghini</option>
+                                <option value="Lanchester">Lanchester</option>
+                                <option value="Lancia">Lancia</option>
+                                <option value="Land Rover">Land Rover</option>
+                                <option value="Landwind">Landwind</option>
+                                <option value="LaSalle">LaSalle</option>
+                                <option value="Lea-Francis">Lea-Francis</option>
+                                <option value="Leitch">Leitch</option>
+                                <option value="Lexus">Lexus</option>
+                                <option value="Leyland">Leyland</option>
+                                <option value="Li Nian">Li Nian</option>
+                                <option value="LIAZ">LIAZ</option>
+                                <option value="Liebao">Liebao</option>
+                                <option value="Lifan">Lifan</option>
+                                <option value="Lima">Lima</option>
+                                <option value="Lincoln">Lincoln</option>
+                                <option value="Lister">Lister</option>
+                                <option value="Litex Motors">Litex Motors</option>
+                                <option value="Lloyd">Lloyd</option>
+                                <option value="Lloyd">Lloyd</option>
+                                <option value="Lloyd-Hartnett">Lloyd-Hartnett</option>
+                                <option value="Lobini">Lobini</option>
+                                <option value="Local">Local</option>
+                                <option value="London Six">London Six</option>
+                                <option value="Lonsdale">Lonsdale</option>
+                                <option value="Lotus">Lotus</option>
+                                <option value="LTI Shanghai Automobile">LTI Shanghai Automobile</option>
+                                <option value="Lucid">Lucid</option>
+                                <option value="Luxgen">Luxgen</option>
+                                <option value="Lyons">Lyons</option>
+                                <option value="Mahindra & Mahindra">Mahindra & Mahindra</option>
+                                <option value="Manic GT">Manic GT</option>
+                                <option value="Marauder">Marauder</option>
+                                <option value="Marlborough">Marlborough</option>
+                                <option value="Marquette">Marquette</option>
+                                <option value="Marussia">Marussia</option>
+                                <option value="Maruti">Maruti</option>
+                                <option value="Maruti Suzuki">Maruti Suzuki</option>
+                                <option value="Maserati">Maserati</option>
+                                <option value="Master">Master</option>
+                                <option value="Mastretta">Mastretta</option>
+                                <option value="Matchedje Motors">Matchedje Motors</option>
+                                <option value="Matra">Matra</option>
+                                <option value="Matra">Matra</option>
+                                <option value="Mauser">Mauser</option>
+                                <option value="MAVA-Renault">MAVA-Renault</option>
+                                <option value="Maxwell">Maxwell</option>
+                                <option value="Mazda">Mazda</option>
+                                <option value="Mazzanti">Mazzanti</option>
+                                <option value="McLaren">McLaren</option>
+                                <option value="McLaughlin">McLaughlin</option>
+                                <option value="McRae">McRae</option>
+                                <option value="MEBEA">MEBEA</option>
+                                <option value="Megatech">Megatech</option>
+                                <option value="Mercedes">Mercedes</option>
+                                <option value="Mercedes-AMG">Mercedes-AMG</option>
+                                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                <option value="Mercer">Mercer</option>
+                                <option value="Mercury">Mercury</option>
+                                <option value="Messerschmitt">Messerschmitt</option>
+                                <option value="Metalurgica Laguarda">Metalurgica Laguarda</option>
+                                <option value="Meteor">Meteor</option>
+                                <option value="Metropolitan">Metropolitan</option>
+                                <option value="MG">MG</option>
+                                <option value="Millat Tractors">Millat Tractors</option>
+                                <option value="Mine">Mine</option>
+                                <option value="Minerva">Minerva</option>
+                                <option value="Mini">Mini</option>
+                                <option value="Mistral">Mistral</option>
+                                <option value="Mitsubishi">Mitsubishi</option>
+                                <option value="Mitsubishi">Mitsubishi</option>
+                                <option value="Miura">Miura</option>
+                                <option value="Miver & ga">Miver & ga</option>
+                                <option value="Mobius">Mobius</option>
+                                <option value="Monarch">Monarch</option>
+                                <option value="Monteverdi">Monteverdi</option>
+                                <option value="Moon">Moon</option>
+                                <option value="Moose Jaw Standard">Moose Jaw Standard</option>
+                                <option value="Morattab">Morattab</option>
+                                <option value="Morgan">Morgan</option>
+                                <option value="Morris">Morris</option>
+                                <option value="Morris">Morris</option>
+                                <option value="Moskvitch">Moskvitch</option>
+                                <option value="Moskvitch">Moskvitch</option>
+                                <option value="Mosler">Mosler</option>
+                                <option value="MP Lafer">MP Lafer</option>
+                                <option value="MTX / Metalex">MTX / Metalex</option>
+                                <option value="Mustang Max">Mustang Max</option>
+                                <option value="MVM">MVM</option>
+                                <option value="Namco">Namco</option>
+                                <option value="Nanjing Automobile Corporation">Nanjing Automobile Corporation</option>
+                                <option value="Nanjing Soyat">Nanjing Soyat</option>
+                                <option value="Nash">Nash</option>
+                                <option value="Nash-Healey">Nash-Healey</option>
+                                <option value="Nasr">Nasr</option>
+                                <option value="NAZ">NAZ</option>
+                                <option value="Neorion">Neorion</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="NEVS">NEVS</option>
+                                <option value="Nexus Automotive">Nexus Automotive</option>
+                                <option value="Niama-Reisser">Niama-Reisser</option>
+                                <option value="Nissan">Nissan</option>
+                                <option value="Nissan">Nissan</option>
+                                <option value="Nobe">Nobe</option>
+                                <option value="Nordex">Nordex</option>
+                                <option value="Nota">Nota</option>
+                                <option value="NSU">NSU</option>
+                                <option value="Nyayo">Nyayo</option>
+                                <option value="O.S.C.A.">O.S.C.A.</option>
+                                <option value="Oakland">Oakland</option>
+                                <option value="Ohio Electric">Ohio Electric</option>
+                                <option value="Oldsmobile">Oldsmobile</option>
+                                <option value="Oliva">Oliva</option>
+                                <option value="Oltcit">Oltcit</option>
+                                <option value="Opel">Opel</option>
+                                <option value="Optimal Energy">Optimal Energy</option>
+                                <option value="Özaltin">Özaltin</option>
+                                <option value="Packard">Packard</option>
+                                <option value="Pagani">Pagani</option>
+                                <option value="Pak Suzuki">Pak Suzuki</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Pan-Car">Pan-Car</option>
+                                <option value="Panhard">Panhard</option>
+                                <option value="Panhard et Levassor">Panhard et Levassor</option>
+                                <option value="Panoz">Panoz</option>
+                                <option value="Panther">Panther</option>
+                                <option value="Paramount">Paramount</option>
+                                <option value="Pars Khodro">Pars Khodro</option>
+                                <option value="Paykan">Paykan</option>
+                                <option value="Peerless">Peerless</option>
+                                <option value="Pegaso">Pegaso</option>
+                                <option value="Pellandini">Pellandini</option>
+                                <option value="Perana">Perana</option>
+                                <option value="Perana">Perana</option>
+                                <option value="Perodua">Perodua</option>
+                                <option value="Peugeot">Peugeot</option>
+                                <option value="Pinifarina">Pinifarina</option>
+                                <option value="Pioneer">Pioneer</option>
+                                <option value="Pirin-Fiat">Pirin-Fiat</option>
+                                <option value="Plymouth">Plymouth</option>
+                                <option value="Polaris">Polaris</option>
+                                <option value="Polarsun Automobile">Polarsun Automobile</option>
+                                <option value="Polski Fiat">Polski Fiat</option>
+                                <option value="Pontiac">Pontiac</option>
+                                <option value="Porsche">Porsche</option>
+                                <option value="Portaro">Portaro</option>
+                                <option value="Praga">Praga</option>
+                                <option value="PRB">PRB</option>
+                                <option value="Premier">Premier</option>
+                                <option value="Premier">Premier</option>
+                                <option value="PRETIS">PRETIS</option>
+                                <option value="Prince">Prince</option>
+                                <option value="Princess">Princess</option>
+                                <option value="Protea">Protea</option>
+                                <option value="Proto">Proto</option>
+                                <option value="Proton">Proton</option>
+                                <option value="Puma">Puma</option>
+                                <option value="Puma">Puma</option>
+                                <option value="Purvis Eureka">Purvis Eureka</option>
+                                <option value="Pyeonghwa Motors">Pyeonghwa Motors</option>
+                                <option value="Pyongsang Auto Works">Pyongsang Auto Works</option>
+                                <option value="Python">Python</option>
+                                <option value="Qoros">Qoros</option>
+                                <option value="Queen">Queen</option>
+                                <option value="Racefab">Racefab</option>
+                                <option value="Radical">Radical</option>
+                                <option value="RAF">RAF</option>
+                                <option value="Raj Ferrari">Raj Ferrari</option>
+                                <option value="Rambler">Rambler</option>
+                                <option value="Ranger">Ranger</option>
+                                <option value="Ranger">Ranger</option>
+                                <option value="Ranger">Ranger</option>
+                                <option value="Redline">Redline</option>
+                                <option value="Reliable Dayton">Reliable Dayton</option>
+                                <option value="Reliant">Reliant</option>
+                                <option value="Renault">Renault</option>
+                                <option value="Renault">Renault</option>
+                                <option value="Renault Samsung">Renault Samsung</option>
+                                <option value="Rengsjöbilen">Rengsjöbilen</option>
+                                <option value="Replicar Hellas">Replicar Hellas</option>
+                                <option value="Reva">Reva</option>
+                                <option value="Revoz">Revoz</option>
+                                <option value="Reyan">Reyan</option>
+                                <option value="Rezvani">Rezvani</option>
+                                <option value="Riley">Riley</option>
+                                <option value="Rimac">Rimac</option>
+                                <option value="Roewe">Roewe</option>
+                                <option value="Rolls-Royce">Rolls-Royce</option>
+                                <option value="Rosengart">Rosengart</option>
+                                <option value="Rösler & Jauernig">Rösler & Jauernig</option>
+                                <option value="Rossion">Rossion</option>
+                                <option value="Rover">Rover</option>
+                                <option value="Russo-Balt">Russo-Balt</option>
+                                <option value="RW">RW</option>
+                                <option value="SAAB">SAAB</option>
+                                <option value="Saehan">Saehan</option>
+                                <option value="Saenara">Saenara</option>
+                                <option value="SAIC Motor">SAIC Motor</option>
+                                <option value="SAIPA">SAIPA</option>
+                                <option value="Saker">Saker</option>
+                                <option value="Saleen">Saleen</option>
+                                <option value="Salmson">Salmson</option>
+                                <option value="San">San</option>
+                                <option value="San Vito">San Vito</option>
+                                <option value="Santa Matilde">Santa Matilde</option>
+                                <option value="Sao">Sao</option>
+                                <option value="Saturn">Saturn</option>
+                                <option value="Sazgar">Sazgar</option>
+                                <option value="Scavas">Scavas</option>
+                                <option value="Scion">Scion</option>
+                                <option value="SEAT">SEAT</option>
+                                <option value="Shaanxi Automobile Group">Shaanxi Automobile Group</option>
+                                <option value="Shahab Khodro">Shahab Khodro</option>
+                                <option value="Shaka">Shaka</option>
+                                <option value="Shanghai Maple Guorun Automobile">Shanghai Maple Guorun Automobile</option>
+                                <option value="Shelby American">Shelby American</option>
+                                <option value="Shinjin">Shinjin</option>
+                                <option value="Shrike">Shrike</option>
+                                <option value="Shuanghuan">Shuanghuan</option>
+                                <option value="Siam V.M.C.">Siam V.M.C.</option>
+                                <option value="Siata">Siata</option>
+                                <option value="Sibrava">Sibrava</option>
+                                <option value="Sichuan Tengzhong">Sichuan Tengzhong</option>
+                                <option value="Simca">Simca</option>
+                                <option value="SIN Cars">SIN Cars</option>
+                                <option value="Singer">Singer</option>
+                                <option value="Sipani Motors">Sipani Motors</option>
+                                <option value="Škoda">Škoda</option>
+                                <option value="Sofia">Sofia</option>
+                                <option value="Sohrab Cycles">Sohrab Cycles</option>
+                                <option value="Soueast Motors / Dongnan">Soueast Motors / Dongnan</option>
+                                <option value="Southern Cross">Southern Cross</option>
+                                <option value="Spania GTA">Spania GTA</option>
+                                <option value="Speranza Chery">Speranza Chery</option>
+                                <option value="Spyker">Spyker</option>
+                                <option value="Spyker">Spyker</option>
+                                <option value="Ssangyong">Ssangyong</option>
+                                <option value="SSC">SSC</option>
+                                <option value="Standard">Standard</option>
+                                <option value="Standard">Standard</option>
+                                <option value="Start">Start</option>
+                                <option value="Statesman">Statesman</option>
+                                <option value="Stearns-Knight">Stearns-Knight</option>
+                                <option value="Steel Brothers">Steel Brothers</option>
+                                <option value="Stelka">Stelka</option>
+                                <option value="Studebaker">Studebaker</option>
+                                <option value="Studebaker">Studebaker</option>
+                                <option value="Styl Kar">Styl Kar</option>
+                                <option value="Subaru">Subaru</option>
+                                <option value="Sunbeam">Sunbeam</option>
+                                <option value="Sunbeam-Talbot">Sunbeam-Talbot</option>
+                                <option value="Sungri Motors">Sungri Motors</option>
+                                <option value="Superformance">Superformance</option>
+                                <option value="Suzuki">Suzuki</option>
+                                <option value="SVOS">SVOS</option>
+                                <option value="Swallow">Swallow</option>
+                                <option value="SYM">SYM</option>
+                                <option value="TAC">TAC</option>
+                                <option value="Talbot">Talbot</option>
+                                <option value="Talbot">Talbot</option>
+                                <option value="Talbot-Lago">Talbot-Lago</option>
+                                <option value="Taller Danree y Silveira">Taller Danree y Silveira</option>
+                                <option value="TAM">TAM</option>
+                                <option value="Tangalakis">Tangalakis</option>
+                                <option value="Tanger">Tanger</option>
+                                <option value="Tarrant">Tarrant</option>
+                                <option value="TAS">TAS</option>
+                                <option value="Tata">Tata</option>
+                                <option value="Tatra">Tatra</option>
+                                <option value="Tauro Sport Auto">Tauro Sport Auto</option>
+                                <option value="Tawon Car Tawon Car">Tawon Car Tawon Car</option>
+                                <option value="TAZ">TAZ</option>
+                                <option value="TD2000">TD2000</option>
+                                <option value="Tesla">Tesla</option>
+                                <option value="THACO">THACO</option>
+                                <option value="Thai Rung">Thai Rung</option>
+                                <option value="Theologou">Theologou</option>
+                                <option value="Thunder Power">Thunder Power</option>
+                                <option value="Tianma">Tianma</option>
+                                <option value="TimorTimor">TimorTimor</option>
+                                <option value="Tobe">Tobe</option>
+                                <option value="Tofaş">Tofaş</option>
+                                <option value="Tomcar">Tomcar</option>
+                                <option value="Tongtian">Tongtian</option>
+                                <option value="Tornado">Tornado</option>
+                                <option value="Toroidion">Toroidion</option>
+                                <option value="Toyopet">Toyopet</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Trabant">Trabant</option>
+                                <option value="Tracta">Tracta</option>
+                                <option value="Tramontana">Tramontana</option>
+                                <option value="Trekka">Trekka</option>
+                                <option value="Trishul Jeep">Trishul Jeep</option>
+                                <option value="Triumph">Triumph</option>
+                                <option value="Trojan">Trojan</option>
+                                <option value="Troller">Troller</option>
+                                <option value="Trumpchi">Trumpchi</option>
+                                <option value="Tudhope">Tudhope</option>
+                                <option value="Turner">Turner</option>
+                                <option value="TVR">TVR</option>
+                                <option value="UAZ">UAZ</option>
+                                <option value="Uirapuru">Uirapuru</option>
+                                <option value="UltraCommuter">UltraCommuter</option>
+                                <option value="UMM">UMM</option>
+                                <option value="Uri International Vehicle & Equipment Marketing">Uri International Vehicle & Equipment Marketing</option>
+                                <option value="Uri-Automobile">Uri-Automobile</option>
+                                <option value="UROVESA">UROVESA</option>
+                                <option value="Vagnsaktiebolaget I Södertelge">Vagnsaktiebolaget I Södertelge</option>
+                                <option value="VAM">VAM</option>
+                                <option value="Van Doorne's Automobiel Fabrieken">Van Doorne's Automobiel Fabrieken</option>
+                                <option value="Vanden Plas">Vanden Plas</option>
+                                <option value="Vauxhall">Vauxhall</option>
+                                <option value="Vechet">Vechet</option>
+                                <option value="VELAM">VELAM</option>
+                                <option value="Velorex">Velorex</option>
+                                <option value="Vemag">Vemag</option>
+                                <option value="Venturi">Venturi</option>
+                                <option value="Venucia">Venucia</option>
+                                <option value="Venucia">Venucia</option>
+                                <option value="Vera">Vera</option>
+                                <option value="Vespa">Vespa</option>
+                                <option value="Vhul">Vhul</option>
+                                <option value="Villa GT">Villa GT</option>
+                                <option value="Vinaxuki">Vinaxuki</option>
+                                <option value="VinFast">VinFast</option>
+                                <option value="Voisin">Voisin</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Volvo">Volvo</option>
+                                <option value="von Braun Holding Company">von Braun Holding Company</option>
+                                <option value="VW-Porsche">VW-Porsche</option>
+                                <option value="W Motors">W Motors</option>
+                                <option value="W Motors">W Motors</option>
+                                <option value="W.W. Trevis">W.W. Trevis</option>
+                                <option value="Wallyscar">Wallyscar</option>
+                                <option value="Walter">Walter</option>
+                                <option value="Walter">Walter</option>
+                                <option value="Wanderer">Wanderer</option>
+                                <option value="Wartburg">Wartburg</option>
+                                <option value="Warwick">Warwick</option>
+                                <option value="Wikov">Wikov</option>
+                                <option value="Willys">Willys</option>
+                                <option value="Willys">Willys</option>
+                                <option value="Winograd">Winograd</option>
+                                <option value="Wolseley">Wolseley</option>
+                                <option value="Wood">Wood</option>
+                                <option value="Wuling">Wuling</option>
+                                <option value="Xinkai">Xinkai</option>
+                                <option value="Yamaha Motor Pakistan">Yamaha Motor Pakistan</option>
+                                <option value="Yema Auto">Yema Auto</option>
+                                <option value="YLN">YLN</option>
+                                <option value="Youngman">Youngman</option>
+                                <option value="Yue Long">Yue Long</option>
+                                <option value="Yuejin">Yuejin</option>
+                                <option value="Yugo">Yugo</option>
+                                <option value="Yulon">Yulon</option>
+                                <option value="Yutong Group">Yutong Group</option>
+                                <option value="Zacua">Zacua</option>
+                                <option value="Zagross Khodro">Zagross Khodro</option>
+                                <option value="Zarooq Motors">Zarooq Motors</option>
+                                <option value="Zastava">Zastava</option>
+                                <option value="Zastava TERVO">Zastava TERVO</option>
+                                <option value="Zbrojovka Brno">Zbrojovka Brno</option>
+                                <option value="ZENN">ZENN</option>
+                                <option value="Zeta">Zeta</option>
+                                <option value="Zhejiang Geely Automobile">Zhejiang Geely Automobile</option>
+                                <option value="Zhonghua">Zhonghua</option>
+                                <option value="Zhongxing">Zhongxing</option>
+                                <option value="Zhongyu">Zhongyu</option>
+                                <option value="ZiL">ZiL</option>
+                                <option value="Zimmer">Zimmer</option>
+                                <option value="Zotye">Zotye</option>
+                            </select>
+                        </span>
                 </fieldset>
             </form>
-            <form>
+            <br>
+            <form class="seis">
                 <fieldset>
                     <label>Comentario</label>
                     <br>

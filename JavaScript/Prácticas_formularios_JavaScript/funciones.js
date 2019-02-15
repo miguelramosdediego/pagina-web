@@ -1,4 +1,4 @@
-function fechayhora() {
+function fechayhoramorado() {
 var fecha = new Date();
 var numeroames;
 var horascero;
@@ -65,6 +65,73 @@ var segundoscero;
     document.write('<span style="color:#820e88">'+fecha.getDate()+' de '+numeroames+' de '+fecha.getFullYear()+', '+horascero+':'+minutoscero+':'+segundoscero);
 }
 
+function fechayhoranegro() {
+var fecha = new Date();
+var numeroames;
+var horascero;
+var minutoscero;
+var segundoscero;
+    if (fecha.getMonth()==0) {
+        numeroames='enero';
+    }
+    if (fecha.getMonth()==1) {
+        numeroames='febrero';
+    }
+    if (fecha.getMonth()==2) {
+        numeroames='marzo';
+    }
+    if (fecha.getMonth()==3) {
+        numeroames='abril';
+    }
+    if (fecha.getMonth()==4) {
+        numeroames='mayo';
+    }
+    if (fecha.getMonth()==5) {
+        numeroames='junio';
+    }
+    if (fecha.getMonth()==6) {
+        numeroames='julio';
+    }
+    if (fecha.getMonth()==7) {
+        numeroames='agosto';
+    }
+    if (fecha.getMonth()==8) {
+        numeroames='septiembre';
+    }
+    if (fecha.getMonth()==9) {
+        numeroames='octubre';
+    }
+    if (fecha.getMonth()==10) {
+        numeroames='noviembre';
+    }
+    if (fecha.getMonth()==11) {
+        numeroames='diciembre';
+    }
+
+    if (fecha.getMinutes()<10) {
+        minutoscero='0'+fecha.getMinutes();
+    }
+    else {
+        minutoscero=fecha.getMinutes();
+    }
+
+    if (fecha.getSeconds()<10) {
+        segundoscero='0'+fecha.getSeconds();
+    }
+    else {
+        segundoscero=fecha.getSeconds();
+    }
+
+    if (fecha.getHours()<10) {
+        horascero='0'+fecha.getHours();
+    }
+    else {
+        horascero=fecha.getHours();
+    }
+
+    document.write('<span style="color:black">'+fecha.getDate()+' de '+numeroames+' de '+fecha.getFullYear()+', '+horascero+':'+minutoscero+':'+segundoscero);
+}
+
 function limitefecha() { /* https://jsfiddle.net/dae4y126/ */
 var fecha = new Date();
 var dia = fecha.getDate();
@@ -100,7 +167,7 @@ function habilitarmarcamovil() { /* https://www.w3schools.com/js/tryit.asp?filen
     }
 }
 
-function borrar () {
+function borrar() {
     document.getElementById('cuantoshijos').style.display = 'none';
     document.getElementById('marcamovil').disabled=true;
     document.getElementById('comentarios').style.height = '64px'; /* https://stackoverflow.com/questions/36087612/reset-textarea-height-in-javascript */

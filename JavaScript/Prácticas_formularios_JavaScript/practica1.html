@@ -7,13 +7,13 @@
         <title>Práctica fomulario con JavaScript I</title><!--Restricciones con «pattern»: https://www.w3schools.com/tags/att_input_pattern.asp. Mas información con «regex», «expresiones regulares»-->
     </head>
     <body>
-        <script type="text/javascript">fechayhora();</script>
+        <script type="text/javascript">fechayhoramorado();</script>
         <form>
             <table>
                 <tr>
                     <td>
                         <label>Usuario: </label>
-                        <input type="text" name="usuario" pattern=".{8,}" title="Mínimo 8 caracteres alfanuméricos" required autofocus>
+                        <input type="text" name="usuario" pattern=".{8,}" title="Mínimo 8 caracteres alfanuméricos" required autofocus">
                     </td>
                     <td colspan="2">
                         <label>Contraseña: </label>
@@ -466,10 +466,15 @@
         <br>
         <br>
         <br>
-        <p>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <span>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fmiguelramosdediego.github.io%2Fpagina-web%2FJavaScript%2FPr%25C3%25A1cticas_formularios_JavaScript%2Fpractica1.html" target="_blank">
+                <img style="border:0;width:88px;height:31px" src="valid-html401-v.svg" alt="Valid HTML!" />
+            </a>
+        </span>
+        <span>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmiguelramosdediego.github.io%2Fpagina-web%2FJavaScript%2FPr%25C3%25A1cticas_formularios_JavaScript%2Festilopractica1.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">
                 <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
             </a>
-        </p>
+        </span>
     </body>
 </html>
